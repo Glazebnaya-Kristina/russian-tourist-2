@@ -1,0 +1,132 @@
+.routes {
+  $block-name: &; // #{$block-name}__element
+
+  padding: 25px 0 0;
+  @media (min-width: $screen-md) {
+    padding: 44px 0 0;
+  }
+
+  &__wrapper-map {
+    margin-top: 40px;
+    @media (min-width: $screen-md) {
+      margin-top: 59px;
+    }
+  }
+
+  &__wrapper {
+    padding-bottom: 55px;
+    background-image: url("../img/home/bg-routes.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (min-width: $screen-xl) {
+      padding-bottom: 105px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    width: 320px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    @media (min-width: $screen-md) {
+      width: 550px;
+      height: 400px;
+    }
+    @media (min-width: $screen-xl) {
+      width: 1200px;
+      height: 675px;
+      background-position: left -20px center;
+    }
+  }
+
+  &__backpack-buy {
+    position: absolute;
+    right: 21px;
+    top: 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 160px;
+    width: 100%;
+    padding: 9px 5px;
+    background-color: $white;
+    border: 1px solid $color-gold;
+    @media (min-width: $screen-md) {
+      right: 52px;
+      top: 63px;
+      max-width: 257px;
+      padding: 15px 15px;
+    }
+    @media (min-width: $screen-xl) {
+      right: 383px;
+      top: 99px;
+      max-width: 310px;
+      padding: 18px 25px 28px;
+    }
+  }
+
+  &__backpack-title {
+    font-size: 15px;
+    @media (min-width: $screen-md) {
+      font-size: 22px;
+    }
+    @media (min-width: $screen-xl) {
+      font-size: 30px;
+    }
+  }
+
+  &__buy-button {
+    @media (min-width: $screen-md) {
+      margin-top: 7px;
+    }
+    @media (min-width: $screen-xl) {
+      margin-top: 15px;
+    }
+  }
+
+  &__subscribe-title {
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (min-width: $screen-md) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__subscribe {
+    margin-top: 25px;
+    @media (min-width: $screen-md) {
+      margin-top: 71px;
+    }
+  }
+
+  &__form {
+    max-width: 320px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 15px;
+    @media (min-width: $screen-md) {
+      max-width: 550px;
+      margin-top: 55px;
+      padding: 0;
+    }
+    @media (min-width: $screen-xl) {
+      max-width: 760px;
+    }
+  }
+
+  &__label {
+    &:not(:first-child) {
+      margin-top: 31px;
+    }
+  }
+
+  &__button-wrapper {
+    margin-top: 40px;
+  }
+}

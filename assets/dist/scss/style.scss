@@ -1,0 +1,32 @@
+// поключения глобальных библиотек и хелперов
+@import "libs/fonts";
+@import "libs/fontello";
+
+/*--- в этом файле лежит то что лежало в файле style.scss ---*/
+@import "libs/common";
+/*--- в этом файле лежит то что лежало в файле style.scss ---*/
+
+@import "helper/variables";
+@import "helper/container-mixins";
+@import "helper/mixins";
+@import "helper/animations";
+
+// поключения глобальные блоков
+@import "blocks/button";
+@import "blocks/navigation";
+@import "blocks/social";
+@import "blocks/logo";
+@import "blocks/menu-burger";
+@import "blocks/title";
+@import "blocks/preview-article";
+@import "blocks/article-top";
+@import "blocks/right-arrow";
+@import "blocks/form";
+@import "blocks/modal";
+@import "blocks/close";
+@import "blocks/link";
+@import "blocks/breadcrumbs";
+@import "blocks/button-arrow";
+@import "blocks/article-row";
+@import "blocks/input-search";
+@import "blocks/button-reset";

@@ -1,0 +1,82 @@
+// Подключения блоков
+@import "blocks/time-flag";
+
+// поключения библиотек
+//@import "libs/title";
+@import "helper/container-mixins";
+// стили шаблонов
+// поключения секций
+@import "sections/index/about-us";
+@import "sections/index/last-news";
+@import "sections/index/popular-month";
+@import "sections/index/routes";
+
+// стили шаблонов
+@import "libs/header";
+@import "libs/footer";
+
+
+.dots{
+  @include ul-reset;
+  @include container-inner;
+  left: 0;
+  right: 0;
+  bottom: 110px;
+  position: absolute;
+  display: flex;
+  li{
+    padding: 0;
+    height: 40px;
+    &:after{
+      display: none;
+    }
+  }
+}
+
+.slick-dots{
+  @include ul-reset;
+  @include container-inner;
+  left: 0;
+  right: 0;
+  bottom: 75px;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 4px;
+  @media (min-width: $screen-lg) {
+    bottom: 110px;
+  }
+  @media (min-width: $screen-xl) {
+    bottom: 117px;
+  }
+  .slick-active{
+    height: 3px;
+    button{
+      background-color: $color-gold;
+    }
+  }
+  li{
+    padding: 0;
+    height: 1px;
+    width: 40px;
+    background-color: transparent;
+    &:after{
+      display: none;
+    }
+    &:not(:first-of-type){
+      margin-left: 10px;
+    }
+    button{
+      width: 100%;
+      font-size: 0;
+      border: none;
+      background-color: $white;
+      cursor: pointer;
+      &:focus{
+        outline: 0;
+        background-color: $color-gold;
+      }
+    }
+  }
+}

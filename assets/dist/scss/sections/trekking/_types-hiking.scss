@@ -1,0 +1,44 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+
+.types-hiking{
+  $block-name: &; // #{$block-name}__element
+
+
+  position: relative;
+  padding: 25px 0 25px;
+  background-image: url("../img/trekking/types-hiking-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  &:after{
+    @include pseudo;
+    bottom: 0;
+    left: -63px;
+    display: none;
+    width: 312px;
+    height: 333px;
+    background-image: url("../img/trekking/baron.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    @media (min-width: 1710px) {
+      display: block;
+    }
+  }
+  @media (min-width: $screen-xl) {
+    padding: 106px 0 120px;
+  }
+
+  &__inner{
+    @include container;
+  }
+
+  &__types{
+    margin-top: 25px;
+    @media (min-width: $screen-xl) {
+      margin-top: 50px;
+    }
+  }
+}

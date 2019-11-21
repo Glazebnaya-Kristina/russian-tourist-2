@@ -1,0 +1,12 @@
+@import "../helper/mixins";
+
+.right-arrow{
+  transition: $transition-time;
+  &--blue{
+    color: $color-blue;
+    &:hover,
+    &:focus{
+      color: $color-gold;
+    }
+  }
+}

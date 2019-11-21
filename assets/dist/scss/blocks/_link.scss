@@ -1,0 +1,25 @@
+.link {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  &--blue {
+    position: relative;
+    color: #498694;
+    &:after{
+      @include pseudo;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #498694;
+      opacity: .2;
+    }
+    &:hover,
+    &:focus{
+      outline: none;
+      color: #236777;
+      &:after{
+        background-color: #236777;
+      }
+    }
+  }
+}

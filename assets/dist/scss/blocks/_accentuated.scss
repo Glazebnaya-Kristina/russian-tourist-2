@@ -1,0 +1,19 @@
+.accentuated{
+  $block-name:                &; // #{$block-name}__element
+
+
+  padding: 15px 20px;
+  font-family: 'Cormorant Garamond';
+  font-weight: 700;
+  font-size: 22px;
+  background-color: $color-blue-lighter;
+  @media (min-width: $screen-md) {
+    font-size: 26px;
+    max-width: 700px;
+  }
+  @media (min-width: $screen-xl) {
+    max-width: 978px;
+    padding: 18px 30px;
+    font-size: 36px;
+  }
+}

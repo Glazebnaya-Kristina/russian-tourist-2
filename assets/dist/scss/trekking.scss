@@ -1,0 +1,23 @@
+// поключения библиотек
+@import "helper/container-mixins";
+@import "helper/variables";
+@import "helper/mixins";
+// стили шаблонов
+@import "libs/header-inner";
+@import "libs/footer";
+@import "libs/jcf-scrollbar";
+@import "libs/jcf-select";
+// подключениея блоков
+@import "blocks/types";
+// поключения секций
+@import "sections/trekking/types-tourism";
+@import "sections/trekking/types-hiking";
+@import "sections/trekking/trekking-articles";
+@import "sections/trekking/hike-search";
+
+
+
+//@media (min-width: $screen-sm) {}
+//@media (min-width: $screen-md) {}
+//@media (min-width: $screen-lg) {}
+//@media (min-width: $screen-xl) {}

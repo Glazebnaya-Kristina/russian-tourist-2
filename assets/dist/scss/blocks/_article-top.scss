@@ -1,0 +1,20 @@
+.article-top{
+  display: flex;
+  align-items: center;
+  span{
+    min-width: 80px;
+    padding: 5px 11.7px;
+    font-size: 14px;
+    text-align: center;
+    color: $color-blue;
+    background-color: $color-grey-lighten;
+  }
+  time{
+    margin-left: 40px;
+    font-size: 14px;
+    color: $text-color-gray-light;
+  }
+  &--space-b{
+    justify-content: space-between;
+  }
+}

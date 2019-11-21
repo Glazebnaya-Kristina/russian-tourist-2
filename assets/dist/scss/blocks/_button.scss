@@ -1,0 +1,156 @@
+.button {
+  $block-name:                &; // #{$block-name}__element
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  //min-height: 48px;
+  margin: 0;
+  padding: 15px 59px;
+  width: max-content;
+  max-width: 222px;
+  font-family: inherit;
+  font-size: $font-size;
+  font-weight: 500;
+  color: inherit;
+  line-height: $line-height;
+  text-decoration: none;
+  text-transform: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  user-select: none;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: $transition-time;
+
+  &--uppercase{
+    text-transform: uppercase;
+  }
+
+  &--border-transparent{
+    background-color: rgba(#f9f9f9, .83);
+    border: 1px solid $color-gold;
+    &:hover,
+    &:focus{
+      outline: none;
+      color: $white;
+      background-color: $color-gold-lighten;
+      border: 1px solid $color-gold-lighten;
+    }
+  }
+
+  &--box{
+    position: relative;
+    &:after{
+      @include pseudo;
+      left: 7px;
+      top: 7px;
+      width: 100%;
+      height: 100%;
+      border: 1px solid $color-blue;
+      transition: $transition-time;
+    }
+  }
+
+  &--blue{
+    color: $white;
+    background-color: $color-blue;
+    &:hover,
+    &:focus{
+      outline: none;
+      background-color: $color-gold;
+      &:after{
+        border-color: $color-gold;
+      }
+    }
+  }
+
+  &--gold{
+    color: $white;
+    background-color: $color-gold;
+    &:hover,
+    &:focus{
+      outline: none;
+      background-color: $color-gold-dark;
+      &:after{
+        border-color: $color-gold-dark;
+      }
+    }
+    &:after{
+      border-color: $color-gold;
+    }
+  }
+
+  &--modal{
+    padding: 10px 65px;
+  }
+
+  &--flex{
+    display: flex;
+  }
+
+  &--xs{
+    padding: 9px 32px;
+  }
+
+  &--xs-s{
+    padding: 5px 15px;
+  }
+
+  &--xss{
+    padding: 10px 6px;
+    font-size: 6px;
+    @media (min-width: $screen-md) {
+      padding: 15px 15px;
+      font-size: 10px;
+    }
+    @media (min-width: $screen-xl) {
+      font-size: 12px;
+    }
+    &:after{
+      @media (min-width: $screen-xs) and (max-width: 767px) {
+        left: 4px;
+        top: 4px;
+      }
+    }
+  }
+}
+
+.button-wrapper{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  &:before{
+    @include pseudo;
+    position: relative;
+    width: 70px;
+    background-image: url("../img/hand-writes.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  &:after{
+    @include pseudo;
+    position: relative;
+    transform: rotate3d(1, 100, 17, 180deg);
+    width: 70px;
+    background-image: url("../img/hand-writes.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &:after,
+  &:before{
+    display: none;
+    @media (min-width: $screen-md) {
+      display: block;
+    }
+  }
+
+  &__button{
+    margin: 0 15px;
+  }
+}

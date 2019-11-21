@@ -1,0 +1,29 @@
+@import "../helper/variables";
+@import "../helper/mixins";
+
+
+.input-search{
+  $block-name: &; // #{$block-name}__element
+
+
+  position: relative;
+  &__icon{
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+  }
+
+  &__search{
+    padding: 13px 20px 13px 60px;
+    border: none;
+    border-radius: 0;
+    background-color: $color-grey-input-search;
+    &:hover,
+    &:focus{
+      border: none;
+      background-color: rgb(241, 241, 241);
+    }
+  }
+}

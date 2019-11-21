@@ -1,0 +1,190 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+.last-news {
+  $block-name: &; // #{$block-name}__element
+
+  position: relative;
+  padding: 25px 0 25px;
+  background-image: url("../img/home/bg-last-news.png");
+  background-repeat: no-repeat;
+  background-position: bottom 39px center;
+
+  @media (min-width: $screen-md) {
+    padding: 99px 0 48px;
+  }
+
+  &__inner {
+    @include container;
+    @media (min-width: $screen-lg) {
+      width: 1010px;
+    }
+  }
+
+  &__list {
+    @include ul-reset;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 59px;
+
+    @media (min-width: $screen-md) {
+      height: 607px;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+    &:after {
+      @include pseudo;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: none;
+      width: 20px;
+      height: 100%;
+      background-image: url("../img/home/arrow-news.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      @media (min-width: $screen-md) {
+        display: block;
+      }
+    }
+
+    li {
+      &:not(:first-child){
+        margin-top: 25px;
+      }
+
+      @media (min-width: $screen-md) {
+        display: flex;
+        align-items: flex-start;
+        max-width: 50%;
+        width: 100%;
+      }
+
+
+      &:nth-child(odd) {
+        #{$block-name}__article {
+          @media (min-width: $screen-md) {
+            margin-left: auto;
+          }
+        }
+
+        &:last-child {
+          @media (min-width: $screen-md) {
+            margin-top: 50px;
+          }
+        }
+      }
+
+      &:nth-child(even) {
+        @media (min-width: $screen-md) {
+          position: absolute;
+          top: 37%;
+          left: 0;
+          flex-direction: row-reverse;
+          margin-top: 0;
+        }
+        #{$block-name}__article {
+          @media (min-width: $screen-md) {
+            margin-right: auto;
+          }
+        }
+
+        .time-flag {
+          &:after {
+            right: auto;
+            left: -15px;
+            border-left: none;
+            border-right: 15px solid $text-color-brown;
+          }
+          &:hover{
+            &:after{
+              border-right-color: $color-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__top {
+    time {
+      margin-left: 22px;
+    }
+  }
+
+  &__article {
+    position: relative;
+    max-width: 353px;
+    padding: 15px 20px;
+    margin-top: 25px;
+    border: 1px solid $color-grey-lighter;
+    background-color: $white;
+    transition: $transition-time;
+
+    @media (min-width: $screen-md) {
+      margin-top: 0;
+    }
+    @media (min-width: $screen-lg) {
+      padding: 19px 28px;
+      padding-bottom: 22px;
+    }
+
+
+    &:hover {
+      border: 1px solid $color-blue;
+    }
+
+    h3 {
+      margin: 0;
+      font-family: $font-family-Cormorant;
+      font-weight: 700;
+      font-size: 18px;
+      color: $text-color-gray-dark;
+      transition: $transition-time;
+      @media (min-width: $screen-md) {
+        font-size: 20px;
+      }
+      @media (min-width: $screen-xl) {
+        font-size: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  &__link {
+    margin-top: 6px;
+
+    &:hover,
+    &:focus {
+      outline: none;
+
+      h3 {
+        color: $color-blue;
+      }
+    }
+  }
+
+  &__body {
+    margin-top: 11px;
+    p{
+      line-height: 22px;
+      margin-top: 16px;
+    }
+  }
+
+  &__footer {
+    margin-top: 13px;
+  }
+
+  &__time-flag{
+    @media (min-width: $screen-xl) {
+      margin-top: 6px;
+    }
+  }
+
+}

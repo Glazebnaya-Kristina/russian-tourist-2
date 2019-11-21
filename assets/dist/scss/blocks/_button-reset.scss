@@ -1,0 +1,17 @@
+@import "../helper/variables";
+@import "../helper/mixins";
+
+.button-reset{
+  $block-name: &; // #{$block-name}__element
+
+  display: inline-flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+
+  i{
+    margin-right: 10px;
+  }
+}

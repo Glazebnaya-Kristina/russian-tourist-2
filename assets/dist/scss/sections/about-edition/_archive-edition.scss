@@ -1,0 +1,134 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+
+.archive-edition {
+  $block-name: &; // #{$block-name}__element
+
+
+  padding: 29px 0 30px;
+  @media (min-width: $screen-lg) {
+    padding: 29px 0 60px;
+  }
+
+  &__content {
+    margin-top: 20px;
+    padding-top: 20px;
+    background-image: url("../img/about-edition/archive-edition-bg.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    @media (min-width: $screen-md) {
+      margin-top: 35px;
+      padding-top: 55px;
+      background-size: 100% 180px;
+    }
+    @media (min-width: $screen-xl) {
+      margin-top: 62px;
+      padding-top: 25px;
+    }
+  }
+
+  &__wrapper-carousel {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__button{
+    margin-top: 18px;
+  }
+
+  //.archive-edition__list {
+  //  .slick-center {
+  //    transition: $transition-time;
+  //    transform: scale(1.17);
+  //  }
+  //
+  //  .slick-track {
+  //    padding: 34px 0;
+  //  }
+  //
+  //  .slick-slide {
+  //    margin: 0 20px;
+  //    display: flex;
+  //    align-items: center;
+  //    justify-content: center;
+  //  }
+  //}
+
+  &__list {
+    @include ul-reset;
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+    @media (min-width: 640px) {
+      max-width: 600px;
+    }
+    @media (min-width: 850px) {
+      max-width: 800px;
+    }
+
+    @media (min-width: $screen-xl) {
+      max-width: 1210px;
+    }
+
+    .slick-center {
+      transition: $transition-time;
+      transform: scale(1.17);
+    }
+
+    .slick-track {
+      padding: 34px 0;
+    }
+
+    .slick-slide {
+      margin: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    li {
+      height: 346px;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      transition: $transition-time;
+      @media (min-width: 640px) {
+        height: 260px;
+      }
+
+      @media (min-width: 850px) {
+        height: 298px;
+      }
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &--left {
+      left: -4px;
+      transform: translateY(-50%) rotate(180deg);
+      @media (min-width: $screen-sm) {
+        left: -15px;
+      }
+      @media (min-width: 900px) {
+        left: -38px;
+      }
+    }
+
+    &--right {
+      right: -4px;
+      @media (min-width: $screen-sm) {
+        right: -15px;
+      }
+      @media (min-width: 900px) {
+        right: -38px;
+      }
+    }
+  }
+}

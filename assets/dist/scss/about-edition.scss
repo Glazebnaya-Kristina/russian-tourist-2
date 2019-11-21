@@ -1,0 +1,25 @@
+// поключения библиотек
+@import "helper/container-mixins";
+@import "helper/variables";
+@import "helper/mixins";
+@import "libs/slick";
+@import "libs/swiper";
+@import "libs/jquery.fancybox";
+// стили шаблонов
+@import "libs/header-inner";
+@import "libs/footer";
+// поключения секций
+@import "sections/about-edition/edition";
+@import "sections/about-edition/archive-edition";
+@import "sections/about-edition/edition-today";
+@import "sections/about-edition/team";
+@import "sections/about-edition/action";
+
+
+
+
+
+//@media (min-width: $screen-sm) {}
+//@media (min-width: $screen-md) {}
+//@media (min-width: $screen-lg) {}
+//@media (min-width: $screen-xl) {}

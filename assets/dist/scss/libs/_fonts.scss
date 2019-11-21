@@ -1,0 +1,325 @@
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: local('Cormorant Garamond Light'), local('CormorantGaramond-Light'),
+  //url('../fonts/Garamond/Cormorantgaramondlight.woff2') format('woff2'),
+  //url('../fonts/Garamond/Cormorantgaramondlight.woff') format('woff'),
+  //url('../fonts/Garamond/CormorantGaramond-Light.otf') format('otf'),
+  url('../fonts/Garamond/CormorantGaramond-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: local('Cormorant Garamond Light Italic'), local('CormorantGaramond-LightItalic'),
+  //url('../fonts/Garamond/Cormorantgaramondlightitalic.woff2') format('woff2'),
+  //url('../fonts/Garamond/Cormorantgaramondlightitalic.woff') format('woff'),
+  //url('../fonts/Garamond/CormorantGaramond-LightItalic.otf') format('otf'),
+  url('../fonts/Garamond/CormorantGaramond-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: local('Cormorant Garamond'), local('CormorantGaramond-Regular'),
+  //url('../fonts/Garamond/Cormorantgaramond.woff2') format('woff2'),
+  //url('../fonts/Garamond/Cormorantgaramond.woff') format('woff'),
+  //url('../fonts/Garamond/CormorantGaramond-Regular.otf') format('otf'),
+  url('../fonts/Garamond/CormorantGaramond-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: local('Cormorant Garamond Italic'), local('CormorantGaramond-Italic'),
+  //url('../fonts/Garamond/Cormorantgaramonditalic.woff2') format('woff2'),
+  //url('../fonts/Garamond/Cormorantgaramonditalic.woff') format('woff'),
+  //url('../fonts/Garamond/CormorantGaramond-Italic.otf') format('otf'),
+  url('../fonts/Garamond/CormorantGaramond-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+//@font-face {
+//  font-family: 'Cormorant Garamond';
+//  src: local('Cormorant Garamond Book'), local('CormorantGaramond-Book'),
+//  url('../fonts/Garamond/Cormorantgaramondbook.woff2') format('woff2'),
+//  url('../fonts/Garamond/Cormorantgaramondbook.woff') format('woff'),
+//  url('../fonts/Garamond/CormorantGaramond-Book.otf') format('otf'),
+//  url('../fonts/Garamond/Cormorantgaramondbook.ttf') format('truetype');
+//  font-weight: 500;
+//  font-style: normal;
+//  font-display: swap;
+//}
+
+//@font-face {
+//  font-family: 'Cormorant Garamond';
+//  src: local('Cormorant Garamond Book Italic'), local('CormorantGaramond-BookItalic'),
+//  url('../fonts/Garamond/Cormorantgaramondbookitalic.woff2') format('woff2'),
+//  url('../fonts/Garamond/Cormorantgaramondbookitalic.woff') format('woff'),
+//  url('../fonts/Garamond/CormorantGaramond-BookItalic.otf') format('otf'),
+//  url('../fonts/Garamond/Cormorantgaramondbookitalic.ttf') format('truetype');
+//  font-weight: 500;
+//  font-style: italic;
+//}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: local('Cormorant Garamond Semibold'), local('CormorantGaramond-Semibold'),
+  //url('../fonts/Garamond/Cormorantgaramondsemibold.woff2') format('woff2'),
+  //url('../fonts/Garamond/Cormorantgaramondsemibold.woff') format('woff'),
+  //url('../fonts/Garamond/CormorantGaramond-Semibold.otf') format('otf'),
+  url('../fonts/Garamond/CormorantGaramond-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: local('Cormorant Garamond Semibold Italic'), local('CormorantGaramond-SemiboldItalic'),
+  //url('../fonts/Garamond/Cormorantgaramondsemibolditalic.woff2') format('woff2'),
+  //url('../fonts/Garamond/Cormorantgaramondsemibolditalic.woff') format('woff'),
+  //url('../fonts/Garamond/CormorantGaramond-SemiboldItalic.otf') format('otf'),
+  url('../fonts/Garamond/CormorantGaramond-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: local('Cormorant Garamond Medium'), local('CormorantGaramond-Medium'),
+  url('../fonts/Garamond/CormorantGaramond-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: local('Cormorant Garamond Medium Italic'), local('CormorantGaramond-MediumItalic'),
+  url('../fonts/Garamond/CormorantGaramond-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: local('Cormorant Garamond Bold'), local('CormorantGaramond-Bold'),
+  //url('../fonts/Garamond/Cormorantgaramondbold.woff2') format('woff2'),
+  //url('../fonts/Garamond/Cormorantgaramondbold.woff') format('woff'),
+  //url('../fonts/Garamond/CormorantGaramond-Bold.otf') format('otf'),
+  url('../fonts/Garamond/CormorantGaramond-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: local('Cormorant Garamond Bold Italic'), local('CormorantGaramond-BoldItalic'),
+  //url('../fonts/Garamond/Cormorantgaramondbolditalic.woff2') format('woff2'),
+  //url('../fonts/Garamond/Cormorantgaramondbolditalic.woff') format('woff'),
+  //url('../fonts/Garamond/CormorantGaramond-BoldItalic.otf') format('otf'),
+  url('../fonts/Garamond/CormorantGaramond-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+/*------------------- GothamPro ---------------------*/
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro/GothamPro.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro/GothamPro-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro/GothamPro-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro/GothamPro-BlackItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro/GothamPro-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro/GothamPro-LightItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro/GothamPro-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro/GothamPro-MediumItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamProNarrow";
+  src: url("../fonts/GothamPro/GothamProNarrow-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamProNarrow";
+  src: url("../fonts/GothamPro/GothamProNarrow-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+
+//@font-face {
+//  font-family: "GothamProRegular";
+//  src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+//  src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+//  url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+//  url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+//  font-style: normal;
+//  font-weight: normal;
+//}
+//
+//@font-face {
+//  font-family: "GothamPro";
+//  src: url("../fonts/GothamPro.ttf") format("truetype");
+//  font-style: normal;
+//  font-weight: normal;
+//}
+//
+//@font-face {
+//  font-family: "GothamProBold";
+//  src: url("../fonts/GothamProBold/GothamProBold.eot");
+//  src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+//  url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
+//  url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+//  font-style: normal;
+//  font-weight: normal;
+//}
+//
+//@font-face {
+//  font-family: "GothamProBlack";
+//  src: url("../fonts/GothamProBlack/GothamProBlack.eot");
+//  src: url("../fonts/GothamProBlack/GothamProBlack.eot?#iefix")format("embedded-opentype"),
+//  url("../fonts/GothamProBlack/GothamProBlack.woff") format("woff"),
+//  url("../fonts/GothamProBlack/GothamProBlack.ttf") format("truetype");
+//  font-style: normal;
+//  font-weight: normal;
+//}
+//
+//@font-face {
+//  font-family: "GothamProItalic";
+//  src: url("../fonts/GothamProItalic/GothamProItalic.eot");
+//  src: url("../fonts/GothamProItalic/GothamProItalic.eot?#iefix")format("embedded-opentype"),
+//  url("../fonts/GothamProItalic/GothamProItalic.woff") format("woff"),
+//  url("../fonts/GothamProItalic/GothamProItalic.ttf") format("truetype");
+//  font-style: normal;
+//  font-weight: normal;
+//}
+//
+//@font-face {
+//  font-family: "GothamProMedium";
+//  src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+//  src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix")format("embedded-opentype"),
+//  url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"),
+//  url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+//  font-style: normal;
+//  font-weight: normal;
+//}
+//
+//@font-face {
+//  font-family: "GothamProLight";
+//  src: url("../fonts/GothamProLight/GothamProLight.eot");
+//  src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix")format("embedded-opentype"),
+//  url("../fonts/GothamProLight/GothamProLight.woff") format("woff"),
+//  url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+//  font-style: normal;
+//  font-weight: normal;
+//}
+//
+//@font-face {
+//  font-family: "GothamProMediumItalic";
+//  src: url("../fonts/GothamProMediumItalic/GothamProMediumItalic.eot");
+//  src: url("../fonts/GothamProMediumItalic/GothamProMediumItalic.eot?#iefix")format("embedded-opentype"),
+//  url("../fonts/GothamProMediumItalic/GothamProMediumItalic.woff") format("woff"),
+//  url("../fonts/GothamProMediumItalic/GothamProMediumItalic.ttf") format("truetype");
+//  font-style: normal;
+//  font-weight: normal;
+//}
+//
+//@font-face {
+//  font-family: "GothamProLightItalic";
+//  src: url("../fonts/GothamProLightItalic/GothamProLightItalic.eot");
+//  src: url("../fonts/GothamProLightItalic/GothamProLightItalic.eot?#iefix")format("embedded-opentype"),
+//  url("../fonts/GothamProLightItalic/GothamProLightItalic.woff") format("woff"),
+//  url("../fonts/GothamProLightItalic/GothamProLightItalic.ttf") format("truetype");
+//  font-style: normal;
+//  font-weight: normal;
+//}
+//
+//@font-face {
+//  font-family: "GothamProBoldItalic";
+//  src: url("../fonts/GothamProBoldItalic/GothamProBoldItalic.eot");
+//  src: url("../fonts/GothamProBoldItalic/GothamProBoldItalic.eot?#iefix")format("embedded-opentype"),
+//  url("../fonts/GothamProBoldItalic/GothamProBoldItalic.woff") format("woff"),
+//  url("../fonts/GothamProBoldItalic/GothamProBoldItalic.ttf") format("truetype");
+//  font-style: normal;
+//  font-weight: normal;
+//}
+//
+//@font-face {
+//  font-family: "GothamProBlackItalic";
+//  src: url("../fonts/GothamProBlackItalic/GothamProBlackItalic.eot");
+//  src: url("../fonts/GothamProBlackItalic/GothamProBlackItalic.eot?#iefix")format("embedded-opentype"),
+//  url("../fonts/GothamProBlackItalic/GothamProBlackItalic.woff") format("woff"),
+//  url("../fonts/GothamProBlackItalic/GothamProBlackItalic.ttf") format("truetype");
+//  font-style: normal;
+//  font-weight: normal;
+//}

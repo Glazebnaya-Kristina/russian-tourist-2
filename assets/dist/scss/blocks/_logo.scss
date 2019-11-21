@@ -1,0 +1,34 @@
+.logo{
+  position: absolute;
+  //z-index: -1;
+  //top: 18px;
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: url("../img/header-top.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  &--index{
+
+  }
+  &--inner{
+    bottom: -72px;
+    background-image: url("../img/header-inner-top.png");
+    .logo__img-link {
+      bottom: 11px;
+    }
+  }
+  &__img-link{
+    //margin-bottom: 22px;
+    position: absolute;
+    bottom: 22px;
+    z-index: 5;
+  }
+  &__name{
+    @include hide-text;
+  }
+  &__img{
+    width: 120px;
+  }
+}

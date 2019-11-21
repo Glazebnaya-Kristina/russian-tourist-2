@@ -1,0 +1,14 @@
+.button-arrow{
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  color: $color-blue;
+  border: none;
+  background-color: transparent;
+  transition: $transition-time;
+  &:hover,
+  &:focus{
+    outline: none;
+    color: $color-gold;
+  }
+}

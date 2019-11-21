@@ -1,0 +1,26 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+
+.types-tourism{
+  $block-name: &; // #{$block-name}__element
+
+  padding: 25px 0 25px;
+  background-image: url("../img/trekking/types-tourism-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  @media (min-width: $screen-xl) {
+    padding: 50px 0 120px;
+    background-position: center bottom -103px;
+  }
+  &__inner{
+    @include container;
+  }
+  &__types{
+    margin-top: 25px;
+    @media (min-width: $screen-xl) {
+      margin-top: 50px;
+    }
+  }
+}

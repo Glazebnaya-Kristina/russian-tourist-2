@@ -1,0 +1,65 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+
+.action{
+  $block-name: &; // #{$block-name}__element
+
+  padding: 75px 0 75px;
+  background-image: url("../img/about-edition/action-bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  @media (min-width: $screen-lg) {
+    padding: 104px 0 82px;
+  }
+
+  &__inner{
+    @include container;
+    color: $white;
+  }
+
+  &__title{
+    @include hide-text;
+  }
+
+  &__contact-email{
+    text-align: center;
+    a{
+      margin-top: 8px;
+      display: block;
+      font-weight: 700;
+      font-size: 22px;
+      &:hover,
+      &:focus{
+        outline: none;
+        color: $color-blue;
+      }
+    }
+  }
+
+  &__links{
+    max-width: 395px;
+    margin: 0 auto;
+    margin-top: 35px;
+    @media (min-width: $screen-lg) {
+      margin-top: 78px;
+    }
+  }
+
+  &__button{
+    width: 100%;
+    max-width: none;
+    font-size: 10px;
+    &:last-child{
+      margin-top: 20px;
+    }
+    @media (min-width: 400px) {
+      font-size: 13px;
+    }
+  }
+
+  &__icon{
+    margin-right: 10px;
+  }
+}

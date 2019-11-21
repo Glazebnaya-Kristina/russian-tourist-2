@@ -1,0 +1,142 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+.about-us{
+  $block-name:                &; // #{$block-name}__element
+
+  position: relative;
+  padding: 80px 0 25px;
+  background-image: url("../img/home/about-us-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  @media (min-width: $screen-md) {
+    padding: 90px 0;
+    background-position: top center;
+  }
+  @media (min-width: $screen-xl) {
+    padding: 113px 0 38px;
+    background-size: 100%;
+    background-position: top right;
+  }
+  &:after{
+    @include pseudo;
+    bottom: 0;
+    display: none;
+    width: 1000px;
+    height: 336px;
+    background-image: url("../img/home/about-us-baron.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-width: $screen-xl) {
+      display: block;
+    }
+  }
+
+
+  &__inner{
+    @include container;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-row-gap: 60px;
+
+    @media (min-width: $screen-md) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: max-content;
+      grid-row-gap: 0;
+    }
+  }
+
+  &__content{
+    @media (min-width: $screen-xl) {
+      grid-column: 1 / 2;
+      padding-right: 89px;
+    }
+    > p {
+      max-width: 500px;
+      margin: 0 auto;
+      margin-top: 40px;
+      font-weight: 500;
+      text-align: center;
+      @media (min-width: $screen-xl) {
+        margin-top: 66px;
+        font-size: 19px;
+      }
+      span:nth-of-type(2){
+        color: $color-blue;
+      }
+    }
+  }
+
+  &__title{
+    margin: 0;
+  }
+
+  &__wrapper-img{
+    position: relative;
+    max-width: 228px;
+    width: 100%;
+    height: 277px;
+    @media (min-width: $screen-md) {
+      margin-top: -15px;
+    }
+
+    @media (min-width: $screen-xl) {
+      grid-column: 2 / -1;
+      justify-self: flex-end;
+      margin-right: 100px;
+      max-width: 450px;
+      height: 560px;
+    }
+    p{
+      position: absolute;
+      margin: 0;
+      max-width: 190px;
+      width: 100%;
+      height: 245px;
+      background-repeat: no-repeat;
+      background-position: left top;
+
+      @media (min-width: $screen-xl) {
+        max-width: 390px;
+        width: 100%;
+        height: 510px;
+      }
+
+      &:nth-child(1){
+        top: 32px;
+        left: 0;
+        z-index: 1;
+        background-size: cover;
+        @media (min-width: $screen-xl) {
+          top: 45px;
+        }
+      }
+      &:nth-child(2){
+        top: 0;
+        left: 55px;
+        z-index: 0;
+        max-width: 172px;
+        background-size: cover;
+        @media (min-width: $screen-xl) {
+          left: 90px;
+          max-width: 358px;
+        }
+      }
+    }
+  }
+  &__date-publish{
+    color: $color-gold;
+  }
+
+  &__button{
+    z-index: 2;
+    grid-column: 1 / -1;
+    margin: 0 auto;
+    margin-top: 40px;
+    @media (min-width: $screen-xl) {
+      margin-top: 60px;
+    }
+  }
+}
