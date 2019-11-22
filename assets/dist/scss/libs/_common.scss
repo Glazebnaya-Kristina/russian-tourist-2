@@ -52,6 +52,10 @@ body {
   @include hide-text;
 }
 
+.icon-star{
+  color: $color-gold;
+}
+
 [tabindex='-1']:focus {
   outline: 0 !important;
 }

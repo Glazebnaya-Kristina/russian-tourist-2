@@ -1,0 +1,40 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+
+.want-camping{
+  $block-name: &; // #{$block-name}__element
+
+  padding: 50px 0 50px;
+  background-image: url('../img/trekking/want-camping-bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  @media (min-width: $screen-xl) {
+    padding: 124px 0 263px;
+    background-position: bottom -16px center;
+  }
+  &__inner{
+    @include container;
+  }
+
+  &__list{
+    margin-top: 20px;
+    @media (min-width: $screen-xl) {
+      margin-top: 68px;
+    }
+  }
+
+  &__hike{
+    &:not(:first-child){
+      margin-top: 20px;
+      @media (min-width: $screen-xl) {
+        margin-top: 70px;
+      }
+    }
+  }
+
+  &__form {
+    margin-top: 41px;
+  }
+}

@@ -1,0 +1,233 @@
+@import "../helper/variables";
+@import "../helper/mixins";
+
+.hike {
+  $block-name: &; // #{$block-name}__element
+
+  @include ul-reset;
+
+  &__atricle{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid $color-gold;
+    @media (min-width: $screen-xl) {
+      padding: 35px;
+      padding-bottom: 36px;
+    }
+  }
+
+  &__header {
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__name {
+    margin: 0;
+    font-family: $font-family-Cormorant;
+    font-weight: 700;
+    font-size: 18px;
+    color: $text-color-gray-dark;
+    transition: $transition-time;
+    @media (min-width: $screen-md) {
+      font-size: 24px;
+    }
+    @media (min-width: $screen-xl) {
+      margin-top: 5px;
+      font-size: 36px;
+      line-height: 33px;
+    }
+  }
+
+  &__road {
+    @include ul-reset;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    @media (min-width: $screen-md) {
+      margin-top: 19px;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:first-child) {
+      margin-left: 16px;
+
+      &:after {
+        @include pseudo;
+        left: -12.5px;
+        top: 49%;
+        width: 7px;
+        height: 1px;
+        background-color: $text-color-gray-dark2;
+      }
+    }
+  }
+
+  &__top-content {
+    margin-top: 10px;
+    @media (min-width: $screen-md) {
+      max-width: 420px;
+      margin-top: 0;
+      margin-left: 15px;
+    }
+    @media (min-width: $screen-lg) {
+      max-width: 100%;
+    }
+    @media (min-width: $screen-xl) {
+      max-width: 690px;
+      margin-left: 27px;
+    }
+  }
+
+  &__supervisor-wrapper {
+    display: grid;
+    grid-template-columns: 125px auto;
+    margin-top: 10px;
+    @media (min-width: $screen-md) {
+      grid-template-columns: 150px auto;
+    }
+  }
+
+  &__supervisor-field {
+    font-weight: 500;
+    color: $color-gold;
+  }
+
+  &__watching {
+    margin-top: 15px;
+    @media (min-width: $screen-lg) {
+      margin-top: -4px;
+      margin-left: auto;
+      padding-right: 7px;
+    }
+  }
+
+  &__want-link {
+    text-decoration: underline;
+    text-decoration-color: rgba($color-blue, .5);
+  }
+
+  &__wrapper-want {
+    display: flex;
+    color: $color-blue;
+    font-size: 14px;
+    &:last-child{
+      margin-top: 8px;
+    }
+  }
+
+  &__button-write {
+    margin-top: 10px;
+    padding: 7px 13px;
+    font-size: 14px;
+    @media (min-width: $screen-md) {
+      margin-top: 17px;
+    }
+  }
+
+  &__body {
+    margin-top: 16px;
+    @media (min-width: $screen-md) {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    @media (min-width: $screen-lg) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__table {
+    td{
+      display: flex;
+    }
+    th{
+      line-height: 16px;
+    }
+    tr{
+      @media (min-width: $screen-md) {
+        align-items: center;
+      }
+      &:not(:first-child){
+        @media (min-width: $screen-xl) {
+          margin-top: 10px;
+        }
+      }
+    }
+    &:nth-child(1) {
+      tr {
+        display: grid;
+        grid-template-columns: repeat(2, minMax(135px, 220px));
+        grid-column-gap: 3px;
+        @media (min-width: $screen-md) {
+          grid-template-columns: 222px auto;
+        }
+        @media (min-width: $screen-lg) {
+          grid-template-columns: 240px auto;
+          grid-column-gap: 7px;
+        }
+      }
+    }
+    &:nth-child(2) {
+      @media (min-width: $screen-md) {
+        margin-left: 20px;
+      }
+      @media (min-width: $screen-lg) {
+        margin-left: 95px;
+      }
+      tr {
+        display: grid;
+        grid-template-columns: repeat(2, minMax(135px, 220px));
+        grid-column-gap: 3px;
+        @media (min-width: $screen-md) {
+          grid-template-columns: 165px auto;
+        }
+        @media (min-width: $screen-lg) {
+          grid-template-columns: 180px auto;
+          grid-column-gap: 7px;
+        }
+      }
+    }
+  }
+
+  &__footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minMax(160px,1fr));
+    grid-template-rows: repeat(auto-fill, 160px);
+    grid-gap: 15px;
+    margin-top: 20px;
+    @media (min-width: $screen-md) {
+      grid-gap: 30px 40px;
+      margin-top: 34px;
+    }
+    @media (min-width: $screen-xl) {
+      grid-template-columns: repeat(auto-fill, 160px);
+    }
+  }
+
+  &__img{
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    @media (min-width: $screen-md) {
+      width: 232px;
+      height: auto;
+    }
+    @media (min-width: $screen-xl) {
+      width: 252px;
+    }
+  }
+
+  &__foto{
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 160px;
+  }
+}
