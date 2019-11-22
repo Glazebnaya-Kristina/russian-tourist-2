@@ -37,4 +37,27 @@
   &__form {
     margin-top: 41px;
   }
+
+  .jcf-scrollbar-vertical{
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    @media (min-width: $screen-xl) {
+      right: 45px;
+    }
+  }
+
+  .jcf-scrollable-wrapper{
+    padding: 38px 0;
+    background-color: white;
+    width: 100% !important;
+  }
+
+  .jcf-scrollbar-slider{
+    background-color: #e8e8e8;
+  }
+
+  .jcf-scrollbar-vertical .jcf-scrollbar-handle {
+    height: 43px !important;
+  }
 }
