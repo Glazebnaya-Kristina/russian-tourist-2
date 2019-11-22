@@ -8,9 +8,11 @@ $(document).ready(function () {
    });
 
 
-   var btnHike = document.querySelector('.hike__wrapper-want');
+   var btnHike = document.querySelectorAll('.hike__wrapper-want');
 
-   btnHike.addEventListener('click', function () {
-      btnHike.classList.toggle('hike__wrapper-want--active');
-   })
+   btnHike.forEach(function (item) {
+      item.addEventListener('click', function () {
+         item.classList.toggle('hike__wrapper-want--active');
+      })
+   });
 });
