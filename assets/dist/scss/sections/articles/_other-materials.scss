@@ -5,6 +5,8 @@
 .other-materials{
   $block-name: &; // #{$block-name}__element
 
+  position: relative;
+  z-index: 1;
   padding: 25px 0 25px;
   background-image: url("../img/articles/other-materials-bg.png");
   background-repeat: no-repeat;
@@ -15,6 +17,21 @@
   }
   @media (min-width: $screen-xl) {
     padding: 100px 0 120px;
+  }
+  &:after{
+    @include pseudo;
+    z-index: -1;
+    display: none;
+    width: 337px;
+    height: 750px;
+    top: -513px;
+    right: 0;
+    background-image: url("../img/articles/heroes-decor.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (min-width: $screen-lg) {
+      display: block;
+    }
   }
   &__inner{
     @include container;
