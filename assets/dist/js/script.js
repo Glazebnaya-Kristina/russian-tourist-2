@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
          overlay.classList.add('modal__overlay--opened');
          modalWrapp.classList.add('modal--opened');
          document.querySelector('body').classList.add('hidden');
+         jcf.replaceAll();
       }); // end click
 
    }); // end foreach

@@ -150,7 +150,7 @@
           position: absolute;
         }
         &:first-child {
-          padding-bottom: 20px;
+          padding-bottom: 31px;
         }
       }
     }
@@ -163,11 +163,11 @@
       i{
         color: $text-color-gray-light;
       }
+      #{$block-name}__quantity{
+        color: $text-color-gray-light;
+      }
     }
 
-    //&:last-child {
-    //  margin-top: 8px;
-    //}
     &:first-child {
       padding-bottom: 8px;
     }
@@ -295,7 +295,8 @@
     top: 36px;
     //z-index: -1;
     //opacity: 0;
-    z-index: 5;
+    //z-index: 5;
+    z-index: 1;
     display: none;
     box-shadow: -1.103px 3.845px 34.96px 3.04px rgba(0,0,0,0.09);
     transition: $transition-time;
