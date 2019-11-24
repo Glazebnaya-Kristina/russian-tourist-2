@@ -1,0 +1,48 @@
+@import "../helper/variables";
+@import "../helper/mixins";
+
+
+
+.blockquote{
+  $block-name: &; // #{$block-name}__element
+
+
+  position: relative;
+  padding: 35px 25px 35px;
+  background-color: $text-color-gray-blockquote;
+  @media (min-width: $screen-md) {
+    padding: 55px 76px 38px;
+  }
+  &:after{
+    @include pseudo;
+    top: -16px;
+    left: 12%;
+    width: 50px;
+    height: 40px;
+    background-image: url('../img/blockquote.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    @media (min-width: $screen-md) {
+      width: 83px;
+      height: 60px;
+    }
+  }
+  &__text{
+    font-style: italic;
+  }
+  &__author{
+    display: block;
+    max-width: 215px;
+    margin-left: auto;
+    margin-top: 18px;
+    text-align: right;
+    font-size: 14px;
+    @media (min-width: $screen-md) {
+      max-width: none;
+    }
+    strong{
+      font-weight: 500;
+    }
+  }
+}

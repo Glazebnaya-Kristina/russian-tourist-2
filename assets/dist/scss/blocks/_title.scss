@@ -36,11 +36,19 @@
 
   &--element-small{
     &:after{
-      //max-width: 212px;
       max-width: none;
       height: 33px;
       background-size: auto;
       background-position: center;
+    }
+  }
+
+  &--left{
+    text-align: left;
+    &:after{
+      left: 0;
+      transform: none;
+      background-position: left;
     }
   }
 

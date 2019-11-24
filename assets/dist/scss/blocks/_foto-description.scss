@@ -1,0 +1,13 @@
+.foto-description{
+  display: block;
+  margin-top: 12px;
+  text-align: center;
+  font-style: italic;
+  font-size: 9px;
+  color: $black;
+  transition: $transition-time;
+  transition-delay: .4s;
+  @media (min-width: $screen-md) {
+    font-size: 13px;
+  }
+}
