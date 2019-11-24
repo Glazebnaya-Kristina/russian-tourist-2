@@ -1,0 +1,17 @@
+.trekking-articles {
+  padding: 50px 0 50px;
+  @media (min-width: $screen-xl) {
+    padding: 123px 0 120px;
+  }
+
+  &__inner {
+    @include container;
+  }
+
+  &__preview-article {
+    margin-top: 27px;
+    @media (min-width: $screen-xl) {
+      margin-top: 47px;
+    }
+  }
+}

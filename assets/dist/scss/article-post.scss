@@ -8,18 +8,35 @@
 @import "libs/jcf-scrollbar";
 @import "libs/jcf-select";
 // подключениея блоков
-@import "blocks/types";
-@import "blocks/hike";
+//@import "blocks/hike";
 // поключения секций
-@import "sections/trekking/types-tourism";
-@import "sections/trekking/want-camping";
-@import "sections/trekking/types-hiking";
 @import "sections/trekking-articles";
 @import "sections/hike-search";
 
+
+
+.article-post{
+  &__hike-search{
+    padding: 50px 0 50px;
+    background-color: $color-grey-bg;
+    @media (min-width: $screen-xl) {
+      padding: 88px 0 100px;
+    }
+  }
+  &__search-form{
+    margin-top: 20px;
+    @media (min-width: $screen-xl) {
+      margin-top: 50px;
+    }
+  }
+}
 
 
 //@media (min-width: $screen-sm) {}
 //@media (min-width: $screen-md) {}
 //@media (min-width: $screen-lg) {}
 //@media (min-width: $screen-xl) {}
+
+
+
+//article-post

@@ -25,5 +25,13 @@
       border: none;
       background-color: rgb(241, 241, 241);
     }
+    &--dark{
+      background-color: $color-grey-input-search-dark;
+      &:hover,
+      &:focus{
+        border: none;
+        background-color: rgba(218, 218, 218, 0.3);
+      }
+    }
   }
 }
