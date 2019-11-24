@@ -1,0 +1,22 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+
+.attractions{
+  $block-name: &; // #{$block-name}__element
+
+  &__inner{
+    @include container;
+    @media (min-width: $screen-lg) {
+      max-width: 1030px;
+    }
+  }
+
+  &__gallery{
+    margin-top: 27px;
+    @media (min-width: $screen-lg) {
+      margin-top: 50px;
+      padding: 0;
+    }
+  }
+}
