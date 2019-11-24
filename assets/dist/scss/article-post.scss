@@ -2,20 +2,36 @@
 @import "helper/container-mixins";
 @import "helper/variables";
 @import "helper/mixins";
+@import "libs/jcf-scrollbar";
+@import "libs/jcf-select";
+@import "libs/slick";
 // стили шаблонов
 @import "libs/header-inner";
 @import "libs/footer";
-@import "libs/jcf-scrollbar";
-@import "libs/jcf-select";
 // подключениея блоков
-//@import "blocks/hike";
+@import "blocks/foto-description";
+@import "blocks/carousel-3D";
+@import "blocks/description";
+@import "blocks/blockquote";
 // поключения секций
 @import "sections/trekking-articles";
 @import "sections/hike-search";
+@import "sections/article-post/introduction";
+@import "sections/article-post/decription-post";
 
 
 
 .article-post{
+  margin-top: 62px;
+  &__header-img{
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 333px;
+    @media (min-width: $screen-lg) {
+      height: 533px;
+    }
+  }
   &__hike-search{
     padding: 50px 0 50px;
     background-color: $color-grey-bg;
@@ -29,6 +45,9 @@
       margin-top: 50px;
     }
   }
+  //&__decription{
+  //  overflow: hidden;
+  //}
 }
 
 

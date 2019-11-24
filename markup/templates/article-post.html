@@ -96,8 +96,81 @@
     </header>
 
     <article class="article-post">
-        <header class="article-post__header"></header>
+        <header class="article-post__header">
+            <img class="article-post__header-img" src="../img/article-post/article-post-header.jpg" alt="Главная фотография статьи">
+        </header>
         <div class="article-post__body">
+
+            <!-- Секция Вступление -->
+            <section class="introduction">
+                <div class="introduction__inner">
+                    <p class="article-top">
+                        <span>Походы</span>
+                    </p>
+                    <h2 class="title title--element title--element-small title--left">Заголовок новости или статьи</h2>
+                    <div class="introduction__description">
+                        <div class="introduction__wrapper-text">
+                            <p class="introduction__description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                                </p>
+                            <p class="introduction__description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                        </div>
+                        <p class="introduction__wrapper-img">
+                            <img src="../img/article-post/introduction-img.jpg" alt="Мини фотография статьи" class="introduction__description-img">
+                            <span class="foto-description">Гора Эверест. Гималаи копия</span>
+                        </p>
+                    </div>
+
+                    <div class="introduction__description">
+                        <div class="introduction__wrapper-text">
+                            <p class="introduction__description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                                </p>
+                            <p class="introduction__description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                        </div>
+                        <p class="introduction__wrapper-img">
+                            <img src="../img/article-post/introduction-img.jpg" alt="Мини фотография статьи" class="introduction__description-img">
+                            <span class="foto-description">Гора Эверест. Гималаи копия</span>
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Секция  Издание сегодня -->
+            <section class="decription-post">
+                <div class="carousel-3D">
+                    <ul class="carousel-3D__list decription-post__carousel-3D-list">
+                        <li>
+                            <img src="../img/about-edition/edition-carousel-1.jpg" alt="Изданvие сегодня фотография">
+                            <p class="carousel-3D__description foto-description">Гора Эверест. Гималаи</p>
+                        </li>
+                        <li>
+                            <img src="../img/about-edition/edition-carousel-2.jpg" alt="Издание сегодня фотография">
+                            <p class="carousel-3D__description foto-description">Гора Эверест. Гималаи</p>
+                        </li>
+                        <li>
+                            <img src="../img/about-edition/edition-carousel-1.jpg" alt="Издание сегодня фотография">
+                            <p class="carousel-3D__description foto-description">Гора Эверест. Гималаи</p>
+                        </li>
+                        <li>
+                            <img src="../img/about-edition/edition-carousel-3.jpg" alt="Издание сегодня фотография">
+                            <p class="carousel-3D__description foto-description">Гора Эверест. Гималаи</p>
+                        </li>
+                    </ul>
+                    <p class="step-count"></p>
+                </div>
+                <div class="description decription-post__description">
+                    <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices <a href="#">gravida</a>. Risus commodo viverra maecenas accumsan lacus vel
+                        facilisis. <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <blockquote class="blockquote decription-post__blockquote">
+                        <p class="blockquote__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        </p>
+                        <cite class="blockquote__author">Участник похода, <strong>Алексеенко Кирилл</strong></cite>
+                    </blockquote>
+                </div>
+            </section>
 
             <!-- Секция Статьи на странице Походы -->
             <section class="trekking-articles">
@@ -159,7 +232,7 @@
                 </div>
             </section>
 
-            <!-- Секция Походы -->
+            <!-- Секция поиск Похода -->
             <section class="hike-search article-post__hike-search">
                 <div class="hike-search__inner">
                     <h2 class="title title--element title--element-small">Поиск похода</h2>
@@ -169,7 +242,8 @@
                             <label class="label input-search">
               <span class="label__name">Поле поиска</span>
               <i class="icon-search input-search__icon"></i>
-              <input class="input input-search__search input-search__search--dark" type="search" placeholder="Поиск похода">
+              <input class="input input-search__search input-search__search--dark" type="search"
+                     placeholder="Поиск похода">
             </label>
                         </fieldset>
                         <fieldset class="form__fieldset hike-search__fieldset">
@@ -676,6 +750,7 @@
     </section>
 
     <script src="../js/jquery.min.js"></script>
+    <script src="../js/slick.min.js"></script>
     <script src="../js/jcf.min.js"></script>
     <script src="../js/jcf.select.min.js"></script>
     <script src="../js/jcf.scrollable.min.js"></script>

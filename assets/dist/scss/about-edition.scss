@@ -8,6 +8,10 @@
 // стили шаблонов
 @import "libs/header-inner";
 @import "libs/footer";
+// подключениея блоков
+@import "blocks/foto-description";
+@import "blocks/carousel-3D";
+@import "blocks/description";
 // поключения секций
 @import "sections/about-edition/edition";
 @import "sections/about-edition/archive-edition";
