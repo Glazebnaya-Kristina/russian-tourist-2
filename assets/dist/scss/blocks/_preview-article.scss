@@ -17,6 +17,7 @@
   &__article {
     padding: 0 15px 20px;
     border: 1px solid $color-grey-lighter;
+    background-color: $white;
     @media (min-width: $screen-lg) {
       padding: 0 28px 23px;
     }
