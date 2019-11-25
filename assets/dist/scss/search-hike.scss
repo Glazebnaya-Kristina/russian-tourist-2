@@ -1,0 +1,17 @@
+//search-hike
+
+// поключения библиотек
+@import "helper/container-mixins";
+@import "helper/variables";
+@import "helper/mixins";
+@import "libs/jcf-scrollbar";
+@import "libs/jcf-select";
+// стили шаблонов
+@import "libs/header-inner";
+@import "libs/footer";
+// подключениея блоков
+//@import "blocks/foto-description";
+// поключения секций
+@import "sections/trekking-articles";
+@import "sections/hike-search";
+@import "sections/search-hike/search-hike-articles";
