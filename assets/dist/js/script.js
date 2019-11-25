@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
    });
 
    // закрытие модального окна Спасибо за регистрацию
-   var btnRegistrationThanks = document.querySelector('button[data-modal="sign-in"]');
+   var btnRegistrationThanks = document.querySelector('.modal__thanks-registration button[data-modal="sign-in"]');
 
    btnRegistrationThanks.addEventListener('click', function (e) {
       e.preventDefault();
