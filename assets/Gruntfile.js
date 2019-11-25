@@ -27,12 +27,14 @@ module.exports = function (grunt) {
                '../markup/js/slick.min.js': ['dist/js/plugin/slick.min.js'],
                '../markup/js/jcf.scrollable.min.js': ['dist/js/plugin/jcf.scrollable.js'],
                '../markup/js/jcf.select.min.js': ['dist/js/plugin/jcf.select.js'],
+               '../markup/js/jcf.file.min.js': ['dist/js/plugin/jcf.file.js'],
                '../markup/js/jcf.min.js': ['dist/js/plugin/jcf.js'],
                '../markup/js/jquery.fancybox.min.js': ['dist/js/plugin/jquery.fancybox.min.js'],
                '../markup/js/script.min.js': ['dist/js/script.js'],
                '../markup/js/home.min.js': ['dist/js/home.js'],
                '../markup/js/about-edition.min.js': ['dist/js/about-edition.js'],
                '../markup/js/trekking.min.js': ['dist/js/trekking.js'],
+               '../markup/js/search-hike.min.js': ['dist/js/search-hike.js'],
                '../markup/js/article-post.min.js': ['dist/js/article-post.js']
             }
          }
@@ -94,7 +96,8 @@ module.exports = function (grunt) {
                   templates: '<%= fixturesPath %>/*.html',
                   layout: {
                      header: '<%= fixturesPath %>/templates/header.html',
-                     footer: '<%= fixturesPath %>/templates/footer.html'
+                     footer: '<%= fixturesPath %>/templates/footer.html',
+                     comment: '<%= fixturesPath %>/templates/comment.html'
                   }
                },
             }
