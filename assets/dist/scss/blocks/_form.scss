@@ -75,11 +75,16 @@
     color: $text-color-gray-lighten;
     font-size: 16px;
   }
-  //
-  //&--textarea{
-  //  border-radius: 20px;
-  //  resize: none;
-  //}
+
+  &--textarea{
+    resize: none;
+    border-radius: 0;
+    border: 1px solid $color-grey-input-textarea;
+    &:focus{
+      outline: 0;
+      border: 1px solid #bdbdbd;
+    }
+  }
 }
 
 .text-error{
