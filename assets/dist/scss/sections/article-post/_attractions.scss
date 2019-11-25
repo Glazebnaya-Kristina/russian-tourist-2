@@ -5,6 +5,10 @@
 .attractions{
   $block-name: &; // #{$block-name}__element
 
+  padding: 23px 0 23px;
+  @media (min-width: $screen-md) {
+    padding: 43px 0 43px;
+  }
   &__inner{
     @include container;
     @media (min-width: $screen-lg) {

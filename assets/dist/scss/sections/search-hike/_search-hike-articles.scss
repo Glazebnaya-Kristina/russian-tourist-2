@@ -1,0 +1,29 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+
+.search-hike-articles{
+  $block-name: &; // #{$block-name}__element
+
+  @media (min-width: $screen-xl){
+    padding: 50px 0 129px;
+  }
+
+  &__title{
+    span{
+      font-family: $font-family;
+      font-weight: 300;
+      color: $color-scroll;
+      font-size: 25px;
+      @media (min-width: $screen-xl) {
+        font-size: 36px;
+      }
+    }
+  }
+  &__preview-article{
+    margin-top: 20px;
+    @media (min-width: $screen-xl) {
+      margin-top: 50px;
+    }
+  }
+}
