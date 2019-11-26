@@ -6,17 +6,16 @@
   border: none;
   background-color: transparent;
   transition: $transition-time;
-  &:hover,
+  &:hover{
+    color: $color-gold;
+  }
   &:focus{
     outline: none;
-    color: $color-gold;
   }
 
   &--gold{
     color: $color-gold;
-    &:hover,
-    &:focus{
-      outline: none;
+    &:hover{
       color: $color-blue;
     }
   }

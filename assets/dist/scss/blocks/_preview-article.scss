@@ -45,6 +45,7 @@
     padding: 0 15px 20px;
     border: 1px solid $color-grey-lighter;
     background-color: $white;
+    overflow: hidden;
     @media (min-width: $screen-lg) {
       padding: 0 28px 23px;
     }
