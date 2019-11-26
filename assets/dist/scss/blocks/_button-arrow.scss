@@ -11,4 +11,13 @@
     outline: none;
     color: $color-gold;
   }
+
+  &--gold{
+    color: $color-gold;
+    &:hover,
+    &:focus{
+      outline: none;
+      color: $color-blue;
+    }
+  }
 }

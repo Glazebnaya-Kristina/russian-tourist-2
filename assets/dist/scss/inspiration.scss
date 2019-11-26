@@ -1,4 +1,3 @@
-//inspiration
 // поключения библиотек
 @import "helper/container-mixins";
 @import "helper/variables";
@@ -6,12 +5,14 @@
 // стили шаблонов
 @import "libs/header-inner";
 @import "libs/footer";
+@import "libs/slick";
 // подключениея блоков
 //@import "blocks/foto-description";
 // поключения секций
 @import "sections/trekking-articles";
 @import "sections/inspiration/movie";
 @import "sections/inspiration/painting";
+@import "sections/inspiration/books";
 
 
 //@media (min-width: $screen-sm) {}

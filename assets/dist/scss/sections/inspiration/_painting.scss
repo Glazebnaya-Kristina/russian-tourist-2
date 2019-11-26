@@ -26,6 +26,7 @@
     object-position: center center;
     width: 112%;
     margin: -5px -15px 0;
+    cursor: pointer;
 
     @media (min-width: $screen-lg) {
       width: 107%;
