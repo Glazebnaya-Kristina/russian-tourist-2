@@ -35,7 +35,8 @@ module.exports = function (grunt) {
                '../markup/js/about-edition.min.js': ['dist/js/about-edition.js'],
                '../markup/js/trekking.min.js': ['dist/js/trekking.js'],
                '../markup/js/search-hike.min.js': ['dist/js/search-hike.js'],
-               '../markup/js/article-post.min.js': ['dist/js/article-post.js']
+               '../markup/js/article-post.min.js': ['dist/js/article-post.js'],
+               '../markup/js/inspiration.min.js': ['dist/js/inspiration.js']
             }
          }
       },

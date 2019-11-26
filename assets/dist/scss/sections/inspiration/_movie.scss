@@ -1,0 +1,62 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+
+.movie{
+  $block-name: &; // #{$block-name}__element
+
+
+  background-image: url('../img/inspiration/movie-bg.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  @media (min-width: $screen-xl) {
+    padding: 39px 0 99px;
+  }
+  &__quote{
+    position: relative;
+    margin: 0;
+    margin-top: 35px;
+    font-family: 'Cormorant Garamond';
+    font-weight: 700;
+    text-align: center;
+    font-size: 22px;
+    @media (min-width: $screen-md) {
+      margin-top: 60px;
+      font-size: 26px;
+    }
+    @media (min-width: $screen-xl) {
+      margin-top: 134px;
+      font-size: 36px;
+    }
+    &:after{
+      @include pseudo;
+      bottom: -75px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70px;
+      height: 70px;
+      background-image: url('../img/inspiration/pero.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      @media (min-width: $screen-xl) {
+        bottom: -123px;
+        width: 96px;
+        height: 100px;
+      }
+    }
+  }
+  &__title{
+    margin-top: 70px;
+    @media (min-width: $screen-xl) {
+      margin-top: 187px;
+    }
+  }
+  &__preview-article{
+    margin-top: 20px;
+    @media (min-width: $screen-xl) {
+      margin-top: 50px;
+    }
+  }
+}
