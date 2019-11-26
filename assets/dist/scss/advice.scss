@@ -1,0 +1,21 @@
+// поключения библиотек
+@import "helper/container-mixins";
+@import "helper/variables";
+@import "helper/mixins";
+// стили шаблонов
+@import "libs/header-inner";
+@import "libs/footer";
+@import "libs/slick";
+// подключениея блоков
+//@import "blocks/foto-description";
+@import "blocks/carousel-content";
+// поключения секций
+@import "sections/advice/equipment";
+@import "sections/advice/training";
+@import "sections/advice/literature";
+
+
+//@media (min-width: $screen-sm) {}
+//@media (min-width: $screen-md) {}
+//@media (min-width: $screen-lg) {}
+//@media (min-width: $screen-xl) {}
