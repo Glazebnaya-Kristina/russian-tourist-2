@@ -14,12 +14,48 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  &--big{
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    .preview-article__article{
+      padding: 0 15px 0;
+    }
+    .preview-article__list{
+      grid-template-columns: 1fr;
+    }
+    img{
+      max-width: none;
+    }
+
+    .preview-article__footer{
+      padding-bottom: 20px;
+      @media (min-width: $screen-lg) {
+        padding-bottom: 23px;
+      }
+    }
+
+    .preview-article__wrapper-top,
+    .preview-article__body,
+    .preview-article__footer{
+      display: none;
+    }
+  }
+
   &__article {
     padding: 0 15px 20px;
     border: 1px solid $color-grey-lighter;
     background-color: $white;
     @media (min-width: $screen-lg) {
       padding: 0 28px 23px;
+    }
+    &--active{
+      border: 1px solid $color-blue;
+
+      .preview-article__wrapper-top,
+      .preview-article__body,
+      .preview-article__footer{
+        display: block;
+      }
     }
   }
 

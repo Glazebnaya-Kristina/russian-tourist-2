@@ -1,0 +1,35 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+
+.painting{
+  $block-name: &; // #{$block-name}__element
+
+  padding: 25px 0 25px;
+  background-color: $color-bg-grey;
+  @media (min-width: $screen-xl) {
+    padding: 94px 0 100px;
+  }
+  &__inner{
+    @include container;
+  }
+
+  &__preview-article{
+    margin-top: 20px;
+    @media (min-width: $screen-xl) {
+      margin-top: 50px;
+    }
+  }
+
+  &__article-img{
+    object-fit: cover;
+    object-position: center center;
+    width: 112%;
+    margin: -5px -15px 0;
+
+    @media (min-width: $screen-lg) {
+      width: 107%;
+      margin: -5px -30px 0;
+    }
+  }
+}
