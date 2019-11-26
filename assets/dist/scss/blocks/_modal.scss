@@ -12,10 +12,6 @@
     height: auto;
   }
 
-  &--small{
-    max-width: 600px;
-    width: 100%;
-  }
   &--big{
     max-width: 880px;
     width: 100%;
@@ -23,6 +19,19 @@
 
   &--opened {
     display: block;
+  }
+
+  &--small{
+    max-width: 600px;
+    width: 100%;
+    .modal__dialog {
+      margin-top: 50%;
+      transform: translateY(25%);
+      @media (min-width: $screen-md) {
+        margin-top: 0;
+        transform: none;
+      }
+    }
   }
 }
 
