@@ -16,7 +16,8 @@ $(document).ready(function () {
       arrows: false,
       asNavFor: '.carousel-content__list',
       centerMode: true,
-      variableWidth: true
+      variableWidth: true,
+      focusOnSelect: true
    });
    $('.carousel-content__list').slick({
       slidesToShow: 1,
