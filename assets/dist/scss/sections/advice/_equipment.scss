@@ -6,8 +6,14 @@
   $block-name: &; // #{$block-name}__element
 
 
-  padding: 41px 0 37px;
-
+  padding: 41px 0 50px;
+  background-image: url('../img/advice/equipment-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom 100px;
+  @media (min-width: $screen-lg) {
+    background-position: center bottom 204px;
+  }
   &__inner {
     @include container;
   }
@@ -20,10 +26,14 @@
     display: grid;
     grid-template-columns: 25px 1fr;
     grid-row-gap: 25px;
-    margin-top: 31px;
+    margin-top: 25px;
+    @media (min-width: $screen-md) {
+      grid-template-columns: 58px 1fr;
+    }
     @media (min-width: $screen-lg) {
       display: flex;
       justify-content: center;
+      margin-top: 31px;
     }
     @media (min-width: $screen-xl) {
       justify-content: flex-start;
@@ -31,15 +41,17 @@
     }
   }
 
+
   &__top {
     margin-top: 9px;
   }
 
   &__preview-article {
     grid-column: 1 / -1;
+    justify-self: center;
     display: block;
-    max-width: none;
     width: 100%;
+    max-width: 400px;
     margin: 0;
 
     @media (min-width: $screen-lg) {
@@ -139,8 +151,12 @@
       max-width: 507px;
       min-height: 473px;
     }
+    @media (min-width: $screen-lg) {
+      max-width: 466px;
+    }
     @media (min-width: $screen-xl) {
       min-height: 500px;
+      max-width: 507px;
     }
 
     .slick-list,
@@ -192,7 +208,7 @@
       right: 29px;
     }
     @media (min-width: $screen-lg) {
-      right: 29px;
+      right: 0;
     }
     @media (min-width: $screen-xl) {
       right: -46px;
@@ -252,6 +268,16 @@
     &:hover:not(.slick-active) {
       outline: none;
       transform: scale(1.1);
+    }
+  }
+
+  &__preview-article-full{
+    margin-top: 15px;
+    padding-top: 20px;
+    border-top: 1px solid $color-gold;
+    @media (min-width: $screen-xl) {
+      margin-top: 37px;
+      padding-top: 60px;
     }
   }
 }
