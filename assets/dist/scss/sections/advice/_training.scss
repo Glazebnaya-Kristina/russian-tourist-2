@@ -2,6 +2,46 @@
 @import "../../helper/mixins";
 
 
-.training{
+.training {
   $block-name: &; // #{$block-name}__element
+
+  padding: 29px 0 50px;
+
+  &__inner {
+    @include container;
+  }
+
+  &__article-row {
+    grid-gap: 28px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    @media (min-width: $screen-md) {
+      max-width: 750px;
+    }
+    @media (min-width: $screen-lg) {
+      max-width: 819px;
+    }
+    @media (min-width: $screen-xl) {
+      margin-top: 48px;
+    }
+
+    li {
+      padding-bottom: 28px;
+      border-bottom: 1px solid $color-gold;
+    }
+  }
+
+  &__block {
+    @media (min-width: $screen-xl) {
+      grid-template-columns: 289px 1fr;
+    }
+  }
+
+  &__pagination {
+    margin-top: 20px;
+    @media (min-width: $screen-xl) {
+      margin-top: 45px;
+    }
+  }
 }

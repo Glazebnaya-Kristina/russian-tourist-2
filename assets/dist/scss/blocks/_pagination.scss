@@ -1,0 +1,47 @@
+@import "../helper/variables";
+@import "../helper/mixins";
+
+
+.pagination{
+  $block-name: &; // #{$block-name}__element
+
+  @include ul-reset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 35px;
+    padding: 10.7px 15px;
+    font-size: 14px;
+    color: #999999;
+    line-height: 14px;
+    &:not(:first-child){
+      margin-left: 5px;
+    }
+  }
+  .active{
+    color: $text-color-gray-dark2;
+    background-color: #f6f1e8;
+    border-radius: 50%;
+  }
+}
+
+
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.active, .btn:hover {
+  background-color: #666;
+  color: white;
+}
