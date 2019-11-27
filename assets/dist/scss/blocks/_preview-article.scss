@@ -227,4 +227,32 @@
       }
     }
   }
+
+  &__rows-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px 10px;
+    @media (min-width: $screen-md) {
+      grid-template-columns: repeat(3, 120px);
+    }
+
+    @media (min-width: $screen-xl) {
+      grid-template-columns: repeat(3, 142px);
+      grid-gap: 25px 33px;
+    }
+    img{
+      object-fit: cover;
+      object-position: center center;
+      width: 100%;
+      height: 110px;
+      @media (min-width: $screen-md) {
+      }
+      @media (min-width: $screen-lg) {
+        height: 110px;
+      }
+      @media (min-width: $screen-xl) {
+        height: 165px;
+      }
+    }
+  }
 }

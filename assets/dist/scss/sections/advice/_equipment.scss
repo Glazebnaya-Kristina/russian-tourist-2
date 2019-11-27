@@ -2,6 +2,259 @@
 @import "../../helper/mixins";
 
 
-.equipment{
+.equipment {
   $block-name: &; // #{$block-name}__element
+
+
+  padding: 41px 0 37px;
+
+  &__inner {
+    @include container;
+  }
+
+  &__title {
+    margin-top: 27px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    grid-row-gap: 25px;
+    margin-top: 31px;
+    @media (min-width: $screen-lg) {
+      display: flex;
+      justify-content: center;
+    }
+    @media (min-width: $screen-xl) {
+      justify-content: flex-start;
+      margin-left: 21px;
+    }
+  }
+
+  &__top {
+    margin-top: 9px;
+  }
+
+  &__preview-article {
+    grid-column: 1 / -1;
+    display: block;
+    max-width: none;
+    width: 100%;
+    margin: 0;
+
+    @media (min-width: $screen-lg) {
+      max-width: 540px;
+      margin-right: 15px;
+    }
+    @media (min-width: $screen-xl) {
+      margin-right: 54px;
+    }
+  }
+
+  &__list {
+    display: block;
+  }
+
+  &__article {
+    padding: 25px 0;
+    padding-top: 0;
+    border: none;
+    @media (min-width: $screen-md) {
+      padding: 25px 0;
+    }
+  }
+
+  &__body {
+    margin-top: 15px;
+    @media (min-width: $screen-xl) {
+      margin-top: 39px;
+    }
+
+    p {
+      color: $text-color-gray-dark2;
+    }
+  }
+
+  &__footer {
+    margin-top: 15px;
+    @media (min-width: $screen-xl) {
+      margin-top: 32px;
+    }
+  }
+
+  &__rows-img {
+    margin-top: 25px;
+    @media (min-width: $screen-xl) {
+      margin-top: 50px;
+    }
+  }
+
+  &__row-line {
+    display: flex;
+    align-items: center;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    padding: 25px 0;
+  }
+
+  &__name {
+    flex-shrink: 0;
+    font-family: 'Cormorant Garamond';
+    font-weight: 700;
+    font-size: 22px;
+    @media (min-width: $screen-md) {
+      font-size: 26px;
+    }
+    @media (min-width: $screen-xl) {
+      font-size: 36px;
+    }
+  }
+
+  &__line {
+    width: 1px;
+    height: 100%;
+    margin-top: 25px;
+    background-color: rgba($black, .2);
+  }
+
+  &__wrapper-carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    @media (min-width: $screen-lg) {
+      justify-content: flex-start;
+    }
+    @media (min-width: $screen-xl) {
+      margin-left: 40px;
+    }
+  }
+
+  &__carousel {
+    @include ul-reset;
+    max-width: 255px;
+    width: 100%;
+    height: 100%;
+    min-height: 173px;
+    @media (min-width: $screen-md) {
+      max-width: 507px;
+      min-height: 473px;
+    }
+    @media (min-width: $screen-xl) {
+      min-height: 500px;
+    }
+
+    .slick-list,
+    .slick-track {
+      height: 100%;
+    }
+
+    .slick-slide {
+      padding: 25px;
+      height: 270px;
+      @media (min-width: $screen-md) {
+        height: 468px;
+      }
+      @media (min-width: $screen-lg) {
+        padding: 20px;
+      }
+      @media (min-width: $screen-xl) {
+        height: 538px;
+        margin-right: 45px;
+      }
+    }
+
+    img {
+      object-fit: cover;
+      object-position: center right;
+      width: 180px;
+      height: 100%;
+      box-shadow: 0 0 30px -8px rgba(0, 0, 0, 0.3);
+      @media (min-width: $screen-md) {
+        width: 385px;
+      }
+      @media (min-width: $screen-xl) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__dots {
+    @include ul-reset;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $screen-md) {
+      top: 32%;
+      transform: none;
+      right: 29px;
+    }
+    @media (min-width: $screen-lg) {
+      right: 29px;
+    }
+    @media (min-width: $screen-xl) {
+      right: -46px;
+    }
+
+    .slick-active {
+      position: relative;
+      padding-right: 6px;
+      transform: scale(1.4);
+      transition: $transition-time;
+      @media (min-width: $screen-md) {
+        margin-bottom: 15px;
+        transform: scale(1.9);
+      }
+
+      &:after {
+        @include pseudo;
+        right: 27px;
+        top: 57%;
+        transform: translateY(-50%) scale(.8);
+        height: 1px;
+        width: 40px;
+        background-color: $color-gold;
+        @media (min-width: $screen-md) {
+          width: 52px;
+        }
+        @media (min-width: $screen-lg) {
+          right: 27px;
+        }
+        @media (min-width: $screen-xl) {
+          width: 75px;
+        }
+      }
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      &:not(:first-child) {
+        margin-top: 7px;
+      }
+    }
+  }
+
+  &__dot-item {
+    padding: 0;
+    font-size: 24px !important;
+    font-family: $font-family-Cormorant !important;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: $transition-time;
+
+    &:focus:not(.slick-active),
+    &:hover:not(.slick-active) {
+      outline: none;
+      transform: scale(1.1);
+    }
+  }
 }
+
+
+
