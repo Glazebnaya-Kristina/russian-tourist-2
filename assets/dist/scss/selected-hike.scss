@@ -1,0 +1,37 @@
+//selected-hike
+// поключения библиотек
+@import "helper/container-mixins";
+@import "helper/variables";
+@import "helper/mixins";
+@import "libs/jcf-scrollbar";
+@import "libs/jcf-select";
+@import "libs/jsf-file";
+@import "libs/slick";
+// стили шаблонов
+@import "libs/header-inner";
+@import "libs/footer";
+@import "libs/block-comment";
+// подключениея блоков
+@import "blocks/foto-description";
+@import "blocks/carousel-3D";
+@import "blocks/description";
+@import "blocks/blockquote";
+@import "blocks/gallery";
+@import "blocks/advantages";
+@import "blocks/youtube-video";
+@import "blocks/smile";
+@import "blocks/location";
+@import "blocks/hike";
+@import "blocks/hike-info";
+// поключения секций
+@import "sections/trekking-articles";
+@import "sections/hike-search";
+@import "sections/article-post/decription-post";
+@import "sections/selected-hike/selected-hike-header";
+//@import "sections/article-post/attractions";
+
+
+//@media (min-width: $screen-sm) {}
+//@media (min-width: $screen-md) {}
+//@media (min-width: $screen-lg) {}
+//@media (min-width: $screen-xl) {}

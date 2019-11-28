@@ -1,0 +1,131 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+
+.selected-hike-header{
+  $block-name: &; // #{$block-name}__element
+
+  padding-top: 62px;
+
+  &__title{
+    @include hide-text;
+  }
+  &__img {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 333px;
+    @media (min-width: $screen-lg) {
+      height: 533px;
+    }
+  }
+  &__content{
+    @include container;
+    margin-top: 20px;
+    @media (min-width: $screen-lg) {
+      max-width: 1030px;
+      margin-top: 41px;
+    }
+  }
+
+  &__content-top{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $screen-md) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__button{
+    padding: 3px 11px;
+    margin: 0 auto;
+    font-size: 13px !important;
+    @media (min-width: $screen-md) {
+      margin: 0;
+      margin-left: auto;
+      margin-top: 10px;
+      margin-right: 8px;
+    }
+    i{
+      margin-right: 10px;
+      font-size: 25px;
+    }
+  }
+
+  &__route {
+    margin-top: 32px;
+  }
+
+  &__route-list{
+    @include ul-reset;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    @media (min-width: $screen-md) {
+      margin-top: 48px;
+    }
+
+    li{
+      position: relative;
+      margin-bottom: 15px;
+      font-size: 14px;
+      @media (min-width: $screen-md) {
+        margin-bottom: 28px;
+        font-size: 18px;
+      }
+
+      &:not(:first-child) {
+        margin-left: 27px;
+        @media (min-width: $screen-md) {
+          margin-left: 37px;
+        }
+        @media (min-width: $screen-xl) {
+          margin-left: 44px;
+        }
+
+        &:after {
+          @include pseudo;
+          left: -26.5px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 20px;
+          height: 10px;
+          background-image: url('../img/selected-hike/rout.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          @media (min-width: $screen-md) {
+            left: -37.5px;
+          }
+          @media (min-width: $screen-xl) {
+            left: -42.5px;
+          }
+        }
+      }
+      &:not(:last-child) {
+        margin-right: 7px;
+        @media (min-width: $screen-md) {
+          margin-right: 18px;
+        }
+        &:before {
+          @include pseudo;
+          right: -26.5px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 20px;
+          height: 10px;
+          background-image: url('../img/selected-hike/rout.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          @media (min-width: $screen-md) {
+            right: -37.5px;
+          }
+          @media (min-width: $screen-xl) {
+            right: -39.5px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@import "../helper/variables";
+@import "../helper/mixins";
+
+
+.hike-info {
+  $block-name: &; // #{$block-name}__element
+
+  margin-top: 11px;
+  @media (min-width: $screen-md) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (min-width: $screen-lg) {
+    justify-content: flex-start;
+  }
+
+  &__table {
+    td {
+      display: flex;
+    }
+
+    th {
+      line-height: 16px;
+    }
+
+    tr {
+      @media (min-width: $screen-md) {
+        align-items: center;
+      }
+
+      &:not(:first-child) {
+        @media (min-width: $screen-xl) {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    &:nth-child(1) {
+      tr {
+        display: grid;
+        grid-template-columns: repeat(2, minMax(135px, 220px));
+        grid-column-gap: 3px;
+        @media (min-width: $screen-md) {
+          grid-template-columns: 222px auto;
+        }
+        @media (min-width: $screen-lg) {
+          grid-template-columns: 240px auto;
+          grid-column-gap: 7px;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      @media (min-width: $screen-md) {
+        margin-left: 20px;
+      }
+      @media (min-width: $screen-lg) {
+        margin-left: 95px;
+      }
+      @media (min-width: $screen-xl) {
+        margin-left: 145px;
+      }
+
+      tr {
+        display: grid;
+        grid-template-columns: repeat(2, minMax(135px, 220px));
+        grid-column-gap: 3px;
+        @media (min-width: $screen-md) {
+          grid-template-columns: 165px auto;
+        }
+        @media (min-width: $screen-lg) {
+          grid-template-columns: 180px auto;
+          grid-column-gap: 7px;
+        }
+      }
+    }
+  }
+}
