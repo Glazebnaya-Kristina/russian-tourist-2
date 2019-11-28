@@ -35,6 +35,19 @@
     @media (min-width: $screen-md) {
       grid-gap: 0;
     }
+
+    &--answer{
+      display: flex;
+      align-items: flex-start;
+      .comment__wrapper-label{
+        max-width: 663px;
+        width: 100%;
+        margin-left: 15px;
+        @media (min-width: $screen-md) {
+          margin-left: 0;
+        }
+      }
+    }
   }
 
   &__user-img{
@@ -129,9 +142,7 @@
       align-items: flex-start;
       &:not(:first-of-type){
         margin-top: 20px;
-      }
-      &:last-child{
-        margin-left: 25px;
+        margin-left: 20px;
         @media (min-width: $screen-md) {
           margin-left: 100px;
           margin-top: 47px;
@@ -155,6 +166,24 @@
     }
   }
 
+  &__attachment{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    img{
+      object-fit: cover;
+      object-position: center center;
+      width: 50px;
+      height: 40px;
+      margin-left: 15px;
+      margin-top: 15px;
+      @media (min-width: $screen-md) {
+        width: 87px;
+        height: 79px;
+      }
+    }
+  }
+
   &__info-author{
     span{
       font-weight: 500;
@@ -166,7 +195,7 @@
     }
   }
 
-  &__message{
+  &__message-block{
     max-width: 663px;
     margin-top: 10px;
     padding: 15px;

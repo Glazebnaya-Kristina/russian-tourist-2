@@ -620,19 +620,22 @@
         </div>
     </section>
 
-    <!-- Секция поиск Похода -->
-    <section class="hike-search article-post__hike-search">
+    <!-- Секция поиск Архив походов -->
+    <section class="hike-search campaign-archive">
         <div class="hike-search__inner">
-            <h2 class="title title--element title--element-small">Поиск похода</h2>
-            <form class="form hike-search__form article-post__search-form" action="/">
-                <fieldset class="form__fieldset">
-                    <legend class="form__legend form__legend--hidden">Поиск похода</legend>
-                    <label class="label input-search">
-          <span class="label__name">Поле поиска</span>
-          <i class="icon-search input-search__icon"></i>
-          <input class="input input-search__search input-search__search--dark" type="search"
-                 placeholder="Поиск похода">
-        </label>
+            <h2 class="title title--element title--element-small">Архив походов</h2>
+            <form class="form hike-search__form" action="/">
+                <fieldset class="form__fieldset campaign-archive__fieldset">
+                    <legend class="form__legend form__legend--hidden">Архив походов</legend>
+                    <p class="campaign-archive__wrapper">
+                        <label class="label input-search">
+            <span class="label__name">Поле поиска</span>
+            <i class="icon-search input-search__icon"></i>
+            <input class="input input-search__search input-search__search--dark" type="search"
+                   placeholder="Поиск похода">
+          </label>
+                        <button class="button button--uppercase button--blue button--flex campaign-archive__button" type="button">хочу в поход</button>
+                    </p>
                 </fieldset>
                 <fieldset class="form__fieldset hike-search__fieldset">
                     <legend class="form__legend form__legend--hidden">Выбор характеристик</legend>
@@ -888,9 +891,11 @@
                             <span>Игорь</span>
                             <time datetime="2019-07-25T00:17">25.07 00:17</time>
                         </p>
-                        <p class="comment__message">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-                        </p>
+                        <div class="comment__message-block">
+                            <p class="comment__message">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+                            </p>
+                        </div>
                         <p class="comment__feedback">
                             <a href="/">Ответить</a>
                             <span>1</span>
@@ -906,9 +911,11 @@
                             <span>Игорь</span>
                             <time datetime="2019-07-25T00:17">25.07 00:17</time>
                         </p>
-                        <p class="comment__message">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-                        </p>
+                        <div class="comment__message-block">
+                            <p class="comment__message">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+                            </p>
+                        </div>
                         <p class="comment__feedback">
                             <a href="/">Ответить</a>
                             <span>1</span>
@@ -917,148 +924,50 @@
                         </p>
                     </div>
                 </li>
+                <li>
+                    <img class="comment__history-user-img" src="../img/user.png" alt="Фотография пользователя">
+                    <div class="comment__wrapper-message">
+                        <p class="comment__info-author">
+                            <span>Игорь</span>
+                            <time datetime="2019-07-25T00:17">25.07 00:17</time>
+                        </p>
+                        <div class="comment__message-block">
+                            <p class="comment__message">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+                            </p>
+                            <p class="comment__attachment">
+                                <img src="../img/foto-1.jpeg" alt="Фотография от пользователя">
+                                <img src="../img/foto-2.jpeg" alt="Фотография от пользователя">
+                                <img src="../img/foto-3.jpeg" alt="Фотография от пользователя">
+                            </p>
+                        </div>
+                        <p class="comment__feedback">
+                            <a href="/">Ответить</a>
+                            <span>1</span>
+                            <i class="icon-hand"></i>
+                            <i class="icon-hand"></i>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <form action="/" class="form comment__form comment__form--answer">
+                        <img class="comment__user-img" src="../img/user.png" alt="Фотография пользователя">
+                        <div class="comment__wrapper-label">
+                            <label class="label">
+              <textarea class="input input--textarea comment__textarea" placeholder="Написать ответ"></textarea>
+            </label>
+                            <div class="comment__wrapper-action">
+                                <div class="smile">
+                                    <button type="button" class="smile__button"><i class="icon-smile"></i></button>
+                                </div>
+                                <input type="file">
+                                <button type="button" class="button button--blue button--uppercase comment__button">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                </li>
             </ul>
         </div>
-    </section>
-
-    <!-- Секция Модальны окна -->
-    <section class="modal">
-        <!--   Модальное окно РЕГЕСТРИЦИЯ -->
-        <div class="popup popup--big modal__registration" data-modal="registration">
-            <div class="modal__dialog">
-                <div class="modal__header modal__header--line">
-                    <h3 class="modal__title">Регистрация</h3>
-                    <button class="modal__close close close--grey-dark close--icon" type="button">
-          <span class="close__description">Закрыть модальное окно</span>
-          <i class="icon-error"></i>
-        </button>
-                </div>
-                <div class="modal__content">
-                    <form action="#" class="form">
-                        <div class="form__wrapper form__wrapper--column-2">
-                            <label class="label">
-              <span class="label__name">Имя</span>
-              <input type="text" class="input" placeholder="Имя">
-            </label>
-                            <label class="label">
-              <span class="label__name">Фамилия</span>
-              <input type="text" class="input" placeholder="Фамилия">
-            </label>
-                            <label class="label">
-              <span class="label__name">E-mail</span>
-              <input type="email" class="input" placeholder="E-mail">
-            </label>
-                            <label class="label">
-              <span class="label__name">Телефон</span>
-              <input type="tel" class="input" placeholder="Телефон">
-            </label>
-                            <label class="label">
-              <span class="label__name">Пароль</span>
-              <input type="password" class="input" placeholder="Пароль">
-            </label>
-                            <label class="label">
-              <span class="label__name">Повторите пароль</span>
-              <input type="password" class="input" placeholder="Повторите пароль">
-            </label>
-                        </div>
-                        <span class="text-error">Ошибка...</span>
-                        <button type="submit" class="button button--blue button--xs-s modal__registration-button js-open-modal" data-modal="thanks-registration">
-            Зарегистрироваться
-          </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- Модальное окно Спасибо за РЕГЕСТРИЦИЮ -->
-        <div class="popup popup--small modal__thanks-registration" data-modal="thanks-registration">
-            <div class="modal__dialog">
-                <div class="modal__header modal__header--center">
-                    <h3 class="modal__title modal__title--element title title--element">Спасибо Вам за регистрацию</h3>
-                </div>
-                <div class="modal__content modal__content--center">
-                    <button class="button button--border-transparent button--modal js-open-modal" data-modal="sign-in" type="button">Закрыть
-        </button>
-                </div>
-            </div>
-        </div>
-        <!-- Модальное окно ВВОЙТИ -->
-        <div class="popup popup--big modal__sign-in" data-modal="sign-in">
-            <div class="modal__dialog">
-                <div class="modal__header modal__header--line">
-                    <h3 class="modal__title">Вход</h3>
-                    <button class="modal__close close close--grey-dark close--icon" type="button">
-          <span class="close__description">Закрыть модальное окно</span>
-          <i class="icon-error"></i>
-        </button>
-                </div>
-                <div class="modal__content modal__content--center">
-                    <form action="#" class="form">
-                        <div class="form__wrapper form__wrapper--column-2">
-                            <p>
-                                <label class="label">
-                <span class="label__name">E-mail</span>
-                <input type="email" class="input" placeholder="E-mail">
-              </label>
-                                <button type="button" class="button link link--blue modal__sign-in-link js-open-modal" data-modal="registration">Регистрация
-              </button>
-                            </p>
-                            <p>
-                                <label class="label">
-                <span class="label__name">Пароль</span>
-                <input type="password" class="input" placeholder="Пароль">
-              </label>
-                                <button type="button" class="button link link--blue modal__sign-in-link js-open-modal" data-modal="password-reminder">Напомнить пароль
-              </button>
-                            </p>
-                        </div>
-                        <span class="text-error">Ошибка...</span>
-                        <button type="submit" class="button button--blue button--xs-s modal__sign-in-button">
-            Войти
-          </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- Модальное окно Напомнить пароль -->
-        <div class="popup popup--big modal__password-reminder" data-modal="password-reminder">
-            <div class="modal__dialog">
-                <div class="modal__header modal__header--line">
-                    <h3 class="modal__title">Напомнить пароль</h3>
-                    <button class="modal__close close close--grey-dark close--icon" type="button">
-          <span class="close__description">Закрыть модальное окно</span>
-          <i class="icon-error"></i>
-        </button>
-                </div>
-                <div class="modal__content modal__password-reminder-content">
-                    <p class="modal__text">На Ваш E-mail будет отправленно сообщение с новый паролем для ввхода в личный кабинет.
-                    </p>
-                    <form action="#" class="form form__wrapper--column-2 modal__password-reminder-form">
-                        <label class="label">
-            <span class="label__name">E-mail</span>
-            <input type="email" class="input" placeholder="E-mail">
-          </label>
-                        <button type="submit" class="button button--blue button--xs-s modal__password-reminder-button js-open-modal" data-modal="new-pass">
-            Отправить новый пароль
-          </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- Модальное окно Новый пароль -->
-        <div class="popup popup--small modal__new-pass" data-modal="new-pass">
-            <div class="modal__dialog">
-                <div class="modal__header modal__header--center">
-                    <h3 class="modal__title modal__title--element title title--element modal__new-pass-title">Новый пароль отправлен на Ваш E-mail</h3>
-                </div>
-                <div class="modal__content modal__content--center">
-                    <button class="button button--border-transparent button--modal js-open-modal" data-modal="sign-in" type="button">Закрыть
-        </button>
-                </div>
-            </div>
-        </div>
-        <!-- Подложка под модальным окном -->
-        <div class="modal__overlay modal__overlay--opened js-overlay-modal"></div>
-
     </section>
 
     <footer class="footer">

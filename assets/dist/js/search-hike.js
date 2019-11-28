@@ -5,4 +5,5 @@ $(document).ready(function () {
       alwaysPreventMouseWheel: true,
       mouseWheelStep: 15
    });
+
 });
