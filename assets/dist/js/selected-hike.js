@@ -48,6 +48,40 @@ $(document).ready(function () {
          spanValueTag.innerHTML = spanValueSum;
       })
    });
+
+   var assistants2 = $('.participants__carousel');
+
+   assistants2.on("init", function (event, slick) {
+      $(".step-count").html(parseInt(slick.currentSlide + 1) + '<span> / ' + slick.slideCount + '</span>');
+   });
+
+   assistants2.on("afterChange", function (event, slick, currentSlide) {
+      $(".step-count").html(parseInt(slick.currentSlide + 1) + '<span> / ' + slick.slideCount + '</span>');
+   });
+
+   assistants2.slick({
+      infinite: true,
+      rows: 2,
+      slidesPerRow: 4,
+      responsive: [
+         {
+            breakpoint: 1345,
+            settings: {
+               slidesPerRow: 3,
+            }
+         },
+         {
+            breakpoint: 1024,
+            settings: {
+               slidesPerRow: 2,
+            }
+         }
+      ],
+      arrows: true,
+      nextArrow: document.querySelector('.participants__next'),
+      prevArrow: document.querySelector('.participants__prev'),
+      dots: false
+   });
 });
 
 

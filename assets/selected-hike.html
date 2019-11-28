@@ -21,7 +21,7 @@
 
 <body>
 
-<!-- Секция хедер Об издании -->
+<!-- Секция хедер -->
 <header class="header">
   <div class="header__inner">
     <div class="header__top">
@@ -86,7 +86,7 @@
           <a href="index.html">Главная</a>
         </li>
         <li>
-          <span>Заголовок новости или статьи</span>
+          <span>Название похода</span>
         </li>
       </ul>
       <button type="button" class="header__button-cabinet button button--border-transparent button--xs js-open-modal"
@@ -96,515 +96,609 @@
   </section>
 </header>
 
+<!-- Секция Главная информация о походе -->
+<section class="selected-hike-header">
+  <h2 class="selected-hike-header__title">Главная информация о походе</h2>
+  <img class="selected-hike-header__img" src="../img/article-post/article-post-header.jpg"
+       alt="Главная фотография похода">
+  <ul class="location">
+    <li>
+      <p class="location__wrapper-img">
+        <img src="../img/selected-hike/location.jpg" alt="Локация на карте">
+      </p>
+      <p>Ю-З Центральной Азии</p>
+    </li>
+    <li>
+      <p class="location__wrapper-img">
+        <img src="../img/selected-hike/location.jpg" alt="Локация на карте">
+      </p>
+      <p>Таджикистан</p>
+    </li>
+    <li>
+      <p class="location__wrapper-img">
+        <img src="../img/selected-hike/location.jpg" alt="Локация на карте">
+      </p>
+      <p>Северо-западный Памир</p>
+    </li>
+  </ul>
+  <div class="selected-hike-header__content">
+    <div class="selected-hike-header__content-top">
+      <div class="selected-hike-header__top-info">
+        <p class="article-top">
+          <span>Походы</span>
+        </p>
+        <h3 class="title title--element title--element-small title--left">Название похода</h3>
+      </div>
+      <button class="button button--blue button--box button--icon button--uppercase selected-hike-header__button"
+              type="button">
+        <i class="icon-route"></i>
+        Весь маршрут
+      </button>
+    </div>
+    <div class="hike-info">
+      <table class="hike-info__table">
+        <tr>
+          <th>Вид спортивного туризма:</th>
+          <td>Пешеходный</td>
+        </tr>
+        <tr>
+          <th>Категория сложности:</th>
+          <td><img src="../img/trekking/level.png" alt="Уровень сложности"></td>
+        </tr>
+        <tr>
+          <th>Тип похода:</th>
+          <td>Категорийный</td>
+        </tr>
+        <tr>
+          <th>Сезон:</th>
+          <td>Зима</td>
+        </tr>
+        <tr>
+          <th>Месяц:</th>
+          <td>Февраль</td>
+        </tr>
+        <tr>
+          <th>Длительность:</th>
+          <td>Поход выходного дня</td>
+        </tr>
+      </table>
+      <table class="hike-info__table">
+        <tbody class="hike-info__table-body">
+        <tr>
+          <th>Протяженность:</th>
+          <td>15 км</td>
+        </tr>
+        <tr>
+          <th>Материк:</th>
+          <td>Евразия</td>
+        </tr>
+        <tr>
+          <th>Страна::</th>
+          <td>Россия</td>
+        </tr>
+        <tr>
+          <th>Местность:</th>
+          <td>Камчатка</td>
+        </tr>
+        <tr>
+          <th>Рекомендованные операторы мобильной связи:</th>
+          <td>МТС, Vodafone</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="selected-hike-header__route">
+      <h2 class="title title--line title--small">Нитка маршрута</h2>
+      <ul class="selected-hike-header__route-list">
+        <li>Пункт 1</li>
+        <li>Пункт 2</li>
+        <li>Пункт 3</li>
+        <li>Пункт 4</li>
+        <li>Пункт 5</li>
+        <li>Пункт 6</li>
+        <li>Пункт 7</li>
+        <li>Пункт 8</li>
+        <li>Пункт 9</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-  <section class="selected-hike-header">
-    <h2 class="selected-hike-header__title">Главная информация о походе</h2>
-    <img class="selected-hike-header__img" src="../img/article-post/article-post-header.jpg"
-         alt="Главная фотография похода">
-    <ul class="location">
-      <li>
-        <p class="location__wrapper-img">
-          <img src="../img/selected-hike/location.jpg" alt="Локация на карте">
+<!-- Секция Участники маршрута -->
+<section class="participants">
+  <div class="participants__inner">
+    <div class="participants__top">
+      <h2 class="title title--small">Участники маршрута </h2>
+      <p><span>13</span>человек</p>
+    </div>
+    <div class="participants__content">
+      <p class="participants__wrapper-leader">
+        <img src="../img/selected-hike/leader.jpg" alt="Фотография лидера похода">
+        <span class="participants__function">Руководитель:</span>
+        <a href="#" class="participants__leader-name">Иван Иванов</a>
+      </p>
+      <ul class="participants__carousel">
+        <li>
+          <img src="../img/selected-hike/incognita.png" alt="Фотография участника похода">
+          <p>Алексеенко Кирилл</p>
+        </li>
+        <li>
+          <img src="../img/selected-hike/participants-1.jpg" alt="Фотография участника похода">
+          <p>Надежда Пилипова</p>
+        </li>
+        <li>
+          <img src="../img/selected-hike/participants-2.jpg" alt="Фотография участника похода">
+          <p>Марина Волкова</p>
+        </li>
+        <li>
+          <img src="../img/selected-hike/participants-3.jpg" alt="Фотография участника похода">
+          <p>Андрей Соколов</p>
+        </li>
+        <li>
+          <img src="../img/selected-hike/incognita.png" alt="Фотография участника похода">
+          <p>Алексеенко Кирилл</p>
+        </li>
+        <li>
+          <img src="../img/selected-hike/participants-1.jpg" alt="Фотография участника похода">
+          <p>Надежда Пилипова</p>
+        </li>
+        <li>
+          <img src="../img/selected-hike/participants-2.jpg" alt="Фотография участника похода">
+          <p>Марина Волкова</p>
+        </li>
+        <li>
+          <img src="../img/selected-hike/participants-3.jpg" alt="Фотография участника похода">
+          <p>Андрей Соколов</p>
+        </li>
+        <li>
+          <img src="../img/selected-hike/incognita.png" alt="Фотография участника похода">
+          <p>Алексеенко Кирилл</p>
+        </li>
+        <li>
+          <img src="../img/selected-hike/participants-1.jpg" alt="Фотография участника похода">
+          <p>Надежда Пилипова</p>
+        </li>
+        <li>
+          <img src="../img/selected-hike/participants-2.jpg" alt="Фотография участника похода">
+          <p>Марина Волкова</p>
+        </li>
+        <li>
+          <img src="../img/selected-hike/participants-3.jpg" alt="Фотография участника похода">
+          <p>Андрей Соколов</p>
+        </li>
+        <li>
+          <img src="../img/selected-hike/participants-3.jpg" alt="Фотография участника похода">
+          <p>Андрей Соколов</p>
+        </li>
+        <li>
+          <img src="../img/selected-hike/participants-3.jpg" alt="Фотография участника похода">
+          <p>Андрей Соколов</p>
+        </li>
+      </ul>
+
+    </div>
+    <div class="participants__wrapper-controls">
+      <button type="button" class="button-arrow participants__prev"><i class="icon-right-arrow"></i></button>
+      <p class="step-count"></p>
+      <button type="button" class="button-arrow participants__next"><i class="icon-right-arrow"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- Секция  Издание сегодня -->
+<section class="decription-post">
+  <div class="decription-post__inner">
+    <div class="carousel-3D">
+      <ul class="carousel-3D__list decription-post__carousel-3D-list">
+        <li>
+          <img src="../img/about-edition/edition-carousel-1.jpg" alt="Изданvие сегодня фотография">
+          <p class="carousel-3D__description foto-description">Гора Эверест. Гималаи</p>
+        </li>
+        <li>
+          <img src="../img/about-edition/edition-carousel-2.jpg" alt="Издание сегодня фотография">
+          <p class="carousel-3D__description foto-description">Гора Эверест. Гималаи</p>
+        </li>
+        <li>
+          <img src="../img/about-edition/edition-carousel-1.jpg" alt="Издание сегодня фотография">
+          <p class="carousel-3D__description foto-description">Гора Эверест. Гималаи</p>
+        </li>
+        <li>
+          <img src="../img/about-edition/edition-carousel-3.jpg" alt="Издание сегодня фотография">
+          <p class="carousel-3D__description foto-description">Гора Эверест. Гималаи</p>
+        </li>
+      </ul>
+      <p class="step-count"></p>
+    </div>
+    <div class="description decription-post__description">
+      <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices <a href="#">gravida</a>. Risus
+        commodo viverra
+        maecenas accumsan lacus vel facilisis. <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing
+        elit,
+        sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. </p>
+      <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+        maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. </p>
+      <blockquote class="blockquote decription-post__blockquote">
+        <p class="blockquote__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore
+          magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+          facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et</p>
+        <cite class="blockquote__author">Участник похода, <strong>Алексеенко Кирилл</strong></cite>
+      </blockquote>
+      <div class="youtube-video decription-post__youtube-video">
+        <!--            <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/pDEe-eJ4MAg?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>-->
+        <p class="youtube-video__overlow">
+          <button class="button-play">
+            <img src="../img/play.png" alt="кнопка запуска видео">
+          </button>
         </p>
-        <p>Ю-З Центральной Азии</p>
-      </li>
-      <li>
-        <p class="location__wrapper-img">
-          <img src="../img/selected-hike/location.jpg" alt="Локация на карте">
-        </p>
-        <p>Таджикистан</p>
-      </li>
-      <li>
-        <p class="location__wrapper-img">
-          <img src="../img/selected-hike/location.jpg" alt="Локация на карте">
-        </p>
-        <p>Северо-западный Памир</p>
-      </li>
-    </ul>
-    <div class="selected-hike-header__content">
-      <div class="selected-hike-header__content-top">
-        <div class="selected-hike-header__top-info">
-          <p class="article-top">
-            <span>Походы</span>
-          </p>
-          <h3 class="title title--element title--element-small title--left">Название похода</h3>
-        </div>
-        <button class="button button--blue button--box button--icon button--uppercase selected-hike-header__button" type="button">
-          <i class="icon-route"></i>
-          Весь маршрут
-        </button>
       </div>
-      <div class="hike-info">
-        <table class="hike-info__table">
-          <tr>
-            <th>Вид спортивного туризма:</th>
-            <td>Пешеходный</td>
-          </tr>
-          <tr>
-            <th>Категория сложности:</th>
-            <td><img src="../img/trekking/level.png" alt="Уровень сложности"></td>
-          </tr>
-          <tr>
-            <th>Тип похода:</th>
-            <td>Категорийный</td>
-          </tr>
-          <tr>
-            <th>Сезон:</th>
-            <td>Зима</td>
-          </tr>
-          <tr>
-            <th>Месяц:</th>
-            <td>Февраль</td>
-          </tr>
-          <tr>
-            <th>Длительность:</th>
-            <td>Поход выходного дня</td>
-          </tr>
-        </table>
-        <table class="hike-info__table">
-          <tbody class="hike-info__table-body">
-          <tr>
-            <th>Протяженность:</th>
-            <td>15 км</td>
-          </tr>
-          <tr>
-            <th>Материк:</th>
-            <td>Евразия</td>
-          </tr>
-          <tr>
-            <th>Страна::</th>
-            <td>Россия</td>
-          </tr>
-          <tr>
-            <th>Местность:</th>
-            <td>Камчатка</td>
-          </tr>
-          <tr>
-            <th>Рекомендованные операторы мобильной связи:</th>
-            <td>МТС, Vodafone</td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="selected-hike-header__route">
-        <h2 class="title title--line title--small">Нитка маршрута</h2>
-        <ul class="selected-hike-header__route-list">
-          <li>Пункт 1</li>
-          <li>Пункт 2</li>
-          <li>Пункт 3</li>
-          <li>Пункт 4</li>
-          <li>Пункт 5</li>
-          <li>Пункт 6</li>
-          <li>Пункт 7</li>
-          <li>Пункт 8</li>
-          <li>Пункт 9</li>
+      <p class="decription-post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed: </p>
+      <div class="decription-post__wrapper-list">
+        <ol class="decription-post__list">
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</li>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</li>
+        </ol>
+        <ul class="decription-post__list">
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor sit amet,</li>
+          <li>Lorem ipsum dolor</li>
+          <li> Lorem ipsum dolor sit amet,</li>
         </ul>
       </div>
+      <ul class="advantages decription-post__advantages">
+        <li class="advantages__item">
+          <i class="icon-clock"></i>
+          <p class="advantages__text">Lorem Ipsum lorem Ipsum</p>
+        </li>
+        <li class="advantages__item">
+          <i class="icon-clock"></i>
+          <p class="advantages__text">Lorem Ipsum lorem Ipsum</p>
+        </li>
+        <li class="advantages__item">
+          <i class="icon-clock"></i>
+          <p class="advantages__text">Lorem Ipsum lorem Ipsum</p>
+        </li>
+      </ul>
+      <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices <a href="#">gravida</a>. Risus
+        commodo viverra
+        maecenas accumsan lacus vel facilisis. <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing
+        elit,
+        sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. </p>
+      <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+        maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. </p>
     </div>
-  </section>
+  </div>
+</section>
 
-    <!-- Секция  Издание сегодня -->
-    <section class="decription-post">
-      <div class="decription-post__inner">
-        <div class="carousel-3D">
-          <ul class="carousel-3D__list decription-post__carousel-3D-list">
-            <li>
-              <img src="../img/about-edition/edition-carousel-1.jpg" alt="Изданvие сегодня фотография">
-              <p class="carousel-3D__description foto-description">Гора Эверест. Гималаи</p>
-            </li>
-            <li>
-              <img src="../img/about-edition/edition-carousel-2.jpg" alt="Издание сегодня фотография">
-              <p class="carousel-3D__description foto-description">Гора Эверест. Гималаи</p>
-            </li>
-            <li>
-              <img src="../img/about-edition/edition-carousel-1.jpg" alt="Издание сегодня фотография">
-              <p class="carousel-3D__description foto-description">Гора Эверест. Гималаи</p>
-            </li>
-            <li>
-              <img src="../img/about-edition/edition-carousel-3.jpg" alt="Издание сегодня фотография">
-              <p class="carousel-3D__description foto-description">Гора Эверест. Гималаи</p>
-            </li>
-          </ul>
-          <p class="step-count"></p>
-        </div>
-        <div class="description decription-post__description">
-          <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices <a href="#">gravida</a>. Risus
-            commodo viverra
-            maecenas accumsan lacus vel facilisis. <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing
-            elit,
-            sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. </p>
-          <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-            maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. </p>
-          <blockquote class="blockquote decription-post__blockquote">
-            <p class="blockquote__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-              facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-              et</p>
-            <cite class="blockquote__author">Участник похода, <strong>Алексеенко Кирилл</strong></cite>
-          </blockquote>
-          <div class="youtube-video decription-post__youtube-video">
-            <!--            <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/pDEe-eJ4MAg?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>-->
-            <p class="youtube-video__overlow">
-              <button class="button-play">
-                <img src="../img/play.png" alt="кнопка запуска видео">
-              </button>
-            </p>
-          </div>
-          <p class="decription-post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed:  </p>
-          <div class="decription-post__wrapper-list">
-            <ol class="decription-post__list">
-              <li>Lorem ipsum dolor </li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</li>
-              <li>Lorem ipsum dolor</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</li>
-            </ol>
-            <ul class="decription-post__list">
-              <li>Lorem ipsum dolor</li>
-              <li>Lorem ipsum dolor sit amet,</li>
-              <li>Lorem ipsum dolor</li>
-              <li> Lorem ipsum dolor sit amet,</li>
-            </ul>
-          </div>
-          <ul class="advantages decription-post__advantages">
-            <li class="advantages__item">
-              <i class="icon-clock"></i>
-              <p class="advantages__text">Lorem Ipsum lorem  Ipsum</p>
-            </li>
-            <li class="advantages__item">
-              <i class="icon-clock"></i>
-              <p class="advantages__text">Lorem Ipsum lorem  Ipsum</p>
-            </li>
-            <li class="advantages__item">
-              <i class="icon-clock"></i>
-              <p class="advantages__text">Lorem Ipsum lorem  Ipsum</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<!-- Секция Достопримечательности -->
+<section class="attractions">
+  <div class="attractions__inner">
+    <h2 class="title title--line title--small">Достопримечательности</h2>
+    <div class="attractions__gallery gallery">
+      <p style="background-image: url('../img/about-edition/edition-today-gallery-1.jpg')"></p>
+      <p style="background-image: url('../img/about-edition/edition-today-gallery-2.jpg')"></p>
+      <p style="background-image: url('../img/about-edition/edition-today-gallery-3.jpg')"></p>
+      <p style="background-image: url('../img/about-edition/edition-today-gallery-2.jpg')"></p>
+      <p style="background-image: url('../img/about-edition/edition-today-gallery-4.jpg')"></p>
+    </div>
+  </div>
+</section>
 
-    <!-- Секция Достопримечательности -->
-    <section class="attractions">
-      <div class="attractions__inner">
-        <h2 class="title title--line title--small">Достопримечательности</h2>
-        <div class="attractions__gallery gallery">
-          <p style="background-image: url('../img/about-edition/edition-today-gallery-1.jpg')"></p>
-          <p style="background-image: url('../img/about-edition/edition-today-gallery-2.jpg')"></p>
-          <p style="background-image: url('../img/about-edition/edition-today-gallery-3.jpg')"></p>
-          <p style="background-image: url('../img/about-edition/edition-today-gallery-2.jpg')"></p>
-          <p style="background-image: url('../img/about-edition/edition-today-gallery-4.jpg')"></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Секция По теме -->
-    <section class="trekking-articles article-post__trekking-articles">
-      <div class="trekking-articles__inner">
-        <h2 class="title title--line title--small">По теме</h2>
-        <div class="preview-article trekking-articles__preview-article">
-          <ul class="preview-article__list">
-            <li>
-              <article class="preview-article__article">
-                <header class="preview-article__header">
-                  <a href="article-post.html" class="preview-article__article-wrapp-img">
-                    <p class="preview-article__article-img"
-                       style="background-image: url('../img/home/popular-month-item-2.png')">
-                    </p>
-                  </a>
-                  <p class="article-top article-top--space-b preview-article__top">
-                    <span>Походы</span>
-                    <time datetime="2019-07-27T09:24">27/07/2019 09:24</time>
-                  </p>
-                  <a class="preview-article__link" href="article-post.html"><h3>Заголовок статьи</h3></a>
-                </header>
-                <div class="preview-article__body">
-                  <p>Здесь будет описание новости в несколько строк. Здесь будет описание новости в несколько строк.
-                    Здесь
-                    будет описание новости в несколько строк. Здесь будет описание новости в</p>
-                </div>
-                <footer class="preview-article__footer">
-                  <a class="preview-article__arrow" href="article-post.html">
-                    <i class="icon-right-arrow right-arrow right-arrow--blue preview-article__arrow"></i>
-                  </a>
-                </footer>
-              </article>
-            </li>
-            <li>
-              <article class="preview-article__article">
-                <header class="preview-article__header">
-                  <a href="article-post.html" class="preview-article__article-wrapp-img">
-                    <p class="preview-article__article-img"
-                       style="background-image: url('../img/home/popular-month-item-3.png')"></p>
-                  </a>
-                  <p class="article-top article-top--space-b preview-article__top">
-                    <span>Походы</span>
-                    <time datetime="2019-07-27T09:24">27/07/2019 09:24</time>
-                  </p>
-                  <a class="preview-article__link" href="article-post.html"><h3>Заголовок статьи</h3></a>
-                </header>
-                <div class="preview-article__body">
-                  <p>Здесь будет описание новости в несколько строк. Здесь будет описание новости в несколько строк.
-                    Здесь
-                    будет описание новости в несколько строк. Здесь будет описание новости в</p>
-                </div>
-                <footer class="preview-article__footer">
-                  <a class="preview-article__arrow" href="article-post.html">
-                    <i class="icon-right-arrow right-arrow right-arrow--blue preview-article__arrow"></i>
-                  </a>
-                </footer>
-              </article>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Секция поиск Похода -->
-    <section class="hike-search article-post__hike-search">
-      <div class="hike-search__inner">
-        <h2 class="title title--element title--element-small">Поиск похода</h2>
-        <form class="form hike-search__form article-post__search-form" action="/">
-          <fieldset class="form__fieldset">
-            <legend class="form__legend form__legend--hidden">Поиск похода</legend>
-            <label class="label input-search">
-              <span class="label__name">Поле поиска</span>
-              <i class="icon-search input-search__icon"></i>
-              <input class="input input-search__search input-search__search--dark" type="search"
-                     placeholder="Поиск похода">
-            </label>
-          </fieldset>
-          <fieldset class="form__fieldset hike-search__fieldset">
-            <legend class="form__legend form__legend--hidden">Выбор характеристик</legend>
-            <div class="hike-search__wrapper-label">
-              <label class="label">
-                <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-                  <option value="" style="display:none">Руководитель группы</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                </select>
-              </label>
-              <label class="label">
-                <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-                  <option value="" style="display:none">Участник группы</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                </select>
-              </label>
-              <label class="label">
-                <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-                  <option value="" style="display:none">Материал</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                </select>
-              </label>
-              <label class="label">
-                <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-                  <option value="" style="display:none">Поход</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                </select>
-              </label>
-              <label class="label">
-                <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-                  <option value="" style="display:none">Вид туризма</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                </select>
-              </label>
-              <label class="label">
-                <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-                  <option value="" style="display:none">Категория сложности</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                </select>
-              </label>
-              <label class="label">
-                <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-                  <option value="" style="display:none">Тип похода</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                </select>
-              </label>
-              <label class="label">
-                <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-                  <option value="" style="display:none">Сезон</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                </select>
-              </label>
-              <label class="label">
-                <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-                  <option value="" style="display:none">Месяц</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                </select>
-              </label>
-              <label class="label">
-                <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-                  <option value="" style="display:none">Длительность</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                </select>
-              </label>
-              <label class="label">
-                <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-                  <option value="" style="display:none">Континент</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                </select>
-              </label>
-              <label class="label">
-                <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-                  <option value="" style="display:none">Страна</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                </select>
-              </label>
-              <label class="label">
-                <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-                  <option value="" style="display:none">Местность</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                </select>
-              </label>
-              <label class="label">
-                <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-                  <option value="" style="display:none">По дате добавления</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                  <option value="value1">Имя фамилия</option>
-                </select>
-              </label>
-              <button class="button-reset hike-search__button-reset" type="reset">
-                <i class="icon-refresh"></i>
-                Сбросить
-              </button>
+<!-- Секция По теме -->
+<section class="trekking-articles article-post__trekking-articles">
+  <div class="trekking-articles__inner">
+    <h2 class="title title--line title--small">По теме</h2>
+    <div class="preview-article trekking-articles__preview-article">
+      <ul class="preview-article__list">
+        <li>
+          <article class="preview-article__article">
+            <header class="preview-article__header">
+              <a href="article-post.html" class="preview-article__article-wrapp-img">
+                <p class="preview-article__article-img"
+                   style="background-image: url('../img/home/popular-month-item-2.png')">
+                </p>
+              </a>
+              <p class="article-top article-top--space-b preview-article__top">
+                <span>Походы</span>
+                <time datetime="2019-07-27T09:24">27/07/2019 09:24</time>
+              </p>
+              <a class="preview-article__link" href="article-post.html"><h3>Заголовок статьи</h3></a>
+            </header>
+            <div class="preview-article__body">
+              <p>Здесь будет описание новости в несколько строк. Здесь будет описание новости в несколько строк.
+                Здесь
+                будет описание новости в несколько строк. Здесь будет описание новости в</p>
             </div>
-          </fieldset>
-        </form>
-      </div>
-    </section>
+            <footer class="preview-article__footer">
+              <a class="preview-article__arrow" href="article-post.html">
+                <i class="icon-right-arrow right-arrow right-arrow--blue preview-article__arrow"></i>
+              </a>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="preview-article__article">
+            <header class="preview-article__header">
+              <a href="article-post.html" class="preview-article__article-wrapp-img">
+                <p class="preview-article__article-img"
+                   style="background-image: url('../img/home/popular-month-item-3.png')"></p>
+              </a>
+              <p class="article-top article-top--space-b preview-article__top">
+                <span>Походы</span>
+                <time datetime="2019-07-27T09:24">27/07/2019 09:24</time>
+              </p>
+              <a class="preview-article__link" href="article-post.html"><h3>Заголовок статьи</h3></a>
+            </header>
+            <div class="preview-article__body">
+              <p>Здесь будет описание новости в несколько строк. Здесь будет описание новости в несколько строк.
+                Здесь
+                будет описание новости в несколько строк. Здесь будет описание новости в</p>
+            </div>
+            <footer class="preview-article__footer">
+              <a class="preview-article__arrow" href="article-post.html">
+                <i class="icon-right-arrow right-arrow right-arrow--blue preview-article__arrow"></i>
+              </a>
+            </footer>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-    <!-- build:section layout.comment-->
-    <!-- /build -->
+<!-- Секция поиск Похода -->
+<section class="hike-search article-post__hike-search">
+  <div class="hike-search__inner">
+    <h2 class="title title--element title--element-small">Поиск похода</h2>
+    <form class="form hike-search__form article-post__search-form" action="/">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend form__legend--hidden">Поиск похода</legend>
+        <label class="label input-search">
+          <span class="label__name">Поле поиска</span>
+          <i class="icon-search input-search__icon"></i>
+          <input class="input input-search__search input-search__search--dark" type="search"
+                 placeholder="Поиск похода">
+        </label>
+      </fieldset>
+      <fieldset class="form__fieldset hike-search__fieldset">
+        <legend class="form__legend form__legend--hidden">Выбор характеристик</legend>
+        <div class="hike-search__wrapper-label">
+          <label class="label">
+            <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+              <option value="" style="display:none">Руководитель группы</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+            </select>
+          </label>
+          <label class="label">
+            <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+              <option value="" style="display:none">Участник группы</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+            </select>
+          </label>
+          <label class="label">
+            <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+              <option value="" style="display:none">Материал</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+            </select>
+          </label>
+          <label class="label">
+            <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+              <option value="" style="display:none">Поход</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+            </select>
+          </label>
+          <label class="label">
+            <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+              <option value="" style="display:none">Вид туризма</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+            </select>
+          </label>
+          <label class="label">
+            <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+              <option value="" style="display:none">Категория сложности</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+            </select>
+          </label>
+          <label class="label">
+            <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+              <option value="" style="display:none">Тип похода</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+            </select>
+          </label>
+          <label class="label">
+            <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+              <option value="" style="display:none">Сезон</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+            </select>
+          </label>
+          <label class="label">
+            <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+              <option value="" style="display:none">Месяц</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+            </select>
+          </label>
+          <label class="label">
+            <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+              <option value="" style="display:none">Длительность</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+            </select>
+          </label>
+          <label class="label">
+            <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+              <option value="" style="display:none">Континент</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+            </select>
+          </label>
+          <label class="label">
+            <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+              <option value="" style="display:none">Страна</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+            </select>
+          </label>
+          <label class="label">
+            <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+              <option value="" style="display:none">Местность</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+            </select>
+          </label>
+          <label class="label">
+            <select class="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+              <option value="" style="display:none">По дате добавления</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+              <option value="value1">Имя фамилия</option>
+            </select>
+          </label>
+          <button class="button-reset hike-search__button-reset" type="reset">
+            <i class="icon-refresh"></i>
+            Сбросить
+          </button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</section>
 
-    <!-- build:section layout.footer-->
-    <!-- /build -->
+<!-- build:section layout.comment-->
+<!-- /build -->
+
+<!-- build:section layout.footer-->
+<!-- /build -->
 
 <!-- Секция Модальны окна -->
 <section class="modal">
