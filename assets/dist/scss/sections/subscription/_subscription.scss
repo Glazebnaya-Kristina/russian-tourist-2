@@ -22,13 +22,23 @@
     @include hide-text;
   }
   &__btn-download{
-    font-size: 13px !important;
-    font-weight: 700 !important;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 26px;
+    font-size: 13px;
+    font-weight: 500;
     text-transform: uppercase;
     color: $color-blue;
     text-align: center;
     background-color: transparent;
     border: none;
+    transition: $transition-time;
+    cursor: pointer;
+    &:hover,
+    &:focus{
+      outline: none;
+      color: $color-gold;
+    }
   }
 
   &__wrapper-carousel{}
@@ -71,19 +81,6 @@
     margin-top: auto;
     padding: 7px 44px;
     font-size: 14px;
-  }
-
-  &__btn-download{
-    display: flex;
-    margin: 0 auto;
-    margin-top: 26px;
-    transition: $transition-time;
-    cursor: pointer;
-    &:hover,
-    &:focus{
-      outline: none;
-      color: $color-gold;
-    }
   }
 
   &__arrow {
