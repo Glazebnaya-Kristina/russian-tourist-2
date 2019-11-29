@@ -1,0 +1,96 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+
+.subscription{
+  $block-name: &; // #{$block-name}__element
+
+  padding-top: 42px;
+  background-image: url("../img/subscription/subscription-bg.png");
+  background-repeat: no-repeat;
+  background-size: auto 182px;
+  background-position: center top 145px;
+  @media (min-width: $screen-lg) {
+    background-size: 100% 182px;
+    background-position: center top 189px;
+  }
+  &__inner{
+    @include container;
+  }
+  &__btn-download{
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    color: $color-blue;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__wrapper-carousel{}
+  &__carousel{
+    @include ul-reset;
+    position: relative;
+    margin-top: 66px;
+    padding: 0 38px;
+    @media (min-width: $screen-lg) {
+      margin-top: 97px;
+    }
+
+    li{
+
+    }
+
+    .slick-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 410px;
+      @media (min-width: $screen-lg) {
+        height: 431px;
+      }
+      &:nth-child(even){
+        img{
+          height: 315px;
+          @media (min-width: $screen-lg) {
+            height: 347px;
+          }
+        }
+      }
+      img{
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__btn-buy{
+    display: flex;
+    margin: 0 auto;
+    margin-top: auto;
+    padding: 5px 38px;
+  }
+
+  &__btn-download{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 26px;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 35%;
+    cursor: pointer;
+    font-size: 18px;
+
+    &--left {
+      left: 0;
+      transform: rotate(180deg);
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
+}

@@ -106,7 +106,9 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; // Коррекция проблем стилизации для Safari
-  font: inherit;
+  //font: inherit;
+  font-family: inherit;
+  line-height: inherit;
 }
 
 button::-moz-focus-inner,
