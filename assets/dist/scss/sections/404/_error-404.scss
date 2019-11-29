@@ -1,0 +1,95 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+
+.error-404{
+  $block-name: &; // #{$block-name}__element
+
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('../img/404/404-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &:after{
+    @include pseudo;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background-image: url('../img/404/404-decor.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    @media (min-width: $screen-md) {
+      right: 0;
+      width: 327px;
+      height: 338px;
+    }
+    @media (min-width: $screen-xl) {
+      right: 16.6%;
+    }
+  }
+
+
+  &__title{
+    @include hide-text;
+  }
+
+  &__subtitle{
+    display: flex;
+    height: 145px;
+    margin: 0;
+    font-family: 'Cormorant Garamond';
+    font-weight: 700;
+
+    @media (min-width: $screen-md) {
+      margin-top: 74px;
+      margin-left: -18px;
+      height: 205px;
+    }
+
+    span{
+      display: block;
+      font-size: 200px;
+      line-height: 56px;
+      @media (min-width: $screen-md) {
+        font-size: 300px;
+      }
+      &:last-of-type{
+        margin-left: -21px;
+      }
+    }
+
+    img{
+      align-self: flex-start;
+      margin-top: -6px;
+      margin-left: -11px;
+      height: 100px;
+      @media (min-width: $screen-md) {
+        height: auto;
+      }
+    }
+  }
+
+  &__text{
+    margin-top: 19px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &__button{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 25px;
+    @media (min-width: $screen-xl) {
+      margin-top: 50px;
+    }
+  }
+}
