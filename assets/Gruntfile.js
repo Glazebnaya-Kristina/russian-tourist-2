@@ -40,7 +40,8 @@ module.exports = function (grunt) {
                '../markup/js/inspiration.min.js': ['dist/js/inspiration.js'],
                '../markup/js/advice.min.js': ['dist/js/advice.js'],
                '../markup/js/selected-hike.min.js': ['dist/js/selected-hike.js'],
-               '../markup/js/subscription.min.js': ['dist/js/subscription.js']
+               '../markup/js/subscription.min.js': ['dist/js/subscription.js'],
+               '../markup/js/personal-area.min.js': ['dist/js/personal-area.js']
             }
          }
       },
