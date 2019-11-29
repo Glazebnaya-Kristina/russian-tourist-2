@@ -17,6 +17,10 @@
   &__inner{
     @include container;
   }
+
+  &__title{
+    @include hide-text;
+  }
   &__btn-download{
     font-size: 13px !important;
     font-weight: 700 !important;
@@ -35,10 +39,6 @@
     padding: 0 38px;
     @media (min-width: $screen-lg) {
       margin-top: 97px;
-    }
-
-    li{
-
     }
 
     .slick-slide {
@@ -69,13 +69,21 @@
     display: flex;
     margin: 0 auto;
     margin-top: auto;
-    padding: 5px 38px;
+    padding: 7px 44px;
+    font-size: 14px;
   }
 
   &__btn-download{
     display: flex;
     margin: 0 auto;
     margin-top: 26px;
+    transition: $transition-time;
+    cursor: pointer;
+    &:hover,
+    &:focus{
+      outline: none;
+      color: $color-gold;
+    }
   }
 
   &__arrow {
@@ -93,4 +101,41 @@
       right: 0;
     }
   }
+
+  &__form{
+
+    max-width: 664px;
+    margin: 0 auto;
+    margin-top: 50px;
+    @media (min-width: $screen-md) {
+      display: flex;
+    }
+    @media (min-width: $screen-lg) {
+      margin-top: 132px;
+    }
+  }
+
+  &__input{
+    padding: 16px 30px;
+    border-right: 0;
+  }
+
+  &__form-download{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px 46px;
+    font-size: 13px;
+    @media (min-width: $screen-md) {
+      margin: 0;
+    }
+  }
+
+  .jcf-select {
+    padding: 17px 30px;
+  }
+}
+
+.jcf-list .jcf-option{
+  padding: 5px 30px;
 }

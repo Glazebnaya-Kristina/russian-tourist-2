@@ -1,0 +1,166 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+
+.printed-number{
+  $block-name: &; // #{$block-name}__element
+
+  padding: 25px 0 25px;
+  background-image: url("../img/subscription/printed-number-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  @media (min-width: $screen-lg) {
+    padding: 79px 0 73px;
+  }
+  &__inner{
+    @include container;
+
+    @media (min-width: $screen-lg) {
+      max-width: 765px;
+    }
+  }
+
+  &__description{
+    font-size: 14px;
+    color: $color-gold;
+    text-align: center;
+    margin-top: 20px;
+    @media (min-width: $screen-lg) {
+      margin-top: 32px;
+    }
+  }
+
+  &__form{
+    margin-top: 10px;
+
+    .input{
+      padding-top: 21px;
+      padding-bottom: 21px;
+    }
+  }
+
+  &__legend{
+    @include hide-text;
+  }
+
+  &__wrapper-label{
+    display: grid;
+    grid-column-gap: 25px;
+    @media (min-width: $screen-md) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .label{
+      margin-top: 25px;
+      &:last-of-type{
+        grid-column: 1 / -1;
+      }
+    }
+  }
+
+  &__subscription-wrapper{
+    display: grid;
+    grid-column-gap: 25px;
+    @media (min-width: $screen-md) {
+      grid-template-columns: 1fr 1fr;
+      margin-top: 22px;
+    }
+  }
+
+  .jcf-select {
+    padding: 17px 30px;
+  }
+
+
+
+  &__calculation{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    @media (min-width: $screen-md) {
+      margin-top: 0;
+      margin-left: 15px;
+    }
+  }
+
+  &__calculation-name{
+    max-width: 170px;
+    font-size: 18px;
+  }
+
+  &__calculation-value{
+    margin-left: auto;
+    font-size: 25px;
+    color: $color-blue;
+    @media (min-width: $screen-md) {
+      margin-left: 15px;
+      font-size: 30px;
+    }
+    @media (min-width: $screen-xl) {
+      margin-left: 40px;
+      font-size: 34px;
+    }
+  }
+
+  &__checkbox-list{
+    @include ul-reset;
+    margin-top: 25px;
+    @media (min-width: $screen-lg) {
+      margin-top: 37px;
+    }
+  }
+
+  &__checkbox-item{
+    font-size: 13px;
+    &:not(:first-of-type){
+      margin-top: 9px;
+    }
+    label {
+      margin-left: 11px;
+    }
+    strong{
+      font-weight: 500;
+    }
+  }
+
+  &__button-subscription{
+    margin-top: 25px;
+    @media (min-width: $screen-lg) {
+      margin-top: 65px;
+    }
+  }
+
+  &__text{
+    max-width: 686px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 14px;
+    text-align: center;
+    @media (min-width: $screen-lg) {
+      margin-top: 62px;
+    }
+
+    &--gold{
+      margin: 0 auto;
+      margin-top: 25px;
+      max-width: 520px;
+      color: $color-gold;
+      @media (min-width: $screen-lg) {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  &__index{
+    display: block;
+    font-size: 25px;
+    color: $color-blue;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+.jcf-list .jcf-option{
+  padding: 5px 30px;
+}

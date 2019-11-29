@@ -28,6 +28,7 @@ module.exports = function (grunt) {
                '../markup/js/jcf.scrollable.min.js': ['dist/js/plugin/jcf.scrollable.js'],
                '../markup/js/jcf.select.min.js': ['dist/js/plugin/jcf.select.js'],
                '../markup/js/jcf.file.min.js': ['dist/js/plugin/jcf.file.js'],
+               '../markup/js/jcf.checkbox.min.js': ['dist/js/plugin/jcf.checkbox.js'],
                '../markup/js/jcf.min.js': ['dist/js/plugin/jcf.js'],
                '../markup/js/jquery.fancybox.min.js': ['dist/js/plugin/jquery.fancybox.min.js'],
                '../markup/js/script.min.js': ['dist/js/script.js'],

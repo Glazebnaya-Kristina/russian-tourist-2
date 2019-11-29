@@ -99,40 +99,157 @@
         <section class="subscription">
             <div class="subscription__inner">
                 <h1 class="title title--element title--element-small">Подписка</h1>
+                <h2 class="subscription__title">Поиск номера на подписку</h2>
                 <div class="subscription__wrapper-carousel">
                     <ul class="subscription__carousel">
                         <li>
                             <img src="../img/subscription/book-1.png" alt="Фотографии издания">
-                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button">Купить выпуск</button>
+                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button">Купить
+              выпуск
+            </button>
                             <button class="subscription__btn-download" type="button">Скачать pdf</button>
                         </li>
                         <li>
                             <img src="../img/subscription/book-2.png" alt="Фотографии издания">
-                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button">Купить выпуск</button>
+                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button">Купить
+              выпуск
+            </button>
                             <button class="subscription__btn-download" type="button">Скачать pdf</button>
                         </li>
                         <li>
                             <img src="../img/subscription/book-1.png" alt="Фотографии издания">
-                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button">Купить выпуск</button>
+                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button">Купить
+              выпуск
+            </button>
                             <button class="subscription__btn-download" type="button">Скачать pdf</button>
                         </li>
                         <li>
                             <img src="../img/subscription/book-2.png" alt="Фотографии издания">
-                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button">Купить выпуск</button>
+                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button">Купить
+              выпуск
+            </button>
                             <button class="subscription__btn-download" type="button">Скачать pdf</button>
                         </li>
                         <li>
                             <img src="../img/subscription/book-1.png" alt="Фотографии издания">
-                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button">Купить выпуск</button>
+                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button">Купить
+              выпуск
+            </button>
                             <button class="subscription__btn-download" type="button">Скачать pdf</button>
                         </li>
                         <li>
                             <img src="../img/subscription/book-2.png" alt="Фотографии издания">
-                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button">Купить выпуск</button>
+                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button">Купить
+              выпуск
+            </button>
                             <button class="subscription__btn-download" type="button">Скачать pdf</button>
                         </li>
                     </ul>
                 </div>
+                <form action="/" class="form subscription__form">
+                    <label class="label">
+          <select class="select subscription__input" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+            <option value="" style="display:none">Выберите номер журнала</option>
+            <option value="value1">Название журнала</option>
+            <option value="value2">Название журнала</option>
+            <option value="value3">Название журнала</option>
+            <option value="value4">Название журнала</option>
+            <option value="value5">Название журнала</option>
+            <option value="value6">Название журнала</option>
+            <option value="value7">Название журнала</option>
+            <option value="value8">Название журнала</option>
+            <option value="value9">Название журнала</option>
+            <option value="value10">Название журнала</option>
+          </select>
+        </label>
+                    <button class="button button--blue button--uppercase subscription__form-download">Скачать PDF</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="printed-number">
+            <div class="printed-number__inner">
+                <h2 class="title title--element">Подписаться на печатный номер</h2>
+                <p class="printed-number__description">Оформление подписки на будущие номера журнала</p>
+                <form action="#" class="form printed-number__form">
+                    <fieldset class="form__fieldset">
+                        <legend class="form__legend printed-number__legend">Личные данные</legend>
+                        <div class="printed-number__wrapper-label">
+                            <label class="label">
+              <span class="label__name">Фамилия Имя Очество</span>
+              <input type="text" class="input" placeholder="ФИО">
+            </label>
+                            <label class="label">
+              <span class="label__name">E-mail</span>
+              <input type="email" class="input" placeholder="E-mail">
+            </label>
+                            <label class="label">
+              <span class="label__name">Телефон</span>
+              <input type="tel" class="input" placeholder="Телефон">
+            </label>
+                            <label class="label">
+              <span class="label__name">Почтовый индекс</span>
+              <input type="number" class="input" placeholder="Почтовый индекс">
+            </label>
+                            <label class="label">
+              <span class="label__name">Адрес</span>
+              <input type="text" class="input" placeholder="Адрес">
+            </label>
+                            <span class="text-error">Ошибка...</span>
+                        </div>
+                    </fieldset>
+                    <div class="printed-number__subscription-wrapper">
+                        <label class="label printed-number__subscription">
+            <select class="select subscription__input" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+              <option value="" style="display:none">Выберите период подписки</option>
+              <option value="1">1 мес</option>
+              <option value="2">2 мес</option>
+              <option value="3">3 мес</option>
+              <option value="4">4 мес</option>
+              <option value="5">5 мес</option>
+              <option value="6">6 мес</option>
+              <option value="7">7 мес</option>
+              <option value="8">8 мес</option>
+              <option value="9">9 мес</option>
+              <option value="10">10 мес</option>
+              <option value="11">11 мес</option>
+              <option value="12">12 мес</option>
+            </select>
+          </label>
+                        <div class="printed-number__calculation">
+                            <p class="printed-number__calculation-name">Расчёт стоимости подписки:</p>
+                            <span class="printed-number__calculation-value">1 200р</span>
+                        </div>
+                    </div>
+                    <ul class="printed-number__checkbox-list">
+                        <li class="printed-number__checkbox-item">
+                            <input type="checkbox" id="checkbox-1" checked/>
+                            <label title="Unchecked state" for="checkbox-1">Согласен получать информацию об издании</label>
+                        </li>
+                        <li class="printed-number__checkbox-item">
+                            <input type="checkbox" id="checkbox-2" />
+                            <label title="Unchecked state" for="checkbox-2">Получать уведомления о начале подписки на печатную
+              версию</label>
+                        </li>
+                        <li class="printed-number__checkbox-item">
+                            <input type="checkbox" id="checkbox-3" />
+                            <label title="Unchecked state" for="checkbox-3">Я согласен/согласна с <strong>политикой ООО "СЛОН ПО" в
+              отношении обработки персональных данных</strong></label>
+                        </li>
+                    </ul>
+                    <p class="button-wrapper routes__button-wrapper printed-number__button-subscription">
+                        <button type="submit" class="button button--uppercase button--blue button--box button--flex button-wrapper__button">
+            Подписаться
+          </button>
+                    </p>
+                    <p class="printed-number__text">
+                        Подпишитесь самостоятельно на журнал “Русский турист” в любом отделении Почты России. Индекс издания в каталоге АПР на предстоящий год/полугодие:
+                        <strong class="printed-number__index">70041</strong>
+                    </p>
+                    <p class="printed-number__text printed-number__text--gold">
+                        Подписываясь на будущие номера журнала, вы не платите за доставку. А оформляя годовую подписку, получаете еще и скидку.
+                    </p>
+                </form>
             </div>
         </section>
     </main>
@@ -416,7 +533,8 @@
         <div class="popup popup--small modal__error" data-modal="error">
             <div class="modal__dialog">
                 <div class="modal__header modal__header--center">
-                    <h3 class="modal__title modal__title--element title title--element title--element-small">Ошибка загрузки файла</h3>
+                    <h3 class="modal__title modal__title--element title title--element title--element-small">Ошибка загрузки файла
+                    </h3>
                 </div>
                 <div class="modal__content modal__content--center">
                     <p class="modal__error-text">Размер файла не должен превышать 700кб</p>
@@ -433,6 +551,7 @@
     <script src="../js/jcf.file.min.js"></script>
     <script src="../js/jcf.select.min.js"></script>
     <script src="../js/jcf.scrollable.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
     <script src="../js/script.min.js"></script>
     <script src="../js/subscription.min.js"></script>
 
