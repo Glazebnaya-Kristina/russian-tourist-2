@@ -36,6 +36,10 @@
       }
     }
   }
+
+  &__list{
+    @include ul-reset;
+  }
 }
 
 .label {
@@ -57,7 +61,22 @@
     position: relative;
     max-width: 420px;
     width: 100%;
-    height: 318px;
+    height: 200px;
+    @media (min-width: $screen-md) {
+      height: 318px;
+    }
+  }
+
+  &--file-small{
+    position: relative;
+    max-width: 210px;
+    width: 100%;
+    height: 160px;
+  }
+
+  &--file-xs{
+    height: 100%;
+    position: relative;
   }
 }
 

@@ -14,8 +14,8 @@ $(document).ready(function () {
 
 
    jcf.setOptions('Scrollable', {
-      alwaysPreventMouseWheel: true,
-      mouseWheelStep: 15
+      alwaysPreventMouseWheel: false,
+      mouseWheelStep: 1
    });
 
    /*--- Пагинация ---*/
@@ -45,6 +45,30 @@ $(document).ready(function () {
          reader.onload = function (e) {
             image.attr('src', e.target.result);
             imageUser.attr('src', e.target.result);
+         };
+         reader.readAsDataURL(input.files[0]);
+      }
+   });
+
+   $(".input-file--trip").change(function(){
+      var input = (this);
+      var image = $('.input-image--trip');
+      if (input.files && input.files[0]) {
+         var reader = new FileReader();
+         reader.onload = function (e) {
+            image.attr('src', e.target.result);
+         };
+         reader.readAsDataURL(input.files[0]);
+      }
+   });
+
+   $(".input-file--trip-more").change(function(){
+      var input = (this);
+      var imageMore = $(this).closest('.label').find('.input-image--trip-more');
+      if (input.files && input.files[0]) {
+         var reader = new FileReader();
+         reader.onload = function (e) {
+            imageMore.attr('src', e.target.result);
          };
          reader.readAsDataURL(input.files[0]);
       }

@@ -1356,7 +1356,7 @@
     </footer>
 
     <!-- Секция Модальны окна -->
-    <section class="modal modal--opened">
+    <section class="modal">
         <!--   Модальное окно РЕГЕСТРИЦИЯ -->
         <div class="popup popup--big modal__registration" data-modal="registration">
             <div class="modal__dialog">
@@ -1582,8 +1582,8 @@
                 </div>
             </div>
         </div>
-        <!-- Модальное окно Создать поход -->
-        <div class="popup popup--big popup--hight modal__create-trip" data-modal="create-trip">
+        <!-- Модальное окно Создать поход1 -->
+        <div class="popup popup--big popup--hight modal__create-trip" data-modal="create-trip1">
             <div class="modal__dialog">
                 <div class="modal__header modal__header--line">
                     <h3 class="modal__title">Создать поход</h3>
@@ -1708,7 +1708,7 @@
             </div>
         </div>
         <!-- Модальное окно Написать сообщение -->
-        <div class="popup popup--big modal__write-message popup--opened" data-modal="write-message">
+        <div class="popup popup--big modal__write-message" data-modal="write-message">
             <div class="modal__dialog">
                 <div class="modal__header modal__header--line">
                     <h3 class="modal__title">Написать сообщение</h3>
@@ -1740,6 +1740,208 @@
                 </div>
             </div>
         </div>
+        <!-- Модальное окно Создать поход -->
+        <div class="popup popup--big popup--hight create-trip" data-modal="create-trip">
+            <div class="modal__dialog">
+                <div class="modal__header modal__header--line">
+                    <h3 class="modal__title">Создать поход</h3>
+                    <button class="modal__close close close--grey-dark close--icon" type="button">
+          <span class="close__description">Закрыть модальное окно</span>
+          <i class="icon-error"></i>
+        </button>
+                </div>
+                <div class="modal__content jcf-scrollable">
+                    <form action="#" class="form">
+                        <fieldset class="form__fieldset">
+                            <legend class="form__legend create-trip__legend create-trip__legend--hidden">Организационные моменты</legend>
+                            <ul class="form__list create-trip__organizational-list">
+                                <li class="form__list-item create-trip__wrapper-content">
+                                    <label class="label label--file-small">
+                  <span class="label__name">Загрузка фотографии</span>
+                  <input type="file" class="input-file--trip">
+                  <img src="../img/personal-area/bg.jpg" class="input-image--trip" alt="Фотография пользователя">
+                </label>
+                                    <p class="create-trip__discription-img">Заглавная фотография похода</p>
+                                </li>
+                                <li class="form__list-item">
+                                    <label class="label">
+                  <span class="label__name">Название локации похода</span>
+                  <input type="text" class="input" placeholder="Название локации похода">
+                </label>
+                                </li>
+                                <li class="form__list-item">
+                                    <label class="label">
+                  <span class="label__name">Руковадетиль похода</span>
+                  <input type="text" class="input" placeholder="Руковадетиль похода">
+                </label>
+                                </li>
+                                <li class="form__list-item">
+                                    <label class="label">
+                  <span class="label__name">Маршрут</span>
+                  <input type="text" class="input" placeholder="Маршрут">
+                </label>
+                                </li>
+                                <li class="form__list-item">
+                                    <label class="label">
+                  <span class="label__name">Вид спортивного туризма</span>
+                  <input type="text" class="input" placeholder="Вид спортивного туризма">
+                </label>
+                                </li>
+                                <li class="form__list-item">
+                                    <label class="label">
+                  <span class="label__name">Тип похода</span>
+                  <input type="text" class="input" placeholder="Тип похода">
+                </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="form__fieldset create-trip__fieldset-category">
+                            <legend class="form__legend create-trip__legend-category">Категория сложности</legend>
+                            <ul class="difficulty-category">
+                                <li class="difficulty-category__item">
+                                    <input type="checkbox" id="difficulty-category-1" />
+                                    <label class="difficulty-category__label" for="difficulty-category-1">
+                  <img src="../img/personal-area/level-1.svg" alt="Уровень сложности">
+                </label>
+                                </li>
+                                <li class="difficulty-category__item">
+                                    <input type="checkbox" id="difficulty-category-2" />
+                                    <label class="difficulty-category__label" for="difficulty-category-2">
+                  <img src="../img/personal-area/level-2.png" alt="Уровень сложности">
+                </label>
+                                </li>
+                                <li class="difficulty-category__item">
+                                    <input type="checkbox" id="difficulty-category-3" />
+                                    <label class="difficulty-category__label" for="difficulty-category-3">
+                  <img src="../img/personal-area/level-3.png" alt="Уровень сложности">
+                </label>
+                                </li>
+                                <li class="difficulty-category__item">
+                                    <input type="checkbox" id="difficulty-category-4" />
+                                    <label class="difficulty-category__label" for="difficulty-category-4">
+                  <img src="../img/personal-area/level-4.png" alt="Уровень сложности">
+                </label>
+                                </li>
+                                <li class="difficulty-category__item">
+                                    <input type="checkbox" id="difficulty-category-5" />
+                                    <label class="difficulty-category__label" for="difficulty-category-5">
+                  <img src="../img/personal-area/level-5.png" alt="Уровень сложности">
+                </label>
+                                </li>
+                                <li class="difficulty-category__item">
+                                    <input type="checkbox" id="difficulty-category-6" />
+                                    <label class="difficulty-category__label" for="difficulty-category-6">
+                  <img src="../img/personal-area/level-6.png" alt="Уровень сложности">
+                </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="form__fieldset create-trip__fieldset-more-info">
+                            <legend class="form__legend create-trip__legend-foto create-trip__legend create-trip__legend--hidden">Дополнительная информация о походе</legend>
+                            <ul class="form__list create-trip__more-info-list">
+                                <li class="form__list-item">
+                                    <label class="label">
+                  <span class="label__name">Сезон</span>
+                  <input type="text" class="input" placeholder="Сезон">
+                </label>
+                                </li>
+                                <li class="form__list-item">
+                                    <label class="label">
+                  <span class="label__name">Месяц</span>
+                  <input type="text" class="input" placeholder="Месяц">
+                </label>
+                                </li>
+                                <li class="form__list-item">
+                                    <label class="label">
+                  <span class="label__name">Длительность</span>
+                  <input type="text" class="input" placeholder="Длительность">
+                </label>
+                                </li>
+                                <li class="form__list-item">
+                                    <label class="label">
+                  <span class="label__name">Протяженность</span>
+                  <input type="text" class="input" placeholder="Протяженность">
+                </label>
+                                </li>
+                                <li class="form__list-item">
+                                    <label class="label">
+                  <span class="label__name">Материк</span>
+                  <input type="text" class="input" placeholder="Материк">
+                </label>
+                                </li>
+                                <li class="form__list-item">
+                                    <label class="label">
+                  <span class="label__name">Страна</span>
+                  <input type="text" class="input" placeholder="Страна">
+                </label>
+                                </li>
+                                <li class="form__list-item">
+                                    <label class="label">
+                  <span class="label__name">Местность</span>
+                  <input type="text" class="input" placeholder="Местность">
+                </label>
+                                </li>
+                                <li class="form__list-item">
+                                    <label class="label">
+                  <span class="label__name">Связь</span>
+                  <input type="text" class="input" placeholder="Связь">
+                </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="form__fieldset create-trip__fieldset-foto">
+                            <legend class="form__legend create-trip__legend-foto">Дополнительные фото похода</legend>
+                            <ul class="form__list create-trip__list-foto">
+                                <li class="form__list-item">
+                                    <label class="label label--file-xs">
+                  <span class="label__name">Загрузка фотографии</span>
+                  <input type="file" class="input-file--trip-more">
+                  <img src="../img/personal-area/bg.jpg" class="input-image--trip-more" alt="Фотография пользователя">
+                </label>
+                                </li>
+                                <li class="form__list-item">
+                                    <label class="label label--file-xs">
+                  <span class="label__name">Загрузка фотографии</span>
+                  <input type="file" class="input-file--trip-more">
+                  <img src="../img/personal-area/bg.jpg" class="input-image--trip-more" alt="Фотография пользователя">
+                </label>
+                                </li>
+                                <li class="form__list-item">
+                                    <label class="label label--file-xs">
+                  <span class="label__name">Загрузка фотографии</span>
+                  <input type="file" class="input-file--trip-more">
+                  <img src="../img/personal-area/bg.jpg" class="input-image--trip-more" alt="Фотография пользователя">
+                </label>
+                                </li>
+                                <li class="form__list-item">
+                                    <label class="label label--file-xs">
+                  <span class="label__name">Загрузка фотографии</span>
+                  <input type="file" class="input-file--trip-more">
+                  <img src="../img/personal-area/bg.jpg" class="input-image--trip-more" alt="Фотография пользователя">
+                </label>
+                                </li>
+                                <li class="form__list-item">
+                                    <label class="label label--file-xs">
+                  <span class="label__name">Загрузка фотографии</span>
+                  <input type="file" class="input-file--trip-more">
+                  <img src="../img/personal-area/bg.jpg" class="input-image--trip-more" alt="Фотография пользователя">
+                </label>
+                                </li>
+                                <li class="form__list-item">
+                                    <label class="label label--file-xs">
+                  <span class="label__name">Загрузка фотографии</span>
+                  <input type="file" class="input-file--trip-more">
+                  <img src="../img/personal-area/bg.jpg" class="input-image--trip-more" alt="Фотография пользователя">
+                </label>
+                                </li>
+                            </ul>
+                            <span class="text-error">Ошибка...</span>
+                        </fieldset>
+                        <button class="button button--blue create-trip__button" type="submit">Сменить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
         <!-- Подложка под модальным окном -->
         <div class="modal__overlay modal__overlay--opened js-overlay-modal"></div>
@@ -1752,7 +1954,7 @@
     <script src="../js/jcf.file.min.js"></script>
     <script src="../js/jcf.select.min.js"></script>
     <script src="../js/jcf.scrollable.min.js"></script>
-    <!--<script src="../js/jcf.checkbox.min.js"></script>-->
+    <script src="../js/jcf.checkbox.min.js"></script>
     <script src="../js/script.min.js"></script>
     <script src="../js/personal-area.min.js"></script>
 
