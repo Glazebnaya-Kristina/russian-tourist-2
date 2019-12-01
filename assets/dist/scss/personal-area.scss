@@ -6,19 +6,39 @@
 // стили шаблонов
 @import "libs/header-inner";
 @import "libs/footer";
+@import "libs/jcf-scrollbar";
+@import "libs/jcf-select";
 // подключениея блоков
-//@import "blocks/carousel-content";
+@import "blocks/types";
+@import "blocks/hike";
+@import "blocks/pagination";
 // поключения секций
+@import "sections/trekking/want-camping";
 @import "sections/trekking-articles";
 @import "sections/personal-area/user";
-
+@import "sections/personal-area/sports-tourism";
+@import "sections/personal-area/trekking-done";
 
 
 .personal-area{
-  .header__breadcrumbs {
-    margin-top: -43px;
+
+}
+
+.personal-area{
+  &__header{
+    .header__breadcrumbs {
+      margin-top: -43px;
+    }
+  }
+
+  &__wrapper{
+    background-image: url("../img/personal-area/trekking-done-bg.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
   }
 }
+
 //@media (min-width: $screen-sm) {}
 //@media (min-width: $screen-md) {}
 //@media (min-width: $screen-lg) {}

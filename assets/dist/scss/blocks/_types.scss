@@ -14,6 +14,7 @@
   }
 
   &__item{
+    position: relative;
     max-height: 175px;
     height: 100%;
   }
@@ -23,7 +24,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 178px;
     padding: 35px 25px;
     padding-top: 30px;
     border: 1px solid transparent;
@@ -60,5 +61,11 @@
     margin-top: 15px;
     font-size: 18px;
     text-align: center;
+    color: $text-color-gray-dark3;
+  }
+
+  &__img{
+    width: 88px;
+    height: 85px;
   }
 }

@@ -1,0 +1,44 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+
+.sports-tourism {
+  $block-name: &; // #{$block-name}__element
+
+
+  padding: 25px 0 25px;
+  @media (min-width: $screen-lg) {
+    padding: 72px 0 50px;
+  }
+  &__inner {
+    @include container;
+  }
+
+  &__types {
+    margin-top: 25px;
+    @media (min-width: $screen-lg) {
+      margin-top: 52px;
+    }
+    .types__description {
+      margin-top: -4px;
+    }
+
+    .types__link{
+      padding-top: 32px;
+    }
+
+    i {
+      color: $color-close;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    top: 0;
+    right: 0;
+  }
+}
