@@ -3,7 +3,7 @@
   display: none;
   overflow-x: hidden;
   overflow-y: auto;
-  height: 100vh;
+  height: auto;
   padding: 25px 30px;
   padding-bottom: 26px;
   background-color: #fff;
@@ -24,14 +24,6 @@
   &--small{
     max-width: 600px;
     width: 100%;
-    .modal__dialog {
-      margin-top: 50%;
-      transform: translateY(25%);
-      @media (min-width: $screen-md) {
-        margin-top: 0;
-        transform: none;
-      }
-    }
   }
 }
 
@@ -255,5 +247,20 @@
     @media (min-width: $screen-md) {
       font-size: 18px;
     }
+  }
+  // Виды туризма
+  &__add{
+    .jcf-scrollable-wrapper{
+      width: 100%;
+    }
+    .modal__content{
+      height: 700px;
+      width: 100% !important;
+    }
+  }
+
+  &__add-button{
+    margin: 25px auto 0;
+    font-weight: 400;
   }
 }

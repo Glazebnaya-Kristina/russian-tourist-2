@@ -29,16 +29,33 @@
 
     i {
       color: $color-close;
+      transition: $transition-time;
+    }
+  }
+
+  &__add{
+    &:hover{
+      i{
+        color: $black;
+      }
     }
   }
 
   &__close {
     position: absolute;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    font-size: 30px;
     top: 0;
     right: 0;
+    padding: 0;
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover,
+    &:focus{
+      outline: none;
+      i{
+        color: $color-gold;
+      }
+    }
   }
 }

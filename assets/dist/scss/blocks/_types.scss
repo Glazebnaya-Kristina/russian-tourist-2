@@ -65,7 +65,26 @@
   }
 
   &__img{
-    width: 88px;
+    width: 109px;
     height: 85px;
+  }
+
+  &--modal{
+    grid-template-rows: 250px;
+    margin-right: 27px;
+    @media (min-width: $screen-xl) {
+      grid-gap: 70px 57px;
+    }
+    #{$block-name}__item{
+      display: flex;
+      flex-direction: column;
+      max-height: none;
+    }
+    #{$block-name}__link{
+      padding: 25px 25px;
+      padding-top: 27px;
+      height: auto;
+      border-color: $color-blue;
+    }
   }
 }
