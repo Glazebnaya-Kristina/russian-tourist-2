@@ -167,11 +167,3 @@ document.addEventListener('DOMContentLoaded', function() {
       this.classList.remove('.modal__overlay--opened');
    });
 }); // end ready
-
-var btnOpenPersonalCabinet = document.querySelectorAll('.personal-cabinet');
-
-btnOpenPersonalCabinet.forEach(function (item) {
-   item.addEventListener('click', function () {
-      window.location.href='personal-area.html';
-   });
-});
