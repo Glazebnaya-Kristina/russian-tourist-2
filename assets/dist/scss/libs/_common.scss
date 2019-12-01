@@ -142,7 +142,8 @@ input[type="month"] {
 
 textarea {
   overflow: auto;   // Удаление верт. скролла в IE.
-  resize: vertical; // Правильное изменение размеров
+  //resize: vertical; // Правильное изменение размеров
+  resize: none;
 }
 
 svg {

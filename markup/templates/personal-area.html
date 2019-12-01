@@ -1504,7 +1504,7 @@
             </div>
         </div>
         <!-- Модальное окно Выбрать Вид спортивного туризма -->
-        <div class="popup popup--big modal__add" data-modal="add">
+        <div class="popup popup--big popup--hight modal__add" data-modal="add">
             <div class="modal__dialog">
                 <div class="modal__header modal__header--line">
                     <h3 class="modal__title">Виды спортивного туризма</h3>
@@ -1520,65 +1520,125 @@
               <img class="types__img" src="../img/trekking/foot.svg" alt="Тип похода">
               <span class="types__description">Пешеходный</span>
             </a>
-                            <button class="button button--blue button--xs-s modal__add-button">Выбрать</button>
+                            <button class="button button--blue modal__add-button">Выбрать</button>
                         </li>
                         <li class="types__item">
                             <a class="types__link" data-modal="ski">
               <img class="types__img" src="../img/trekking/sky.svg" alt="Тип похода">
               <span class="types__description">Лыжный</span>
             </a>
-                            <button class="button button--blue button--xs-s modal__add-button">Выбрать</button>
+                            <button class="button button--blue modal__add-button">Выбрать</button>
                         </li>
                         <li class="types__item">
                             <a class="types__link" data-modal="mountain">
               <img class="types__img" src="../img/trekking/mountain.svg" alt="Тип похода">
               <span class="types__description">Горный</span>
             </a>
-                            <button class="button button--blue button--xs-s modal__add-button">Выбрать</button>
+                            <button class="button button--blue modal__add-button">Выбрать</button>
                         </li>
                         <li class="types__item">
                             <a class="types__link" data-modal="water">
               <img class="types__img" src="../img/trekking/lodka.svg" alt="Тип похода">
               <span class="types__description">Водный</span>
             </a>
-                            <button class="button button--blue button--xs-s modal__add-button">Выбрать</button>
+                            <button class="button button--blue modal__add-button">Выбрать</button>
                         </li>
                         <li class="types__item">
                             <a class="types__link" data-modal="bicycle">
               <img class="types__img" src="../img/trekking/road.svg" alt="Тип похода">
               <span class="types__description">Велосипедный</span>
             </a>
-                            <button class="button button--blue button--xs-s modal__add-button">Выбрать</button>
+                            <button class="button button--blue modal__add-button">Выбрать</button>
                         </li>
                         <li class="types__item">
                             <a class="types__link" data-modal="avtomoto">
               <img class="types__img" src="../img/trekking/car.svg" alt="Тип похода">
               <span class="types__description">Автомото</span>
             </a>
-                            <button class="button button--blue button--xs-s modal__add-button">Выбрать</button>
+                            <button class="button button--blue modal__add-button">Выбрать</button>
                         </li>
                         <li class="types__item">
                             <a class="types__link" data-modal="speleo">
               <img class="types__img" src="../img/trekking/kirka.svg" alt="Тип похода">
               <span class="types__description">Спелео</span>
             </a>
-                            <button class="button button--blue button--xs-s modal__add-button">Выбрать</button>
+                            <button class="button button--blue modal__add-button">Выбрать</button>
                         </li>
                         <li class="types__item">
                             <a class="types__link" data-modal="sailing">
               <img class="types__img" src="../img/trekking/water.svg" alt="Тип похода">
               <span class="types__description">Парусный</span>
             </a>
-                            <button class="button button--blue button--xs-s modal__add-button">Выбрать</button>
+                            <button class="button button--blue modal__add-button">Выбрать</button>
                         </li>
                         <li class="types__item">
                             <a class="types__link" data-modal="equestrian">
               <img class="types__img" src="../img/trekking/animal.svg" alt="Тип похода">
               <span class="types__description">Конный</span>
             </a>
-                            <button class="button button--blue button--xs-s modal__add-button">Выбрать</button>
+                            <button class="button button--blue modal__add-button">Выбрать</button>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Модальное окно Создать поход -->
+        <div class="popup popup--big popup--hight modal__create-trip" data-modal="create-trip">
+            <div class="modal__dialog">
+                <div class="modal__header modal__header--line">
+                    <h3 class="modal__title">Создать поход</h3>
+                    <button class="modal__close close close--grey-dark close--icon" type="button">
+          <span class="close__description">Закрыть модальное окно</span>
+          <i class="icon-error"></i>
+        </button>
+                </div>
+                <div class="modal__content jcf-scrollable">
+                    <h2 class="title title--small title--line-grey">Информация</h2>
+                    <form action="#" class="form modal__create-trip-form">
+                        <fieldset class="form__fieldset">
+                            <legend class="form__legend modal__create-trip-legend">Личные данные</legend>
+                            <div class="modal__create-trip-wrapper-label">
+                                <label class="label">
+                <span class="label__name">Имя</span>
+                <input type="text" class="input" placeholder="Имя">
+              </label>
+                                <label class="label">
+                <span class="label__name">Город</span>
+                <input type="text" class="input" placeholder="Город">
+              </label>
+                                <label class="label">
+                <span class="label__name">Фамилия</span>
+                <input type="text" class="input" placeholder="Фамилия">
+              </label>
+                                <label class="label">
+                <span class="label__name">Возраст</span>
+                <input type="number" class="input" placeholder="Возраст">
+              </label>
+                                <label class="label">
+                <span class="label__name">О себе</span>
+                <textarea class="input" placeholder="О себе"></textarea>
+              </label>
+                                <span class="text-error">Ошибка...</span>
+                            </div>
+                            <button class="button button--blue button--modal modal__create-trip-save" type="submit">Сохранить</button>
+                        </fieldset>
+                    </form>
+                    <h2 class="title title--small title--line-grey modal__create-trip-subtitle">Смена пароля</h2>
+                    <form action="#" class="form modal__create-trip-form-pass">
+                        <fieldset class="form__fieldset">
+                            <legend class="form__legend">Смена пароля</legend>
+                            <label class="label">
+                <span class="label__name">Новый пароль</span>
+                <input type="password" class="input" placeholder="Новый пароль">
+              </label>
+                            <label class="label">
+                <span class="label__name">Повторите пароль</span>
+                <input type="password" class="input" placeholder="Повторите пароль">
+              </label>
+                            <span class="text-error">Ошибка...</span>
+                            <button class="button button--blue button--modal modal__create-trip-save" type="submit">Сменить</button>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>

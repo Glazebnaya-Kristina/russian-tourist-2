@@ -1,8 +1,9 @@
 .popup {
   z-index: 4;
   display: none;
-  overflow-x: hidden;
-  overflow-y: auto;
+  //overflow-x: hidden;
+  //overflow-y: auto;
+  overflow: hidden;
   height: auto;
   padding: 25px 30px;
   padding-bottom: 26px;
@@ -10,6 +11,13 @@
   border: 1px solid $color-gold;
   @media (min-width: $screen-md) {
     height: auto;
+  }
+
+  &--hight{
+    .modal__content{
+      height: 700px;
+      width: auto !important;
+    }
   }
 
   &--big{
@@ -97,7 +105,7 @@
   }
 
   &__dialog{
-    overflow-y: auto;
+    //overflow-y: auto;
   }
 
   &__content{
@@ -253,14 +261,83 @@
     .jcf-scrollable-wrapper{
       width: 100%;
     }
-    .modal__content{
-      height: 700px;
-      width: 100% !important;
-    }
+    //.modal__content{
+    //  height: 700px;
+    //  width: 100% !important;
+    //}
   }
 
   &__add-button{
     margin: 25px auto 0;
+    padding: 7px 25px;
     font-weight: 400;
   }
+
+  &__create-trip{
+    .modal__content{
+      padding: 0 10px;
+      @media (min-width: $screen-md) {
+        padding: 0 25px;
+      }
+      @media (min-width: $screen-xl) {
+        padding: 0 46px;
+      }
+    }
+  }
+
+  &__create-trip-form{
+    //margin-top: 10px;
+    margin-top: 60px;
+
+    .input{
+      padding-top: 21px;
+      padding-bottom: 21px;
+    }
+  }
+
+  &__create-trip-legend{
+    @include hide-text;
+  }
+
+  &__create-trip-wrapper-label{
+    display: grid;
+    grid-column-gap: 25px;
+    @media (min-width: $screen-md) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    textarea {
+      height: 134px;
+    }
+
+    .label{
+      margin-top: 25px;
+      &:last-of-type{
+        grid-column: 1 / -1;
+      }
+    }
+  }
+
+  &__create-trip-save{
+    margin-top: 30px;
+  }
+
+  &__create-trip-subtitle{
+    margin-top: 57px;
+  }
+
+  &__create-trip-form-pass{
+    max-width: 410px;
+    margin-top: 60px;
+    .form__legend{
+      @include hide-text;
+    }
+
+    .label{
+      &:not(:first-child){
+        margin-top: 25px;
+      }
+    }
+  }
 }
+

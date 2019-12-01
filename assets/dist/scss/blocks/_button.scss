@@ -118,6 +118,14 @@
     }
   }
 
+  &--modal{
+    padding: 7px 10px;
+    max-width: 180px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
   &--icon{
     display: flex;
     align-items: center;
