@@ -28,6 +28,12 @@
     background-color: #f6f1e8;
     border-radius: 50%;
   }
+
+  &--dark{
+    .active{
+      background-color: #e7e2d9;
+    }
+  }
 }
 
 

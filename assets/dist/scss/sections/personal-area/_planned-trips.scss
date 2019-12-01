@@ -1,0 +1,49 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+
+.planned-trips{
+  $block-name: &; // #{$block-name}__element
+
+  position: relative;
+  z-index: 1;
+  background-image: url("../img/personal-area/planned-trips-bg.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 30%;
+
+  @media (min-width: $screen-xl){
+    padding: 84px 0 98px;
+  }
+
+  &:after{
+    @include pseudo;
+    bottom: -206px;
+    z-index: -1;
+    left: 0;
+    display: none;
+    width: 388px;
+    height: 750px;
+    background-image: url("../img/personal-area/planned-trips-decor.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (min-width: $screen-lg){
+      display: block;
+    }
+  }
+
+  &__hike{
+    margin-top: 41px;
+  }
+
+  .hike__atricle{
+    background-color: $white;
+  }
+
+  &__pagination{
+    margin-top: 25px;
+    @media (min-width: $screen-xl){
+      margin-top: 64px;
+    }
+  }
+}

@@ -12,12 +12,16 @@
 @import "blocks/types";
 @import "blocks/hike";
 @import "blocks/pagination";
+@import "blocks/preview-article";
+@import "blocks/article-top";
 // поключения секций
 @import "sections/trekking/want-camping";
-@import "sections/trekking-articles";
+//@import "sections/trekking-articles";
 @import "sections/personal-area/user";
 @import "sections/personal-area/sports-tourism";
 @import "sections/personal-area/trekking-done";
+@import "sections/personal-area/planned-trips";
+@import "sections/personal-area/user-mentions";
 
 
 .personal-area{

@@ -7,7 +7,7 @@
 
   background-image: none;
   @media (min-width: $screen-xl){
-    padding: 34px 0 200px;
+    padding: 34px 0 98px;
   }
 
   &__inner{
@@ -20,5 +20,12 @@
 
   .hike__atricle{
     background-color: $white;
+  }
+
+  &__pagination{
+    margin-top: 25px;
+    @media (min-width: $screen-xl){
+      margin-top: 64px;
+    }
   }
 }

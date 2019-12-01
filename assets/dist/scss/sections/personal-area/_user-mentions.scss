@@ -1,0 +1,29 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+
+.user-mentions{
+  $block-name: &; // #{$block-name}__element
+
+
+  padding: 25px 0 50px;
+  background-image: url("../img/personal-area/user-mentions-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  @media (min-width: $screen-xl){
+    padding: 78px 0 168px;
+  }
+  @media (min-width: 1921px){
+    background-size: cover;
+  }
+  &__inner{
+    @include container;
+  }
+
+  &__preview-article{
+    margin-top: 20px;
+    @media (min-width: $screen-xl){
+      margin-top: 41px;
+    }
+  }
+}
