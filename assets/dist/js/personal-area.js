@@ -73,4 +73,16 @@ $(document).ready(function () {
          reader.readAsDataURL(input.files[0]);
       }
    });
+
+   var message = document.querySelectorAll('.message__top');
+
+   message.forEach(function (item) {
+      item.addEventListener('click', function () {
+         this.closest('.message__item').classList.toggle('message__item--active');
+      })
+   });
+
+   $('.message__top').bind('click', function(){
+      $(this).next('.message__wrapper').toggle('message__wrapper--active');
+   });
 });

@@ -119,7 +119,9 @@
                   <button class="link link--blue-g" type="button">Выход</button>
                 </li>
               </ul>
-              <button class="button button--blue user__button-create js-open-modal" type="button" data-modal="create-trip">Создать поход</button>
+              <button class="button button--blue user__button-create js-open-modal" type="button"
+                      data-modal="create-trip">Создать поход
+              </button>
             </div>
           </div>
           <div class="user__about-me-wrapper">
@@ -1256,7 +1258,7 @@
 <!-- /build -->
 
 <!-- Секция Модальны окна -->
-<section class="modal">
+<section class="modal modal--opened">
   <!--   Модальное окно РЕГЕСТРИЦИЯ -->
   <div class="popup popup--big modal__registration" data-modal="registration">
     <div class="modal__dialog">
@@ -1534,15 +1536,15 @@
         <form action="#" class="form modal__create-trip-form-pass">
           <fieldset class="form__fieldset">
             <legend class="form__legend">Смена пароля</legend>
-              <label class="label">
-                <span class="label__name">Новый пароль</span>
-                <input type="password" class="input" placeholder="Новый пароль">
-              </label>
-              <label class="label">
-                <span class="label__name">Повторите пароль</span>
-                <input type="password" class="input" placeholder="Повторите пароль">
-              </label>
-              <span class="text-error">Ошибка...</span>
+            <label class="label">
+              <span class="label__name">Новый пароль</span>
+              <input type="password" class="input" placeholder="Новый пароль">
+            </label>
+            <label class="label">
+              <span class="label__name">Повторите пароль</span>
+              <input type="password" class="input" placeholder="Повторите пароль">
+            </label>
+            <span class="text-error">Ошибка...</span>
             <button class="button button--blue button--modal modal__create-trip-save" type="submit">Сменить</button>
           </fieldset>
         </form>
@@ -1633,7 +1635,8 @@
               <input type="text" class="input-message" placeholder="Имя фамилия">
               <time datetime="2019-07-27">24.07.2019</time>
             </label>
-            <textarea class="input input--textarea modal__write-message-textarea" placeholder="Имя фамилия">Сообщение</textarea>
+            <textarea class="input input--textarea modal__write-message-textarea"
+                      placeholder="Имя фамилия">Сообщение</textarea>
             <span class="text-error">Ошибка...</span>
             <div class="modal__write-message-wrapper-action">
               <button class="button button--blue modal__write-message-save-submit" type="submit">Отправить</button>
@@ -1660,7 +1663,8 @@
       <div class="modal__content jcf-scrollable">
         <form action="#" class="form">
           <fieldset class="form__fieldset">
-            <legend class="form__legend create-trip__legend create-trip__legend--hidden">Организационные моменты</legend>
+            <legend class="form__legend create-trip__legend create-trip__legend--hidden">Организационные моменты
+            </legend>
             <ul class="form__list create-trip__organizational-list">
               <li class="form__list-item create-trip__wrapper-content">
                 <label class="label label--file-small">
@@ -1744,7 +1748,9 @@
             </ul>
           </fieldset>
           <fieldset class="form__fieldset create-trip__fieldset-more-info">
-            <legend class="form__legend create-trip__legend-foto create-trip__legend create-trip__legend--hidden">Дополнительная информация о походе</legend>
+            <legend class="form__legend create-trip__legend-foto create-trip__legend create-trip__legend--hidden">
+              Дополнительная информация о походе
+            </legend>
             <ul class="form__list create-trip__more-info-list">
               <li class="form__list-item">
                 <label class="label">
@@ -1846,6 +1852,207 @@
           </fieldset>
           <button class="button button--blue create-trip__button" type="submit">Сменить</button>
         </form>
+      </div>
+    </div>
+  </div>
+  <!-- Модальное окно Сообщение -->
+  <div class="popup popup--big popup--hight message popup--opened" data-modal="message">
+    <div class="modal__dialog">
+      <div class="modal__header modal__header--line">
+        <h3 class="modal__title">Сообщения</h3>
+        <button class="modal__close close close--grey-dark close--icon" type="button">
+          <span class="close__description">Закрыть модальное окно</span>
+          <i class="icon-error"></i>
+        </button>
+      </div>
+      <div class="modal__content jcf-scrollable">
+        <ul class="message__list">
+          <li class="message__item">
+            <article>
+              <header class="message__top">
+                <i class="icon-email"></i>
+                <p class="message__sender">Имя фамилия</p>
+                <time datetime="2019-07-27">27/07/2019</time>
+              </header>
+              <div class="message__wrapper">
+                <div class="message__body">
+                  <p class="message__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                    сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное
+                    заполнение шаблона, а также</p>
+                  <p class="message__wrapper-img">
+                    <img src="../img/foto-1.jpeg" alt="Фотография от пользователя">
+                    <img src="../img/foto-2.jpeg" alt="Фотография от пользователя">
+                    <img src="../img/foto-3.jpeg" alt="Фотография от пользователя">
+                  </p>
+                </div>
+                <footer class="message__footer">
+                  <form action="/" class="form message__form">
+                    <div class="message__wrapper-label">
+                      <label class="label">
+                        <textarea class="input input--textarea" placeholder="Ответить"></textarea>
+                      </label>
+                      <div class="message__wrapper-action">
+                        <button type="button" class="button button--blue message__button">Ответить</button>
+                        <div class="smile">
+                          <button type="button" class="smile__button"><i class="icon-smile"></i></button>
+                        </div>
+                        <input type="file">
+                      </div>
+                    </div>
+                  </form>
+                </footer>
+              </div>
+            </article>
+          </li>
+          <li class="message__item">
+            <article>
+              <header class="message__top">
+                <i class="icon-email"></i>
+                <p class="message__sender">Имя фамилия</p>
+                <time datetime="2019-07-27">27/07/2019</time>
+              </header>
+              <div class="message__wrapper">
+                <div class="message__body">
+                  <p class="message__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                    сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное
+                    заполнение шаблона, а также</p>
+                  <p class="message__wrapper-img">
+                    <img src="../img/foto-1.jpeg" alt="Фотография от пользователя">
+                    <img src="../img/foto-2.jpeg" alt="Фотография от пользователя">
+                    <img src="../img/foto-3.jpeg" alt="Фотография от пользователя">
+                  </p>
+                </div>
+                <footer class="message__footer">
+                  <form action="/" class="form message__form">
+                    <div class="message__wrapper-label">
+                      <label class="label">
+                        <textarea class="input input--textarea" placeholder="Ответить"></textarea>
+                      </label>
+                      <div class="message__wrapper-action">
+                        <button type="button" class="button button--blue message__button">Ответить</button>
+                        <div class="smile">
+                          <button type="button" class="smile__button"><i class="icon-smile"></i></button>
+                        </div>
+                        <input type="file">
+                      </div>
+                    </div>
+                  </form>
+                </footer>
+              </div>
+            </article>
+          </li>
+          <li class="message__item">
+            <article>
+              <header class="message__top">
+                <i class="icon-email"></i>
+                <p class="message__sender">Имя фамилия</p>
+                <time datetime="2019-07-27">27/07/2019</time>
+              </header>
+              <div class="message__wrapper">
+                <div class="message__body">
+                  <p class="message__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                    сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное
+                    заполнение шаблона, а также</p>
+                  <p class="message__wrapper-img">
+                    <img src="../img/foto-1.jpeg" alt="Фотография от пользователя">
+                    <img src="../img/foto-2.jpeg" alt="Фотография от пользователя">
+                    <img src="../img/foto-3.jpeg" alt="Фотография от пользователя">
+                  </p>
+                </div>
+                <footer class="message__footer">
+                  <form action="/" class="form message__form">
+                    <div class="message__wrapper-label">
+                      <label class="label">
+                        <textarea class="input input--textarea" placeholder="Ответить"></textarea>
+                      </label>
+                      <div class="message__wrapper-action">
+                        <button type="button" class="button button--blue message__button">Ответить</button>
+                        <div class="smile">
+                          <button type="button" class="smile__button"><i class="icon-smile"></i></button>
+                        </div>
+                        <input type="file">
+                      </div>
+                    </div>
+                  </form>
+                </footer>
+              </div>
+            </article>
+          </li>
+          <li class="message__item">
+            <article>
+              <header class="message__top">
+                <i class="icon-email"></i>
+                <p class="message__sender">Имя фамилия</p>
+                <time datetime="2019-07-27">27/07/2019</time>
+              </header>
+              <div class="message__wrapper">
+                <div class="message__body">
+                  <p class="message__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                    сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное
+                    заполнение шаблона, а также</p>
+                  <p class="message__wrapper-img">
+                    <img src="../img/foto-1.jpeg" alt="Фотография от пользователя">
+                    <img src="../img/foto-2.jpeg" alt="Фотография от пользователя">
+                    <img src="../img/foto-3.jpeg" alt="Фотография от пользователя">
+                  </p>
+                </div>
+                <footer class="message__footer">
+                  <form action="/" class="form message__form">
+                    <div class="message__wrapper-label">
+                      <label class="label">
+                        <textarea class="input input--textarea" placeholder="Ответить"></textarea>
+                      </label>
+                      <div class="message__wrapper-action">
+                        <button type="button" class="button button--blue message__button">Ответить</button>
+                        <div class="smile">
+                          <button type="button" class="smile__button"><i class="icon-smile"></i></button>
+                        </div>
+                        <input type="file">
+                      </div>
+                    </div>
+                  </form>
+                </footer>
+              </div>
+            </article>
+          </li>
+          <li class="message__item">
+            <article>
+              <header class="message__top">
+                <i class="icon-email"></i>
+                <p class="message__sender">Имя фамилия</p>
+                <time datetime="2019-07-27">27/07/2019</time>
+              </header>
+              <div class="message__wrapper">
+                <div class="message__body">
+                  <p class="message__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                    сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное
+                    заполнение шаблона, а также</p>
+                  <p class="message__wrapper-img">
+                    <img src="../img/foto-1.jpeg" alt="Фотография от пользователя">
+                    <img src="../img/foto-2.jpeg" alt="Фотография от пользователя">
+                    <img src="../img/foto-3.jpeg" alt="Фотография от пользователя">
+                  </p>
+                </div>
+                <footer class="message__footer">
+                  <form action="/" class="form message__form">
+                    <div class="message__wrapper-label">
+                      <label class="label">
+                        <textarea class="input input--textarea" placeholder="Ответить"></textarea>
+                      </label>
+                      <div class="message__wrapper-action">
+                        <button type="button" class="button button--blue message__button">Ответить</button>
+                        <div class="smile">
+                          <button type="button" class="smile__button"><i class="icon-smile"></i></button>
+                        </div>
+                        <input type="file">
+                      </div>
+                    </div>
+                  </form>
+                </footer>
+              </div>
+            </article>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

@@ -768,6 +768,226 @@
       padding: 6px 10px;
     }
   }
+
+  //  Модальное окно Сообщение
+  .message{
+
+    &__wrapper{
+      display: none;
+
+      &--active{
+        display: block;
+      }
+    }
+    .modal__content{
+      margin-top: 13px;
+      padding-right: 25px;
+      @media (min-width: $screen-md) {
+        padding: 0 50px 0 49px;
+      }
+    }
+    &__list{
+      @include ul-reset;
+    }
+
+    &__item{
+      //margin: -1px 0;
+      //border-top: 1px solid rgba(#a7a6af, .3);
+      border-bottom: 1px solid rgba(#a7a6af, .3);
+      &:first-child{
+        //border-top: none;
+      }
+      //&:last-child{
+      //  border-bottom: 1px solid rgba(#a7a6af, .3);
+      //}
+      &--active{
+        border: none;
+      }
+    }
+
+    &__top{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 23px 0;
+      cursor: pointer;
+
+      &:hover{
+        i,
+        .message__sender{
+          color: $color-blue;
+        }
+      }
+
+      i{
+        font-size: 25px;
+        color: $text-color-gray-light;
+        transition: $transition-time;
+        @media (min-width: $screen-md) {
+          font-size: 45px;
+        }
+      }
+
+      time{
+        display: block;
+        width: 100%;
+        text-align: right;
+        margin-left: auto;
+        font-size: 14px;
+        color: $text-color-gray-light;
+        @media (min-width: $screen-md) {
+          display: inline-block;
+          width: auto;
+          font-size: 18px;
+        }
+      }
+    }
+
+    &__sender{
+      margin-left: 15px;
+      font-family: 'Cormorant Garamond';
+      font-weight: 400;
+      font-size: 18px;
+      transition: $transition-time;
+      @media (min-width: $screen-md) {
+        margin-left: 15px;
+        font-size: 20px;
+      }
+      @media (min-width: $screen-xl) {
+        margin-left: 32px;
+        font-size: 30px;
+      }
+    }
+
+    &__text{
+      color: $text-color-brown;
+    }
+
+    &__body,
+    &__footer{
+      margin-left: 6px;
+      @media (min-width: $screen-md) {
+        margin-left: 80px;
+      }
+      @media (min-width: $screen-xl) {
+        margin-left: 96px;
+      }
+    }
+
+    &__body{
+      margin-top: -6px;
+    }
+
+    &__footer{
+      margin-top: 35px;
+    }
+
+    &__wrapper-img{
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -15px;
+      img{
+        object-fit: cover;
+        object-position: center center;
+        width: 50px;
+        height: 40px;
+        margin-left: 15px;
+        margin-top: 15px;
+        @media (min-width: $screen-md) {
+          width: 87px;
+          height: 79px;
+        }
+      }
+    }
+
+    &__form{
+      textarea{
+        height: 178px;
+        padding: 10px;
+      }
+    }
+
+    &__wrapper-action{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap-reverse;
+      margin-top: 29px;
+      @media (min-width: $screen-md) {
+        flex-wrap: nowrap;
+      }
+    }
+    /* file */
+    .jcf-file {
+      display: inline-block;
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+    }
+    .jcf-file .jcf-real-element {
+      position: absolute;
+      font-size: 200px;
+      height: 200px;
+      margin: 0;
+      right: 0;
+      top: 0;
+      &:hover,
+      &:focus{
+        .jcf-upload-button{
+          i{
+            color: red;
+          }
+        }
+      }
+    }
+
+    .jcf-file .jcf-fake-input {
+      text-overflow:ellipsis;
+      white-space: nowrap;
+      vertical-align: top;
+      overflow: hidden;
+      border: 1px solid #777;
+      padding: 0 8px;
+      font-size: 13px;
+      line-height: 28px;
+      height: 28px;
+      width: 125px;
+      display: none;
+    }
+
+    .jcf-button-content-my{
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      white-space: nowrap;
+      i{
+        font-size: 20px;
+        color: $color-grey-light;
+      }
+
+    }
+    .jcf-file .jcf-upload-button {
+      display: inline-block;
+      vertical-align: top;
+      white-space: nowrap;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .smile {
+      margin-left: 10px;
+    }
+    .jcf-file {
+      margin-left: 10px;
+    }
+
+    &__button{
+      padding: 7px 10px;
+      max-width: 180px;
+      width: 100%;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
 }
 
 
