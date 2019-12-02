@@ -41,7 +41,8 @@ module.exports = function (grunt) {
                '../markup/js/advice.min.js': ['dist/js/advice.js'],
                '../markup/js/selected-hike.min.js': ['dist/js/selected-hike.js'],
                '../markup/js/subscription.min.js': ['dist/js/subscription.js'],
-               '../markup/js/personal-area.min.js': ['dist/js/personal-area.js']
+               '../markup/js/personal-area.min.js': ['dist/js/personal-area.js'],
+               '../markup/js/developments.min.js': ['dist/js/developments.js']
             }
          }
       },

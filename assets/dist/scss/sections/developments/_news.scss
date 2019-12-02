@@ -1,0 +1,28 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+.news{
+  $block-name: &; // #{$block-name}__element
+
+  padding: 25px 0 25px;
+  background-image: url("../img/developments/news-bg2.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  @media (min-width: $screen-md) {
+    padding: 50px 0 50px;
+  }
+  @media (min-width: $screen-xl) {
+    padding: 96px 0 108px;
+    background-position: center bottom;
+  }
+
+  &__inner{
+    @include container;
+  }
+
+
+  &__pagination{
+    margin-top: 72px;
+  }
+}

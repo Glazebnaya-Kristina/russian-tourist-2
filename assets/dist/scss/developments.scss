@@ -1,0 +1,37 @@
+//developments
+// поключения библиотек
+@import "helper/container-mixins";
+@import "helper/variables";
+@import "helper/mixins";
+// стили шаблонов
+@import "libs/header-inner";
+@import "libs/footer";
+//@import "libs/jcf-scrollbar";
+//@import "libs/jcf-select";
+//@import "libs/jcf-checkbox";
+// подключениея блоков
+@import "blocks/pagination";
+@import "blocks/tidings";
+//@import "blocks/types";
+//@import "blocks/hike";
+//@import "blocks/preview-article";
+//@import "blocks/article-top";
+//@import "blocks/smile";
+//@import "blocks/difficulty-category";
+// поключения секций
+//@import "sections/trekking/want-camping";
+//@import "sections/trekking-articles";
+//@import "sections/personal-area/user";
+//@import "sections/personal-area/sports-tourism";
+//@import "sections/personal-area/trekking-done";
+//@import "sections/personal-area/planned-trips";
+//@import "sections/personal-area/user-mentions";
+@import "sections/developments/news";
+
+
+
+
+//@media (min-width: $screen-sm) {}
+//@media (min-width: $screen-md) {}
+//@media (min-width: $screen-lg) {}
+//@media (min-width: $screen-xl) {}
