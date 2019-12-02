@@ -987,6 +987,10 @@
       font-size: 14px;
       font-weight: 400;
     }
+
+    &__title{
+      @include hide-text;
+    }
   }
 }
 
