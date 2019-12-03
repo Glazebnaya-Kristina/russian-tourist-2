@@ -32,6 +32,11 @@ $(document).ready(function () {
       mouseWheelStep: 15
    });
 
+   // jcf.setOptions('Select', {
+   //    useCustomScroll: false,
+   //    maxVisibleItems: 4
+   // });
+
    jcf.replaceAll();
 
    // $('input[id="radio-7"]').change(function () {

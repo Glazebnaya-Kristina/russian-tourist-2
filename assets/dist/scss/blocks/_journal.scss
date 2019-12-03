@@ -22,8 +22,10 @@
     width: 250px;
     @media (min-width: $screen-md) {
       width: 240px;
-      height: auto;
       margin-bottom: -29px;
+    }
+    @media (min-width: $screen-lg) {
+      height: auto;
     }
   }
 
@@ -59,17 +61,20 @@
   }
 
   &__field{
-    font-size: 18px;
+    font-size: 14px;
+    @media (min-width: $screen-md) {
+      font-size: 18px;
+    }
   }
 
   &__value{
     margin-left: auto;
-    font-size: 22px;
+    font-size: 18px;
     color: $color-blue;
     line-height: 22px;
     border-bottom: 1px solid rgba($color-blue,0.5);
     @media (min-width: $screen-md) {
-      font-size: 26px;
+      font-size: 22px;
       line-height: 26px;
     }
     @media (min-width: $screen-xl) {
@@ -80,8 +85,12 @@
 
   &__delivery{
     position: absolute;
-    bottom: -25px;
-    font-size: 14px;
     color: #bababa;
+    bottom: -17px;
+    font-size: 9px;
+    @media (min-width: $screen-md) {
+      bottom: -25px;
+      font-size: 14px;
+    }
   }
 }

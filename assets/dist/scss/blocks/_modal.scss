@@ -6,12 +6,14 @@
   //overflow: hidden;
   height: auto;
   //padding: 25px 30px;
-  padding: 11px 30px;
+  padding: 11px 15px;
   //padding-bottom: 26px;
   padding-bottom: 30px;
   background-color: #fff;
   border: 1px solid $color-gold;
   @media (min-width: $screen-md) {
+    padding: 11px 30px;
+    padding-bottom: 30px;
     height: auto;
   }
 
@@ -989,6 +991,17 @@
 
 //  Модальное окно Скачать pdf журнала
 .download-pdf{
+  .modal__content{
+    margin-top: 13px;
+    padding-right: 25px;
+    height: 500px;
+    overflow: auto;
+    @media (min-width: $screen-md) {
+      padding-right: 25px;
+      height: auto;
+      overflow: visible;
+    }
+  }
   &__button{
     margin: 0 auto;
     margin-top: 35px;
@@ -1109,9 +1122,12 @@
       margin-top: 57px;
     }
     .form__legend{
-      font-size: 20px;
+      font-size: 16px;
       color: $text-color-gray-dark3;
       font-weight: 400;
+      @media (min-width: $screen-md) {
+        font-size: 20px;
+      }
     }
   }
 
@@ -1124,10 +1140,13 @@
   &__list{
     @include ul-reset;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px 15px;
     margin-top: 21px;
-    padding-left: 39px;
+    @media (min-width: $screen-md) {
+      grid-template-columns: 1fr 1fr;
+      padding-left: 39px;
+    }
     @media (min-width: $screen-xl) {
       grid-gap: 43px 80px;
     }
@@ -1174,6 +1193,9 @@
   &__pickup{
     width: 100%;
     margin-top: 28px;
+    @media (min-width: $screen-xl) {
+      padding-right: 39px;
+    }
     //display: none;
 
     //&--active{

@@ -458,27 +458,29 @@
           <i class="icon-error"></i>
         </button>
       </div>
-      <div class="modal__content journal">
-        <img src="../img/subscription/book-1.png" class="journal__img" alt="Фотография журнала">
-        <div class="journal__content">
-          <p class="journal__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et
-            dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus
-            vel facilisis. </p>
-          <p class="journal__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et
-            dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus
-            vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices</p>
-          <p class="journal__cost">
-            <span class="journal__field">Стоимость выпуска:</span>
-            <span class="journal__value">375р</span>
-          </p>
+      <div class="modal__content">
+        <div class="journal">
+          <img src="../img/subscription/book-1.png" class="journal__img" alt="Фотография журнала">
+          <div class="journal__content">
+            <p class="journal__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et
+              dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus
+              vel facilisis. </p>
+            <p class="journal__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et
+              dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus
+              vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Quis ipsum suspendisse ultrices</p>
+            <p class="journal__cost">
+              <span class="journal__field">Стоимость выпуска:</span>
+              <span class="journal__value">375р</span>
+            </p>
+          </div>
         </div>
+        <button class="button button--blue button--middle download-pdf__button js-open-modal" type="button"
+                data-modal="buy-print-journal">Купить
+        </button>
       </div>
-      <button class="button button--blue button--middle download-pdf__button js-open-modal" type="button"
-              data-modal="buy-print-journal">Купить
-      </button>
     </div>
   </div>
   <!-- Модальное окно Краткое описание выпуска  -->
@@ -653,7 +655,7 @@
                 <div class="buy-print-journal__pickup">
                   <label class="label buy-print-journal__extradition-list">
                     <select class="select subscription__input"
-                            data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                            data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "maxVisibleItems": 5}'>
                       <option value="" style="display:none">Выберите пункт выдачи</option>
                       <option value="1">Библиотека ФСТ-ОТМ на Таганке (ул. Солженицына, д. 17, стр. 1,
                         ВТ-ЧТ, 17.00-20.00).
@@ -662,13 +664,13 @@
                       <option value="3">Самовывоз по адресу: 1-ый Дербеневский переулок, 5.</option>
                       <option value="4">Революционный просп., 80/42, Подольск.</option>
                       <option value="5">Самовывоз по адресу: 1-ый Дербеневский переулок, 5.</option>
-                      <option value="6">Революционный просп., 80/42, Подольск.</option>
-                      <option value="7">Революционный просп., 80/42, Подольск.</option>
-                      <option value="8">Самовывоз по адресу: 1-ый Дербеневский переулок, 5.</option>
-                      <option value="9">Революционный просп., 80/42, Подольск.</option>
-                      <option value="10">Революционный просп., 80/42, Подольск.</option>
-                      <option value="11">Самовывоз по адресу: 1-ый Дербеневский переулок, 5.</option>
-                      <option value="12">Революционный просп., 80/42, Подольск.</option>
+<!--                      <option value="6">Революционный просп., 80/42, Подольск.</option>-->
+<!--                      <option value="7">Революционный просп., 80/42, Подольск.</option>-->
+<!--                      <option value="8">Самовывоз по адресу: 1-ый Дербеневский переулок, 5.</option>-->
+<!--                      <option value="9">Революционный просп., 80/42, Подольск.</option>-->
+<!--                      <option value="10">Революционный просп., 80/42, Подольск.</option>-->
+<!--                      <option value="11">Самовывоз по адресу: 1-ый Дербеневский переулок, 5.</option>-->
+<!--                      <option value="12">Революционный просп., 80/42, Подольск.</option>-->
                     </select>
                   </label>
                 </div>
