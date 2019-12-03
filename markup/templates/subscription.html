@@ -106,7 +106,7 @@
                             <a href="/" class="js-open-modal" data-modal="release-summary">
               <img src="../img/subscription/book-1.png" alt="Фотографии издания">
             </a>
-                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button">Купить
+                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button" data-modal="buy-print-journal">Купить
               выпуск
             </button>
                             <button class="subscription__btn-download js-open-modal" type="button" data-modal="download-pdf">Скачать
@@ -117,7 +117,7 @@
                             <a href="/" class="js-open-modal" data-modal="release-summary">
               <img src="../img/subscription/book-2.png" alt="Фотографии издания">
             </a>
-                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button">Купить
+                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button" data-modal="buy-print-journal">Купить
               выпуск
             </button>
                             <button class="subscription__btn-download js-open-modal" type="button" data-modal="download-pdf">Скачать
@@ -128,7 +128,7 @@
                             <a href="/" class="js-open-modal" data-modal="release-summary">
               <img src="../img/subscription/book-1.png" alt="Фотографии издания">
             </a>
-                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button">Купить
+                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button" data-modal="buy-print-journal">Купить
               выпуск
             </button>
                             <button class="subscription__btn-download js-open-modal" type="button" data-modal="download-pdf">Скачать
@@ -139,7 +139,7 @@
                             <a href="/" class="js-open-modal" data-modal="release-summary">
               <img src="../img/subscription/book-2.png" alt="Фотографии издания">
             </a>
-                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button">Купить
+                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button" data-modal="buy-print-journal">Купить
               выпуск
             </button>
                             <button class="subscription__btn-download js-open-modal" type="button" data-modal="download-pdf">Скачать
@@ -150,7 +150,7 @@
                             <a href="/" class="js-open-modal" data-modal="release-summary">
               <img src="../img/subscription/book-1.png" alt="Фотографии издания">
             </a>
-                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button">Купить
+                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button" data-modal="buy-print-journal">Купить
               выпуск
             </button>
                             <button class="subscription__btn-download js-open-modal" type="button" data-modal="download-pdf">Скачать
@@ -161,7 +161,7 @@
                             <a href="/" class="js-open-modal" data-modal="release-summary">
               <img src="../img/subscription/book-2.png" alt="Фотографии издания">
             </a>
-                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button">Купить
+                            <button class="button button--blue button--xs js-open-modal subscription__btn-buy" type="button" data-modal="buy-print-journal">Купить
               выпуск
             </button>
                             <button class="subscription__btn-download js-open-modal" type="button" data-modal="download-pdf">Скачать
@@ -186,7 +186,8 @@
             <option value="value10">Название журнала</option>
           </select>
         </label>
-                    <a href="../img/logo.png" class="button button--blue button--uppercase subscription__form-download" download>Скачать PDF</a>
+                    <a href="../img/logo.png" class="button button--blue button--uppercase subscription__form-download" download>Скачать
+          PDF</a>
                 </form>
             </div>
         </section>
@@ -640,6 +641,130 @@
                 </div>
             </div>
         </div>
+        <!-- Модальное окно Купить печатный журнал  -->
+        <div class="popup popup--big popup--hight buy-print-journal" data-modal="buy-print-journal">
+            <div class="modal__dialog">
+                <div class="modal__header modal__header--line">
+                    <h3 class="modal__title">Купить печатный журнал</h3>
+                    <button class="modal__close close close--grey-dark close--icon" type="button">
+          <span class="close__description">Закрыть модальное окно</span>
+          <i class="icon-error"></i>
+        </button>
+                </div>
+                <div class="modal__content jcf-scrollable">
+                    <div class="journal">
+                        <img src="../img/subscription/book-1.png" class="journal__img" alt="Фотография журнала">
+                        <div class="journal__content">
+                            <p class="journal__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                                </p>
+                            <p class="journal__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices</p>
+                            <p class="journal__cost">
+                                <span class="journal__field">Стоимость выпуска:</span>
+                                <span class="journal__value">500р</span>
+                                <span class="journal__delivery">Не включает в себя стоимость доставки</span>
+                            </p>
+                        </div>
+                    </div>
+                    <form action="/" class="form buy-print-journal__form">
+                        <fieldset class="form__fieldset">
+                            <legend class="form__legend">Заполните адрес доставки</legend>
+                            <div class="form__wrapper-label">
+                                <label class="label">
+                <span class="label__name">Страна</span>
+                <input type="text" class="input" placeholder="Страна">
+              </label>
+                                <label class="label">
+                <span class="label__name">Город</span>
+                <input type="text" class="input" placeholder="Город">
+              </label>
+                                <label class="label">
+                <span class="label__name">Фамилия Имя Очество</span>
+                <input type="text" class="input" placeholder="ФИО">
+              </label>
+                                <label class="label">
+                <span class="label__name">E-mail</span>
+                <input type="email" class="input" placeholder="E-mail">
+              </label>
+                                <label class="label">
+                <span class="label__name">Телефон</span>
+                <input type="tel" class="input" placeholder="Телефон">
+              </label>
+                                <label class="label">
+                <span class="label__name">Почтовый индекс</span>
+                <input type="number" class="input" placeholder="Почтовый индекс">
+              </label>
+                                <label class="label">
+                <span class="label__name">Адрес</span>
+                <input type="text" class="input" placeholder="Адрес">
+              </label>
+                                <span class="text-error">Ошибка...</span>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form__fieldset">
+                            <legend class="form__legend">Способ доставки:</legend>
+                            <ul class="buy-print-journal__list">
+                                <li class="buy-print-journal__item">
+                                    <input type="radio" id="radio-1" name="delivery">
+                                    <label for="radio-1">Почта России</label>
+                                </li>
+                                <li class="buy-print-journal__item">
+                                    <input type="radio" id="radio-2" name="delivery">
+                                    <label for="radio-2">Другой способ доставки</label>
+                                </li>
+                                <li class="buy-print-journal__item buy-print-journal__item--disabled">
+                                    <input type="radio" id="radio-3" name="delivery" disabled>
+                                    <label class="buy-print-journal__label" for="radio-3">
+                  <span>Курьерская доставка</span>
+                  <span class="buy-print-journal__disabled">( пока не доступно )</span>
+                </label>
+                                    <!--                <p class="buy-print-journal__disabled">( пока не доступно )</p>-->
+                                </li>
+                                <li class="buy-print-journal__item">
+                                    <input type="radio" id="radio-4" name="delivery">
+                                    <label for="radio-4">Другой способ доставки</label>
+                                </li>
+                                <li class="buy-print-journal__item">
+                                    <input type="radio" id="radio-5" name="delivery">
+                                    <label for="radio-5">Другой способ доставки</label>
+                                </li>
+                                <li class="buy-print-journal__item">
+                                    <input type="radio" id="radio-6" name="delivery">
+                                    <label for="radio-6">Другой способ доставки</label>
+                                </li>
+                                <li class="buy-print-journal__item">
+                                    <input type="radio" id="radio-7" name="delivery">
+                                    <label for="radio-7">Самовывоз</label>
+                                    <div class="buy-print-journal__pickup">
+                                        <label class="label buy-print-journal__extradition-list">
+                    <select class="select subscription__input"
+                            data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                      <option value="" style="display:none">Выберите пункт выдачи</option>
+                      <option value="1">Библиотека ФСТ-ОТМ на Таганке (ул. Солженицына, д. 17, стр. 1,
+                        ВТ-ЧТ, 17.00-20.00).
+                      </option>
+                      <option value="2">Центральныймагазин «Альпиндустрии» (Первомайская, д. 18).</option>
+                      <option value="3">Самовывоз по адресу: 1-ый Дербеневский переулок, 5.</option>
+                      <option value="4">Революционный просп., 80/42, Подольск.</option>
+                      <option value="5">Самовывоз по адресу: 1-ый Дербеневский переулок, 5.</option>
+                      <option value="6">Революционный просп., 80/42, Подольск.</option>
+                      <option value="7">Революционный просп., 80/42, Подольск.</option>
+                      <option value="8">Самовывоз по адресу: 1-ый Дербеневский переулок, 5.</option>
+                      <option value="9">Революционный просп., 80/42, Подольск.</option>
+                      <option value="10">Революционный просп., 80/42, Подольск.</option>
+                      <option value="11">Самовывоз по адресу: 1-ый Дербеневский переулок, 5.</option>
+                      <option value="12">Революционный просп., 80/42, Подольск.</option>
+                    </select>
+                  </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <button class="button button--blue button--middle buy-print-journal__button" type="button">Купить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
 
         <!-- Подложка под модальным окном -->
@@ -654,6 +779,7 @@
     <script src="../js/jcf.select.min.js"></script>
     <script src="../js/jcf.scrollable.min.js"></script>
     <script src="../js/jcf.checkbox.min.js"></script>
+    <script src="../js/jcf.radio.min.js"></script>
     <script src="../js/script.min.js"></script>
     <script src="../js/subscription.min.js"></script>
 

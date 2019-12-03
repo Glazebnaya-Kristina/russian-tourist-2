@@ -29,6 +29,7 @@ module.exports = function (grunt) {
                '../markup/js/jcf.select.min.js': ['dist/js/plugin/jcf.select.js'],
                '../markup/js/jcf.file.min.js': ['dist/js/plugin/jcf.file.js'],
                '../markup/js/jcf.checkbox.min.js': ['dist/js/plugin/jcf.checkbox.js'],
+               '../markup/js/jcf.radio.min.js': ['dist/js/plugin/jcf.radio.js'],
                '../markup/js/jcf.min.js': ['dist/js/plugin/jcf.js'],
                // '../markup/js/daygrid/main.min.js': ['dist/js/plugin/daygrid/main.js'],
                // '../markup/js/core/main.min.js': ['dist/js/plugin/core/main.js'],

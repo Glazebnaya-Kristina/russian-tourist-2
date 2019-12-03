@@ -49,6 +49,7 @@
   }
 
   &__cost{
+    position: relative;
     display: flex;
     align-items: flex-end;
     margin-top: 12px;
@@ -75,5 +76,12 @@
       font-size: 34px;
       line-height: 34px;
     }
+  }
+
+  &__delivery{
+    position: absolute;
+    bottom: -25px;
+    font-size: 14px;
+    color: #bababa;
   }
 }

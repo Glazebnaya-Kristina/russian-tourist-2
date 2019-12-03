@@ -27,9 +27,20 @@ $(document).ready(function () {
       ]
    });
 
-   jcf.replaceAll();
    jcf.setOptions('Scrollable', {
-      alwaysPreventMouseWheel: true,
+      alwaysPreventMouseWheel: false,
       mouseWheelStep: 15
    });
+
+   jcf.replaceAll();
+
+   // $('input[id="radio-7"]').change(function () {
+   //    if ($(this).prop('checked', true)) {
+   //       $('.buy-print-journal__pickup').css("display", "block")
+   //    } else if ($(this).prop('checked', false)) {
+   //       $('.buy-print-journal__pickup').css("display", "none")
+   //    }
+   // });
+
+
 });
