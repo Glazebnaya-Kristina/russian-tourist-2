@@ -1,0 +1,42 @@
+@import "../helper/variables";
+@import "../helper/mixins";
+
+
+.zoom{
+  $block-name: &; // #{$block-name}__element
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: $color-grey-input-textarea;
+
+
+  &__button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+    width: 22px;
+    padding: 0;
+    font-size: 15px;
+    line-height: 15px;
+    border: 1px solid $color-grey-input-textarea;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover{
+      color: $color-gold;
+      border: 1px solid $color-gold;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+
+  .icon-search{
+    margin: 0 33px;
+    font-size: 25px;
+  }
+
+}

@@ -1,5 +1,12 @@
 $(document).ready(function () {
 
+   jcf.setOptions('Scrollable', {
+      alwaysPreventMouseWheel: false,
+      mouseWheelStep: 15
+   });
+
+   jcf.replaceAll();
+
    $('.archive-edition__list').slick({
       centerMode: true,
       centerPadding: '0',
@@ -72,9 +79,9 @@ $(document).ready(function () {
       ]
    });
 
-   $('.archive-edition__list .fancybox-link').fancybox({
-      backFocus: false
-   });
+   // $('.archive-edition__list .fancybox-link').fancybox({
+   //    backFocus: false
+   // });
 
 
    var assistants = $('.carousel-3D__list');
@@ -99,4 +106,15 @@ $(document).ready(function () {
       dots: false
    });
 
+
+   $('.photo-description__wrapper-img').zoom({ on:'grab' });
+
 });
+
+var map = document.querySelector('.photo-description__img');
+var scale = 1;
+function resizeMap(x){
+   scale*=x; // изменяем коэффициент масштаба
+   map.style.width = 1000*scale+'px'; // 1000 и 700 - начальные размеры при масштабе х1
+   map.style.height = 750*scale+'px'; // получаем нужные размеры под текущий масштаб
+}

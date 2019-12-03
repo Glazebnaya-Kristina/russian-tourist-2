@@ -66,7 +66,7 @@
               </a>
                             </li>
                         </ul>
-                        <button class="button button--border-transparent button--xs header__social-mobile-cabinet" type="button">
+                        <button class="button button--border-transparent button--xs header__social-mobile-cabinet js-open-modal" type="button" data-modal="registration">
             Личный кабинет
           </button>
                     </div>
@@ -132,33 +132,64 @@
             <div class="archive-edition__content">
                 <div class="archive-edition__wrapper-carousel">
                     <ul class="archive-edition__list">
+                        <!--          <li>-->
+                        <!--            <a data-caption="Заголовок" class="fancybox-link" href="../img/about-edition/edition-img-2.png" data-fancybox="gallery">-->
+                        <!--              <img src="../img/about-edition/edition-img-2.png" alt="Архив издания картинка">-->
+                        <!--            </a>-->
+                        <!--          </li>-->
+                        <!--          <li>-->
+                        <!--            <a class="fancybox-link" href="../img/about-edition/archive-edition-2.png" data-fancybox="gallery">-->
+                        <!--              <img src="../img/about-edition/archive-edition-2.png" alt="Архив издания картинка">-->
+                        <!--            </a>-->
+                        <!--          </li>-->
+                        <!--          <li>-->
+                        <!--            <a class="fancybox-link" href="../img/about-edition/archive-edition-1.png" data-fancybox="gallery">-->
+                        <!--              <img src="../img/about-edition/archive-edition-1.png" alt="Архив издания картинка">-->
+                        <!--            </a>-->
+                        <!--          </li>-->
+                        <!--          <li>-->
+                        <!--            <a class="fancybox-link" href="../img/about-edition/archive-edition-2.png" data-fancybox="gallery">-->
+                        <!--              <img src="../img/about-edition/archive-edition-2.png" alt="Архив издания картинка">-->
+                        <!--            </a>-->
+                        <!--          </li>-->
+                        <!--          <li>-->
+                        <!--            <a class="fancybox-link" href="../img/about-edition/archive-edition-1.png" data-fancybox="gallery">-->
+                        <!--              <img src="../img/about-edition/archive-edition-1.png" alt="Архив издания картинка">-->
+                        <!--            </a>-->
+                        <!--          </li>-->
+                        <!--          <li>-->
+                        <!--            <a class="fancybox-link" href="../img/about-edition/archive-edition-2.png" data-fancybox="gallery">-->
+                        <!--              <img src="../img/about-edition/archive-edition-2.png" alt="Архив издания картинка">-->
+                        <!--            </a>-->
+                        <!--          </li>-->
+
                         <li>
-                            <a class="fancybox-link" href="../img/about-edition/edition-img-2.png" data-fancybox="gallery">
+                            <a class="js-open-modal" data-modal="photo-description" href="#">
               <img src="../img/about-edition/edition-img-2.png" alt="Архив издания картинка">
             </a>
                         </li>
                         <li>
-                            <a class="fancybox-link" href="../img/about-edition/archive-edition-2.png" data-fancybox="gallery">
+                            <a class="js-open-modal" data-modal="photo-description" href="#">
               <img src="../img/about-edition/archive-edition-2.png" alt="Архив издания картинка">
             </a>
                         </li>
                         <li>
-                            <a class="fancybox-link" href="../img/about-edition/archive-edition-1.png" data-fancybox="gallery">
+                            <a class="js-open-modal" data-modal="photo-description" href="#">
               <img src="../img/about-edition/archive-edition-1.png" alt="Архив издания картинка">
             </a>
                         </li>
                         <li>
-                            <a class="fancybox-link" href="../img/about-edition/archive-edition-2.png" data-fancybox="gallery">
+                            <a class="js-open-modal" data-modal="photo-description" href="#">
               <img src="../img/about-edition/archive-edition-2.png" alt="Архив издания картинка">
             </a>
                         </li>
                         <li>
-                            <a class="fancybox-link" href="../img/about-edition/archive-edition-1.png" data-fancybox="gallery">
+                            <a class="js-open-modal" data-modal="photo-description" href="#">
               <img src="../img/about-edition/archive-edition-1.png" alt="Архив издания картинка">
             </a>
                         </li>
                         <li>
-                            <a class="fancybox-link" href="../img/about-edition/archive-edition-2.png" data-fancybox="gallery">
+                            <a class="js-open-modal" data-modal="photo-description" href="#">
               <img src="../img/about-edition/archive-edition-2.png" alt="Архив издания картинка">
             </a>
                         </li>
@@ -280,7 +311,8 @@
                 <a href="mailto:russkiyturist@mail.ru">russkiyturist@mail.ru</a>
             </p>
             <p class="action__links">
-                <a href="subscription.html" class="button button--blue button--uppercase action__button">Подписка на печатную версию журнала</a>
+                <a href="subscription.html" class="button button--blue button--uppercase action__button">Подписка на печатную
+        версию журнала</a>
                 <a href="/" class="button button--blue button--uppercase action__button">
         <i class="icon-download action__icon"></i>
         Скачать pdf журнала
@@ -426,6 +458,34 @@
                 </div>
             </div>
         </div>
+        <!-- Модальное окно описание фотографии -->
+        <div class="popup popup--big photo-description" data-modal="photo-description">
+            <div class="modal__dialog">
+                <div class="modal__header modal__header--line">
+                    <h3 class="modal__title">Название фотографии</h3>
+                    <button class="modal__close close close--grey-dark close--icon" type="button">
+          <span class="close__description">Закрыть модальное окно</span>
+          <i class="icon-error"></i>
+        </button>
+                </div>
+                <div class="modal__content jcf-scrollable">
+                    <p class="photo-description__wrapper-img">
+                        <img class="photo-description__img" src="../img/about-edition/edition-img-22.png" alt="Архив издания картинка">
+                    </p>
+                    <p class="zoom photo-description__zoom">
+                        <button class="zoom__button zoom__button--minus" onclick="resizeMap(0.5)">—</button>
+                        <i class="icon-search"></i>
+                        <button class="zoom__button zoom__button--plus" onclick="resizeMap(2)">
+            <i class="icon-plus"></i>
+          </button>
+                    </p>
+                    <p class="photo-description__discription">
+                        Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и </p>
+                </div>
+            </div>
+        </div>
+
+
         <!-- Подложка под модальным окном -->
         <div class="modal__overlay modal__overlay--opened js-overlay-modal"></div>
     </section>
@@ -573,10 +633,13 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/jcf.min.js"></script>
-    <script src="../js/jquery.fancybox.min.js"></script>
+    <script src="../js/jcf.scrollable.min.js"></script>
+    <!--<script src="../js/jquery.fancybox.min.js"></script>-->
     <script src="../js/swiper.min.js"></script>
+    <script src="../js/jquery.zoom.min.js"></script>
     <script src="../js/script.min.js"></script>
     <script src="../js/about-edition.min.js"></script>
+
 
 </body>
 
