@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
    jcf.setOptions('Scrollable', {
-      alwaysPreventMouseWheel: false,
+      // alwaysPreventMouseWheel: false,
       mouseWheelStep: 15
    });
 

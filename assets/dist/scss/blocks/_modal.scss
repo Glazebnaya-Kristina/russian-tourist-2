@@ -1242,9 +1242,6 @@
   .modal__content{
     width: auto !important;
     height: 500px !important;
-    //padding-left: 40px;
-    //padding-right: 40px;
-    padding-right: 25px;
     @media (min-width: $screen-lg) {
       padding-left: 40px;
       padding-right: 40px;
@@ -1252,9 +1249,7 @@
     @media (min-height: 1050px) {
       height: auto !important;
     }
-    //@media (max-height: 1050px) {
-    //  height: 500px;
-    //}
+
   }
 
   &__wrapper-img{
@@ -1269,9 +1264,15 @@
       width: 400px;
       height: 567px;
     }
-    @media (min-width: $screen-xl) {
+
+
+    @media (min-width: 1800px) {
       width: 550px;
       height: 760px;
+    }
+    @media (max-height: 1000px) {
+      width: 400px;
+      height: 567px;
     }
   }
 
