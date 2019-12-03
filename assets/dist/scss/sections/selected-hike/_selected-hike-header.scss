@@ -21,6 +21,7 @@
   }
   &__content{
     @include container;
+    position: relative;
     margin-top: 20px;
     @media (min-width: $screen-lg) {
       max-width: 1030px;
@@ -39,11 +40,10 @@
 
   &__button{
     padding: 3px 11px;
-    margin: 0 auto;
+    margin: 15px 0;
     font-size: 13px !important;
     @media (min-width: $screen-md) {
-      margin: 0;
-      margin-left: auto;
+      margin: 0 auto;
       margin-top: 10px;
       margin-right: 8px;
     }
@@ -127,5 +127,93 @@
         }
       }
     }
+  }
+
+  //&__wrapper-box{
+  //  position: relative;
+  //}
+
+  &__wrapper-route{
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border: 1px solid $color-gold;
+    background-color: $white;
+    opacity: 0;
+    z-index: -1;
+    transition: $transition-time;
+
+    &--active{
+      opacity: 1;
+      z-index: 1;
+    }
+    @media (min-width: $screen-lg) {
+      //height: 609px;
+    }
+    @media (min-width: $screen-xl) {
+      width: 1240px;
+      height: 708px;
+      padding: 57px;
+    }
+  }
+
+  &__close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    color: #d7d7d7;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .25s;
+    @media (min-width: $screen-md) {
+      top: 3px;
+      right: 3px;
+    }
+    i{
+      font-size: 20px;
+      @media (min-width: $screen-md) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__close-description{
+    @include hide-text;
+  }
+
+  &__map-img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 90%;
+    background-image: url('../img/selected-hike/maps.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    @media (min-width: $screen-md) {
+      width: 91%;
+      height: 80%;
+    }
+    @media (min-width: $screen-xl) {
+      left: 0;
+      top: 0;
+      transform: none;
+      width: 100%;
+      height: 100%;
+      background-size: auto;
+    }
+
   }
 }

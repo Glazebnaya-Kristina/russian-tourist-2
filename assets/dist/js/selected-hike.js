@@ -82,6 +82,17 @@ $(document).ready(function () {
       prevArrow: document.querySelector('.participants__prev'),
       dots: false
    });
+
+   var btnOpenMap = document.querySelector('.selected-hike-header__button'),
+      blockMap = document.querySelector('.selected-hike-header__wrapper-route'),
+      closeblockMap = document.querySelector('.selected-hike-header__close');
+
+   btnOpenMap.addEventListener('click', function () {
+      blockMap.classList.add('selected-hike-header__wrapper-route--active');
+   });
+   closeblockMap.addEventListener('click', function () {
+      blockMap.classList.remove('selected-hike-header__wrapper-route--active');
+   });
 });
 
 

@@ -8,14 +8,22 @@
   @include ul-reset;
   display: flex;
   justify-content: center;
-  margin-top: -63px;
+  align-items: start;
+  margin-top: -46px;
+  @media (min-width: $screen-md) {
+    margin-top: -63px;
+  }
   li{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 215px;
+    max-width: 90px;
     width: 100%;
+    @media (min-width: $screen-md) {
+      max-width: 215px;
+    }
+
     &:not(:first-child){
       margin-left: 5px;
       @media (min-width: $screen-lg) {
@@ -27,6 +35,7 @@
   p{
     margin: 0;
     font-size: 14px;
+    text-align: center;
   }
 
   &__wrapper-img{
@@ -38,8 +47,11 @@
       object-fit: cover;
       object-position: center center;
       width: 100%;
-      height: 100px;
+      height: 72px;
       border-radius: 50%;
+      @media (min-width: $screen-md) {
+        height: 100px;
+      }
     }
   }
 }
