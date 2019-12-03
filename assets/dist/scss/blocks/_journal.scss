@@ -1,0 +1,79 @@
+@import "../helper/variables";
+@import "../helper/mixins";
+
+
+.journal{
+  $block-name: &; // #{$block-name}__element
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: $screen-md) {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  @media (min-width: $screen-xl) {
+    padding-left: 75px;
+  }
+  &__img{
+    object-fit: cover;
+    object-position: center center;
+    height: 350px;
+    width: 250px;
+    @media (min-width: $screen-md) {
+      width: 240px;
+      height: auto;
+      margin-bottom: -29px;
+    }
+  }
+
+  &__content{
+    margin-top: 20px;
+    @media (min-width: $screen-md) {
+      margin-left: 15px;
+      margin-top: 9px;
+    }
+    @media (min-width: $screen-xl) {
+      margin-left: 77px;
+    }
+  }
+
+  &__text{
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: -0.25px;
+    color: $text-color-gray-dark3;
+    &:not(:first-child){
+      margin-top: 20px;
+    }
+  }
+
+  &__cost{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 12px;
+    @media (min-width: $screen-xl) {
+      margin-top: 33px;
+    }
+  }
+
+  &__field{
+    font-size: 18px;
+  }
+
+  &__value{
+    margin-left: auto;
+    font-size: 22px;
+    color: $color-blue;
+    line-height: 22px;
+    border-bottom: 1px solid rgba($color-blue,0.5);
+    @media (min-width: $screen-md) {
+      font-size: 26px;
+      line-height: 26px;
+    }
+    @media (min-width: $screen-xl) {
+      font-size: 34px;
+      line-height: 34px;
+    }
+  }
+}

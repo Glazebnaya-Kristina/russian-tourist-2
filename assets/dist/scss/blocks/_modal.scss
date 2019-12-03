@@ -791,15 +791,8 @@
     }
 
     &__item{
-      //margin: -1px 0;
-      //border-top: 1px solid rgba(#a7a6af, .3);
       border-bottom: 1px solid rgba(#a7a6af, .3);
-      &:first-child{
-        //border-top: none;
-      }
-      //&:last-child{
-      //  border-bottom: 1px solid rgba(#a7a6af, .3);
-      //}
+
       &--active{
         border: none;
       }
@@ -991,6 +984,14 @@
     &__title{
       @include hide-text;
     }
+  }
+}
+
+//  Модальное окно Скачать pdf журнала
+.download-pdf{
+  &__button{
+    margin: 0 auto;
+    margin-top: 35px;
   }
 }
 

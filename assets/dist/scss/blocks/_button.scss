@@ -87,6 +87,15 @@
     padding: 10px 65px;
   }
 
+  &--middle{
+    display: flex;
+    max-width: 200px;
+    width: 100%;
+    padding: 7.6px 10px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
   &--flex{
     display: flex;
   }

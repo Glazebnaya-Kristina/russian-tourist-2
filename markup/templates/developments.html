@@ -16,10 +16,11 @@
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css" data-inprogress="">
     <link rel="stylesheet" href="../css/developments.css" data-inprogress="">
-
+    <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>-->
 </head>
 
 <body>
+
 
     <!-- Секция хедер Об издании -->
     <header class="header">
@@ -96,6 +97,24 @@
     </header>
 
     <h1 class="title title--element title--element-small">События</h1>
+
+    <!-- Секция Календарь -->
+    <section class="calendar">
+        <div class="calendar__inner">
+            <h2 class="title title--small title--line">Календарь</h2>
+
+            <!--    <div class="calendar__wrapper">-->
+            <!--      <input type='text' id="datepicker" class="calendar__input">-->
+            <!--    </div>-->
+
+            <div class="calendar__wrap">
+                <div id="my-today-button">число</div>
+                <div id='calendar'></div>
+            </div>
+
+
+        </div>
+    </section>
 
     <!-- Секция События -->
     <section class="news">
@@ -466,8 +485,18 @@
 
     <script src="../js/jquery.min.js"></script>
     <script src="../js/jcf.min.js"></script>
+    <script src="../js/core.min.js"></script>
+    <script src="../js/daygrid.min.js"></script>
+    <!--<script src="../js/moment.min.js"></script>-->
+    <!--<script src="../js/moment2.js"></script>-->
+
+    <!--<script src="../js/datepicker.min.js"></script>-->
     <script src="../js/script.min.js"></script>
     <script src="../js/developments.min.js"></script>
+
+    <!--<script>-->
+    <!--   moment().format();-->
+    <!--</script>-->
 
 </body>
 
