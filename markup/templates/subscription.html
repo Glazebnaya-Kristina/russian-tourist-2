@@ -418,7 +418,7 @@
     </footer>
 
     <!-- Секция Модальны окна -->
-    <section class="modal">
+    <section class="modal modal--opened">
         <!--   Модальное окно РЕГЕСТРИЦИЯ -->
         <div class="popup popup--big modal__registration" data-modal="registration">
             <div class="modal__dialog">
@@ -758,6 +758,17 @@
                         </fieldset>
                         <button class="button button--blue button--middle buy-print-journal__button" type="button">Купить</button>
                     </form>
+                </div>
+            </div>
+        </div>
+        <!-- Модальное окно Ошибка ввода данных -->
+        <div class="popup popup--small error-info popup--opened" data-modal="error-info">
+            <div class="modal__dialog">
+                <div class="modal__header modal__header--center">
+                    <h3 class="modal__title modal__title--element title title--element title--element-small">Ошибка ввода данных</h3>
+                </div>
+                <div class="modal__content modal__content--center">
+                    <button class="button button--border-transparent button--modal close" type="button">Закрыть</button>
                 </div>
             </div>
         </div>

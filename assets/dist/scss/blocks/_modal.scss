@@ -34,9 +34,23 @@
   }
 
   &--small {
-    padding-top: 20px;
+    padding-top: 25px;
+    padding-bottom: 34px;
     max-width: 600px;
     width: 100%;
+
+    .modal__title--element {
+      padding-bottom: 46px;
+    }
+
+    .modal__content {
+      margin-top: 28px;
+    }
+
+    .button--modal {
+      padding: 13px 17px;
+      max-width: 200px;
+    }
   }
 }
 
