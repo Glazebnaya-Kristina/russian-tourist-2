@@ -83,6 +83,8 @@ $(document).ready(function () {
       dots: false
    });
 
+
+   // блок с картой
    var btnOpenMap = document.querySelector('.selected-hike-header__button'),
       blockMap = document.querySelector('.selected-hike-header__wrapper-route'),
       closeblockMap = document.querySelector('.selected-hike-header__close');
@@ -93,15 +95,20 @@ $(document).ready(function () {
    closeblockMap.addEventListener('click', function () {
       blockMap.classList.remove('selected-hike-header__wrapper-route--active');
    });
-});
 
 
-$(document).on('click', '.button-play', function () {
+   // кнопка ютуб
+   $('.button-play').click(function () {
+      var dataYoutube = $('.youtube-video__wrapper-modal').attr('data-youtube');
 
-   var wrapperYoutube = document.querySelector('.youtube-video__overlow');
-   wrapperYoutube.classList.add('youtube-video__overlow--close');
-   var $video = $('#video'),
-      src = $video.attr('src');
+      $('.youtube-video__wrapper-modal').addClass('youtube-video__wrapper-modal--active');
 
-   $video.attr('src', src + '&autoplay=1');
+      $('.youtube-video__content-video').html('<iframe id="player" src="https://www.youtube.com/embed/'+ dataYoutube +'?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+   });
+
+   $('.youtube-video__close').click(function () {
+      $('.youtube-video__wrapper-modal').removeClass('youtube-video__wrapper-modal--active');
+      $('.youtube-video__content-video').html('');
+   })
+
 });
