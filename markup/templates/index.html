@@ -129,19 +129,17 @@
                     </div>
                 </li>
             </ul>
-            <a href="#about-us" class="header__arrow js-anchor">
-      <i class=" icon-right-arrow"></i>
-    </a>
         </section>
     </header>
-
-    <!--<section class="block"></section>-->
 
 
 
     <!-- Секция  Журнал «Русский Турист»-->
     <section class="about-us">
         <div class="about-us__inner">
+            <a href="#about-us" class="about-us__arrow js-anchor">
+      <i class=" icon-right-arrow"></i>
+    </a>
             <div class="about-us__content">
                 <h2 class="about-us__title title title--element">Журнал «Русский Турист»</h2>
                 <p>Первый печатный номер вышел в <span class="about-us__date-publish">1889</span> году. В <span>2019</span> году мы возродили журнал при поддержке Федерации спортивного туризма России.
@@ -156,7 +154,6 @@
     </a>
         </div>
     </section>
-
 
     <!-- Секция  Последние новости -->
     <section class="last-news">
@@ -320,8 +317,9 @@
         <div class="routes__inner">
             <h2 class="title title--element">Маршруты</h2>
             <div class="routes__wrapper-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7598858.832548437!2d29.714320960147315!3d48.300272449224956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440dfbd5689933%3A0x67954a817f2651b5!2zSXNhbmktU2FtZ29yaSwg0KLQsdC40LvQuNGB0LgsINCT0YDRg9C30LjRjw!5e0!3m2!1sru!2sua!4v1573846805190!5m2!1sru!2sua"
-                    height="705" style="border:0;width:100%;" allowfullscreen=""></iframe>
+                <!--      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7598858.832548437!2d29.714320960147315!3d48.300272449224956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440dfbd5689933%3A0x67954a817f2651b5!2zSXNhbmktU2FtZ29yaSwg0KLQsdC40LvQuNGB0LgsINCT0YDRg9C30LjRjw!5e0!3m2!1sru!2sua!4v1573846805190!5m2!1sru!2sua"-->
+                <!--              height="705" style="border:0;width:100%;" allowfullscreen=""></iframe>-->
+                <div class="map" id="map"></div>
             </div>
             <div class="routes__wrapper">
                 <div class="routes__content" style="background-image: url('../img/home/routes-img1.png')">
@@ -387,11 +385,11 @@
             </label>
                             <label class="label">
               <span class="label__name">Пароль</span>
-              <input type="password" class="input" placeholder="Пароль">
+              <input id="password" type="password" name="password" class="input" placeholder="Пароль">
             </label>
                             <label class="label">
               <span class="label__name">Повторите пароль</span>
-              <input type="password" class="input" placeholder="Повторите пароль">
+              <input type="password" name="confirm_password" class="input" placeholder="Повторите пароль">
             </label>
                         </div>
                         <span class="text-error">Ошибка...</span>
@@ -465,7 +463,8 @@
         </button>
                 </div>
                 <div class="modal__content modal__password-reminder-content">
-                    <p class="modal__text">На Ваш E-mail будет отправленно сообщение с новый паролем для ввхода в личный кабинет.</p>
+                    <p class="modal__text">На Ваш E-mail будет отправленно сообщение с новый паролем для ввхода в личный кабинет.
+                    </p>
                     <form action="#" class="form form__wrapper--column-2 modal__password-reminder-form">
                         <label class="label">
             <span class="label__name">E-mail</span>
@@ -636,7 +635,8 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/jcf.min.js"></script>
-    <!--<script src="../js/swiper.min.js"></script>-->
+    <script src="../js/jquery.validate.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGZ7eT_hxqBbA2Yy48OG3P9O1K75wiFss&callback=initMap"></script>
     <script src="../js/script.min.js"></script>
     <script src="../js/home.min.js"></script>
 

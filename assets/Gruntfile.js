@@ -31,6 +31,7 @@ module.exports = function (grunt) {
                '../markup/js/jcf.checkbox.min.js': ['dist/js/plugin/jcf.checkbox.js'],
                '../markup/js/jcf.radio.min.js': ['dist/js/plugin/jcf.radio.js'],
                '../markup/js/jcf.min.js': ['dist/js/plugin/jcf.js'],
+               '../markup/js/jquery.validate.min.js': ['dist/js/plugin/jquery.validate.min.js'],
                // '../markup/js/daygrid/main.min.js': ['dist/js/plugin/daygrid/main.js'],
                // '../markup/js/core/main.min.js': ['dist/js/plugin/core/main.js'],
                '../markup/js/datepicker.min.js': ['dist/js/plugin/datepicker.min.js'],
