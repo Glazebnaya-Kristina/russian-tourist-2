@@ -85,4 +85,72 @@ $(document).ready(function () {
    $('.message__top').bind('click', function(){
       $(this).next('.message__wrapper').toggle('message__wrapper--active');
    });
+
+
+   $('.types__close').click(function () {
+      $(this).parent('.types__item').css('display', 'none');
+   });
+
+
+   // добавление и закрытия карточек
+   var typesAddBtn = document.querySelectorAll('.types__item--add');
+
+   typesAddBtn.forEach(function(item){
+
+      item.addEventListener('click', function(e) {
+         e.preventDefault();
+
+         var typesAddId = this.getAttribute('data-add'),
+            typesAddElem = document.querySelector('.types__item[data-add="' + typesAddId + '"]');
+
+
+         var popupAdd  = document.querySelector('.popup[data-modal="add"]');
+         var overlay = document.querySelector('.js-overlay-modal');
+         var modal = document.querySelector('.modal');
+         var btnToggle = document.querySelector('.hike__want-link');
+
+         popupAdd.classList.remove('popup--opened');
+         overlay.classList.remove('modal__overlay--opened');
+         modal.classList.remove('modal--opened');
+         document.querySelector('body').classList.remove('hidden');
+
+         /* на случай, если надо что бы было переключалкой для блока hike.
+          Но тога не корректно работает если в личном кабинете карточка есть, то при нажатии на hike__link
+          с личного кабинета карточка убирается, а по виду, что наооборот она там есть*/
+
+         if (item.classList.contains('hike__want-link')){
+            typesAddElem.classList.toggle('types__item--active');
+         } else {
+            typesAddElem.classList.add('types__item--active');
+         }
+
+         /* если только добавление класса */
+         // typesAddElem.classList.add('types__item--active');
+      });
+
+   });
+
+   var closeAddTypes = document.querySelectorAll('.types__close');
+
+   closeAddTypes.forEach(function(item){
+
+      item.addEventListener('click', function(e) {
+         var parentTypes = this.closest('.types__item');
+
+         parentTypes.classList.remove('types__item--active');
+         parentTypes.style.display = '';
+      });
+
+   });
+
+
+   // var closeHike = document.querySelectorAll('.hike__wrapper-want--active button');
+   //
+   // closeHike.forEach(function (item) {
+   //    item.addEventListener('click', function () {
+   //       typesAddElem.classList.remove('types__item--active');
+   //       parentTypes.style.display = '';
+   //    })
+   // })
+
 });

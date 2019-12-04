@@ -31,6 +31,18 @@
       color: $color-close;
       transition: $transition-time;
     }
+
+    .types__item{
+      display: none;
+
+      &--active{
+        display: block;
+      }
+    }
+
+    #{$block-name}__add{
+      display: block;
+    }
   }
 
   &__add{

@@ -29,32 +29,38 @@ $(document).ready(function () {
    });
 
    var btnLike = document.querySelectorAll('.button-like'),
-      btndisLike = document.querySelectorAll('.button-dislike'),
-      spanValue = document.querySelector('.comment__feedback span');
+      spanValue = document.querySelector('.comment__feedback span').textContent,
+      spanValueTag = document.querySelector('.comment__feedback span'),
+      btndisLike = document.querySelectorAll('.button-dislike');
 
 
    btnLike.forEach(function (item) {
       item.addEventListener('click', function () {
          item.classList.add('button-like--active');
-         spanValueSum = parseInt(spanValue) + 1;
-         spanValue.innerHTML = spanValueSum;
+         spanValueSum = +spanValue + 1;
+         spanValueTag.innerHTML = spanValueSum;
       })
    });
    btndisLike.forEach(function (item) {
       item.addEventListener('click', function () {
          // btnLike.classList.remove('button-like--active');
          item.classList.add('button-dislike--active');
+         spanValueSum = +spanValue - 1;
+         spanValueTag.innerHTML = spanValueSum;
       })
    });
-});
 
+   // кнопка ютуб
+   $('.button-play').click(function () {
+      var dataYoutube = $('.youtube-video__wrapper-modal').attr('data-youtube');
 
-$(document).on('click', '.button-play', function () {
+      $('.youtube-video__wrapper-modal').addClass('youtube-video__wrapper-modal--active');
 
-   var wrapperYoutube = document.querySelector('.youtube-video__overlow');
-   wrapperYoutube.classList.add('youtube-video__overlow--close');
-   var $video = $('#video'),
-      src = $video.attr('src');
+      $('.youtube-video__content-video').html('<iframe id="player" src="https://www.youtube.com/embed/'+ dataYoutube +'?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+   });
 
-   $video.attr('src', src + '&autoplay=1');
+   $('.youtube-video__close').click(function () {
+      $('.youtube-video__wrapper-modal').removeClass('youtube-video__wrapper-modal--active');
+      $('.youtube-video__content-video').html('');
+   })
 });

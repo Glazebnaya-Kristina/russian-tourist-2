@@ -87,4 +87,29 @@
       border-color: $color-blue;
     }
   }
+
+  &__close{
+    margin: 0;
+    padding: 0;
+    color: $color-close;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: $transition-time;
+    &:hover,
+    &:focus{
+      outline: none;
+      color: $color-gold;
+    }
+    i{
+      font-size: 22px;
+      @media (min-width: $screen-md) {
+        font-size: 38px;
+      }
+    }
+  }
+  &__description{
+    @include hide-text;
+  }
+
 }

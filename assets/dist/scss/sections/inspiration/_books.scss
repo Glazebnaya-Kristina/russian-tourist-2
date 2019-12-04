@@ -40,6 +40,9 @@
         height: 430px;
       }
     }
+    .slick-track{
+      transition: all .5s;
+    }
 
     .slick-center {
       align-items: stretch;

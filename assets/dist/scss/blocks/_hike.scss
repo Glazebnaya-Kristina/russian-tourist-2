@@ -124,10 +124,12 @@
     background-color: transparent;
     cursor: pointer;
     outline: none;
-    &:focus,
     &:hover{
       color: $color-gold;
       text-decoration-color: rgba($color-gold, .5);
+    }
+    &:focus{
+      outline: none;
     }
   }
 

@@ -144,23 +144,93 @@
       <div class="sports-tourism__inner">
         <h2 class="title title--small title--line">Виды спортивного туризма</h2>
         <ul class="types sports-tourism__types">
-          <li class="types__item">
-            <a class="types__link types__link--blue js-open-modal" data-modal="pedestrian">
+          <li class="types__item" data-add="foot">
+            <a class="types__link types__link--blue">
               <img class="types__img" src="../img/trekking/foot.svg" alt="Тип похода">
               <span class="types__description">Пешеходный</span>
             </a>
-            <button class="close close--grey-dark sports-tourism__close" type="button">
-              <span class="close__description">Закрыть карту</span>
+            <button class="types__close sports-tourism__close" type="button">
+              <span class="types__description">Закрыть карту</span>
               <i class="icon-error"></i>
             </button>
           </li>
-          <li class="types__item">
-            <a class="types__link types__link--blue js-open-modal" data-modal="mountain">
+          <li class="types__item" data-add="mountain">
+            <a class="types__link types__link--blue">
               <img class="types__img" src="../img/trekking/mountain.svg" alt="Тип похода">
               <span class="types__description">Горный</span>
             </a>
-            <button class="close close--grey-dark sports-tourism__close" type="button">
-              <span class="close__description">Закрыть карту</span>
+            <button class="types__close sports-tourism__close" type="button">
+              <span class="types__description">Закрыть карту</span>
+              <i class="icon-error"></i>
+            </button>
+          </li>
+          <li class="types__item" data-add="sky">
+            <a class="types__link types__link--blue">
+              <img class="types__img" src="../img/trekking/sky.svg" alt="Тип похода">
+              <span class="types__description">Лыжный</span>
+            </a>
+            <button class="types__close sports-tourism__close" type="button">
+              <span class="types__description">Закрыть карту</span>
+              <i class="icon-error"></i>
+            </button>
+          </li>
+          <li class="types__item" data-add="lodka">
+            <a class="types__link types__link--blue">
+              <img class="types__img" src="../img/trekking/lodka.svg" alt="Тип похода">
+              <span class="types__description">Водный</span>
+            </a>
+            <button class="types__close sports-tourism__close" type="button">
+              <span class="types__description">Закрыть карту</span>
+              <i class="icon-error"></i>
+            </button>
+          </li>
+          <li class="types__item" data-add="road">
+            <a class="types__link types__link--blue">
+              <img class="types__img" src="../img/trekking/road.svg" alt="Тип похода">
+              <span class="types__description">Велосипедный</span>
+            </a>
+            <button class="types__close sports-tourism__close" type="button">
+              <span class="types__description">Закрыть карту</span>
+              <i class="icon-error"></i>
+            </button>
+          </li>
+          <li class="types__item" data-add="car">
+            <a class="types__link types__link--blue">
+              <img class="types__img" src="../img/trekking/car.svg" alt="Тип похода">
+              <span class="types__description">Автомото</span>
+            </a>
+            <button class="types__close sports-tourism__close" type="button">
+              <span class="types__description">Закрыть карту</span>
+              <i class="icon-error"></i>
+            </button>
+          </li>
+          <li class="types__item" data-add="kirka">
+            <a class="types__link types__link--blue">
+              <img class="types__img" src="../img/trekking/kirka.svg" alt="Тип похода">
+              <span class="types__description">Спелео</span>
+            </a>
+            <button class="types__close sports-tourism__close" type="button">
+              <span class="types__description">Закрыть карту</span>
+              <i class="icon-error"></i>
+            </button>
+          </li>
+          <li class="types__item" data-add="water">
+            <a class="types__link types__link--blue">
+              <img class="types__img" src="../img/trekking/water.svg" alt="Тип похода">
+              <span class="types__description">Парусный</span>
+            </a>
+            <button class="types__close sports-tourism__close" type="button">
+              <span class="types__description">Закрыть карту</span>
+              <i class="icon-error"></i>
+            </button>
+          </li>
+          <li class="types__item" data-add="animal">
+            <a class="types__link types__link--blue">
+              <img class="types__img" src="../img/trekking/animal.svg" alt="Тип похода">
+              <span class="types__description">Конный</span>
+            </a>
+            <button class="types__close sports-tourism__close" type="button">
+              <span class="types__description">Закрыть карту</span>
               <i class="icon-error"></i>
             </button>
           </li>
@@ -201,7 +271,7 @@
                 </div>
                 <div class="hike__watching">
                   <div class="hike__wrapper-want hike__wrapper-want--popup">
-                    <button type="button" class="hike__want-link">Хотят в этот поход</button>
+                    <button type="button" class="hike__want-link types__item--add" data-add="lodka">Хотят в этот поход</button>
                     <p class="hike__wrapper-quantity">
                       <i class="icon-star"></i>
                       <span class="hike__quantity">4</span>
@@ -448,7 +518,7 @@
                 </div>
                 <div class="hike__watching">
                   <div class="hike__wrapper-want hike__wrapper-want--popup">
-                    <button type="button" class="hike__want-link">Хотят в этот поход</button>
+                    <button type="button" class="hike__want-link types__item--add" data-add="foot">Хотят в этот поход</button>
                     <p class="hike__wrapper-quantity">
                       <i class="icon-star"></i>
                       <span class="hike__quantity">4</span>
@@ -703,7 +773,7 @@
               </div>
               <div class="hike__watching">
                 <div class="hike__wrapper-want hike__wrapper-want--popup">
-                  <button type="button" class="hike__want-link">Хотят в этот поход</button>
+                  <button type="button" class="hike__want-link types__item--add" data-add="lodka">Хотят в этот поход</button>
                   <p class="hike__wrapper-quantity">
                     <i class="icon-star"></i>
                     <span class="hike__quantity">4</span>
@@ -950,7 +1020,7 @@
               </div>
               <div class="hike__watching">
                 <div class="hike__wrapper-want hike__wrapper-want--popup">
-                  <button type="button" class="hike__want-link">Хотят в этот поход</button>
+                  <button type="button" class="hike__want-link types__item--add" data-add="lodka">Хотят в этот поход</button>
                   <p class="hike__wrapper-quantity">
                     <i class="icon-star"></i>
                     <span class="hike__quantity">4</span>
@@ -1429,63 +1499,63 @@
               <img class="types__img" src="../img/trekking/foot.svg" alt="Тип похода">
               <span class="types__description">Пешеходный</span>
             </a>
-            <button class="button button--blue modal__add-button">Выбрать</button>
+            <button class="button button--blue modal__add-button types__item--add" data-add="foot">Выбрать</button>
           </li>
           <li class="types__item">
             <a class="types__link" data-modal="ski">
               <img class="types__img" src="../img/trekking/sky.svg" alt="Тип похода">
               <span class="types__description">Лыжный</span>
             </a>
-            <button class="button button--blue modal__add-button">Выбрать</button>
+            <button class="button button--blue modal__add-button types__item--add" data-add="sky">Выбрать</button>
           </li>
           <li class="types__item">
             <a class="types__link" data-modal="mountain">
               <img class="types__img" src="../img/trekking/mountain.svg" alt="Тип похода">
               <span class="types__description">Горный</span>
             </a>
-            <button class="button button--blue modal__add-button">Выбрать</button>
+            <button class="button button--blue modal__add-button types__item--add" data-add="mountain">Выбрать</button>
           </li>
           <li class="types__item">
             <a class="types__link" data-modal="water">
               <img class="types__img" src="../img/trekking/lodka.svg" alt="Тип похода">
               <span class="types__description">Водный</span>
             </a>
-            <button class="button button--blue modal__add-button">Выбрать</button>
+            <button class="button button--blue modal__add-button types__item--add" data-add="lodka">Выбрать</button>
           </li>
           <li class="types__item">
             <a class="types__link" data-modal="bicycle">
               <img class="types__img" src="../img/trekking/road.svg" alt="Тип похода">
               <span class="types__description">Велосипедный</span>
             </a>
-            <button class="button button--blue modal__add-button">Выбрать</button>
+            <button class="button button--blue modal__add-button types__item--add" data-add="road">Выбрать</button>
           </li>
           <li class="types__item">
             <a class="types__link" data-modal="avtomoto">
               <img class="types__img" src="../img/trekking/car.svg" alt="Тип похода">
               <span class="types__description">Автомото</span>
             </a>
-            <button class="button button--blue modal__add-button">Выбрать</button>
+            <button class="button button--blue modal__add-button types__item--add" data-add="car">Выбрать</button>
           </li>
           <li class="types__item">
             <a class="types__link" data-modal="speleo">
               <img class="types__img" src="../img/trekking/kirka.svg" alt="Тип похода">
               <span class="types__description">Спелео</span>
             </a>
-            <button class="button button--blue modal__add-button">Выбрать</button>
+            <button class="button button--blue modal__add-button types__item--add" data-add="kirka">Выбрать</button>
           </li>
           <li class="types__item">
             <a class="types__link" data-modal="sailing">
               <img class="types__img" src="../img/trekking/water.svg" alt="Тип похода">
               <span class="types__description">Парусный</span>
             </a>
-            <button class="button button--blue modal__add-button">Выбрать</button>
+            <button class="button button--blue modal__add-button types__item--add" data-add="water">Выбрать</button>
           </li>
           <li class="types__item">
             <a class="types__link" data-modal="equestrian">
               <img class="types__img" src="../img/trekking/animal.svg" alt="Тип похода">
               <span class="types__description">Конный</span>
             </a>
-            <button class="button button--blue modal__add-button">Выбрать</button>
+            <button class="button button--blue modal__add-button types__item--add" data-add="animal">Выбрать</button>
           </li>
         </ul>
       </div>
