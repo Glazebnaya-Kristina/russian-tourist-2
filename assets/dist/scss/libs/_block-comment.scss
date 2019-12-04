@@ -234,11 +234,11 @@
         color: $color-blue;
       }
     }
-    span{
-      display: inline-block;
-      margin-right: 8px;
-      color: $color-blue;
-    }
+    //span{
+    //  display: inline-block;
+    //  margin-right: 8px;
+    //  color: $color-blue;
+    //}
     i{
       display: inline-block;
       color: $color-grey-light;
@@ -247,6 +247,14 @@
         margin-left: 5px;
       }
     }
+  }
+
+  &__input{
+    display: inline-block;
+    max-width: 20px;
+    //margin-right: 8px;
+    color: $color-blue;
+    border: none;
   }
   .button-like--active{
     color: $color-blue;

@@ -16,7 +16,6 @@ $(document).ready(function () {
       $(".step-count").html(parseInt(slick.currentSlide + 1) + '<span> / ' + slick.slideCount + '</span>');
    });
 
-
    assistants.slick({
       infinite: true,
       slidesToShow: 3,
@@ -28,26 +27,21 @@ $(document).ready(function () {
       dots: false
    });
 
-   var btnLike = document.querySelectorAll('.button-like'),
-      spanValue = document.querySelector('.comment__feedback span').textContent,
-      spanValueTag = document.querySelector('.comment__feedback span'),
-      btndisLike = document.querySelectorAll('.button-dislike');
-
-
-   btnLike.forEach(function (item) {
-      item.addEventListener('click', function () {
-         item.classList.add('button-like--active');
-         spanValueSum = +spanValue + 1;
-         spanValueTag.innerHTML = spanValueSum;
-      })
+   // лайки и дизлайки
+   $(".comment__feedback .button-like").click(function() {
+      var $price = $(this).siblings(".comment__input");
+      $price.val(parseInt($price.val()) + 1);
+      $price.change();
+      $(this).css('color', '#41a1b6');
+      $(this).siblings(".button-dislike").css('color', '#a4a4a4');
    });
-   btndisLike.forEach(function (item) {
-      item.addEventListener('click', function () {
-         // btnLike.classList.remove('button-like--active');
-         item.classList.add('button-dislike--active');
-         spanValueSum = +spanValue - 1;
-         spanValueTag.innerHTML = spanValueSum;
-      })
+
+   $(".comment__feedback .button-dislike").click(function() {
+      var $price = $(this).siblings(".comment__input");
+      $price.val(parseInt($price.val()) - 1);
+      $price.change();
+      $(this).css('color', '#41a1b6');
+      $(this).siblings(".button-like").css('color', '#a4a4a4');
    });
 
    // кнопка ютуб
@@ -65,6 +59,7 @@ $(document).ready(function () {
    });
 
 
+   // блок с ответом
    $('.comment__feedback a').click(function (e) {
       e.preventDefault();
       var comentHistory = $('.comment__history-answer');
