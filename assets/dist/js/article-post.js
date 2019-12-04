@@ -62,5 +62,13 @@ $(document).ready(function () {
    $('.youtube-video__close').click(function () {
       $('.youtube-video__wrapper-modal').removeClass('youtube-video__wrapper-modal--active');
       $('.youtube-video__content-video').html('');
+   });
+
+
+   $('.comment__feedback a').click(function (e) {
+      e.preventDefault();
+      var comentHistory = $('.comment__history-answer');
+      $(this).parents('.comment__history-item').append(comentHistory);
+      $(this).parents('.comment__history').find('.comment__history-answer').toggle('comment__history-answer--active');
    })
 });

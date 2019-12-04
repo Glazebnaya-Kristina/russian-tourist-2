@@ -137,17 +137,30 @@
     @media (min-width: $screen-md) {
       margin-top: 59px;
     }
-    li{
-      display: flex;
-      align-items: flex-start;
-      &:not(:first-of-type){
-        margin-top: 20px;
-        margin-left: 20px;
-        @media (min-width: $screen-md) {
-          margin-left: 100px;
-          margin-top: 47px;
-        }
+  }
+
+  &__history-item{
+
+    &:not(:first-of-type){
+      margin-top: 20px;
+      margin-left: 20px;
+      @media (min-width: $screen-md) {
+        margin-left: 100px;
+        margin-top: 47px;
       }
+    }
+  }
+
+  &__wrapper-item{
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__history-answer{
+    display: none;
+
+    &--active{
+      display: flex;
     }
   }
 
