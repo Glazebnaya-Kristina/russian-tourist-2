@@ -139,4 +139,22 @@
       margin-top: 60px;
     }
   }
+
+  &__arrow{
+    @include link(inherit, $color-gold);
+    position: absolute;
+    left: 50%;
+    top: -33px;
+    transform: translateX(-50%) rotate(90deg);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: $white;
+    box-shadow: 0 0 31px 3px rgba(0,0,0,0.3);
+  }
 }

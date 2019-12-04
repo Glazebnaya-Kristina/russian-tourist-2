@@ -122,17 +122,6 @@ document.addEventListener('DOMContentLoaded', function() {
       modalPass.classList.remove('popup--opened');
    });
 
-
-   // var article = document.querySelectorAll('.last-news__article');
-   //
-   // article.forEach(function (item) {
-   //    item.onmouseover  = function(){
-   //       document.querySelectorAll('.time-flag').classList.add('time-flag--active');
-   //    };
-   // });
-
-
-
    closeButtons.forEach(function(item){
 
       item.addEventListener('click', function(e) {

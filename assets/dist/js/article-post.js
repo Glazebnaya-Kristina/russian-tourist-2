@@ -38,10 +38,14 @@ $(document).ready(function () {
 
    $(".comment__feedback .button-dislike").click(function() {
       var $price = $(this).siblings(".comment__input");
-      $price.val(parseInt($price.val()) - 1);
-      $price.change();
-      $(this).css('color', '#41a1b6');
-      $(this).siblings(".button-like").css('color', '#a4a4a4');
+
+      if ($price.val() > 0){
+         $price.val(parseInt($price.val()) - 1);
+         $price.change();
+         $(this).css('color', '#41a1b6');
+         $(this).siblings(".button-like").css('color', '#a4a4a4');
+         console.log(0);
+      }
    });
 
    // кнопка ютуб

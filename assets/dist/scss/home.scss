@@ -1,5 +1,6 @@
 // Подключения блоков
 @import "blocks/time-flag";
+@import "blocks/map-popup";
 
 // поключения библиотек
 //@import "libs/title";
@@ -78,5 +79,53 @@
         background-color: $color-gold;
       }
     }
+  }
+}
+
+.map{
+  width: 100%;
+  height: 705px;
+}
+
+
+.gm-style .gm-style-iw-c{
+  width: 100%;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.gm-style .gm-style-iw{
+  max-width: 290px !important;
+  @media (min-width: $screen-xl) {
+    max-width: 355px !important;
+  }
+
+}
+
+.gm-style .gm-style-iw-d{
+  overflow: hidden !important;
+  width: 355px;
+  max-width: 355px !important;
+  margin: 0 auto;
+}
+
+.gm-style .gm-style-iw-t::after{
+  display: none;
+}
+
+.gm-ui-hover-effect{
+  //display: none !important;
+  width: 26px!important;
+  height: 18px!important;
+  &:after{
+    @include pseudo;
+    font-family: "fontello";
+    content: '\e808';
+    font-size: 16px;
+  }
+  img{
+    display: none !important;
   }
 }

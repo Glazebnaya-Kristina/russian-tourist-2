@@ -36,10 +36,12 @@
 
   &--element-small{
     &:after{
-      max-width: none;
+      //max-width: none;
+      max-width: 200px;
       height: 33px;
-      background-size: auto;
+      //background-size: auto;
       background-position: center;
+      background-size: contain;
     }
   }
 

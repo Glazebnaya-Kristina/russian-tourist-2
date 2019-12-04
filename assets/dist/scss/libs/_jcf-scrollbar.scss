@@ -7,7 +7,7 @@
   position: absolute;
   cursor: default;
   background-color: #e8e8e8;
-  width: 14px;
+  width: 11px;
   bottom: 0;
   right: 15px;
   top: 0;
@@ -27,41 +27,9 @@
 .jcf-scrollbar-vertical .jcf-scrollbar-handle {
   background-color: #d0d0d0;
   height: 1px;
-  width: 14px;
+  width: 11px;
 }
-//.jcf-scrollbar-horizontal {
-//  position: absolute;
-//  background: #e3e3e3;
-//  right: auto;
-//  top: auto;
-//  left: 0;
-//  bottom: 0;
-//  width: 1px;
-//  height: 14px;
-//}
-//.jcf-scrollbar-horizontal .jcf-scrollbar-dec,
-//.jcf-scrollbar-horizontal .jcf-scrollbar-inc {
-//  display: inline-block;
-//  vertical-align: top;
-//  overflow: hidden;
-//  background: #bbb;
-//  height: 14px;
-//  width: 14px;
-//}
-//.jcf-scrollbar-horizontal .jcf-scrollbar-inc {
-//  left: auto;
-//  right: 0;
-//}
-//.jcf-scrollbar-horizontal .jcf-scrollbar-slider {
-//  display: inline-block;
-//  position: relative;
-//  height: 14px;
-//}
-//.jcf-scrollbar-horizontal .jcf-scrollbar-handle {
-//  position: absolute;
-//  background: #888;
-//  height: 14px;
-//}
+
 .jcf-scrollbar.jcf-inactive .jcf-scrollbar-handle {
   visibility: hidden;
 }

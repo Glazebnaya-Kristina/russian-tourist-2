@@ -20,6 +20,7 @@
     object-position: center center;
     height: 350px;
     width: 250px;
+    max-width: none;
     @media (min-width: $screen-md) {
       width: 240px;
       margin-bottom: -29px;

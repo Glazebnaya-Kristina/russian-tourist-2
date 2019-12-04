@@ -7,9 +7,6 @@
 @import "slick";
 
 .header {
-  &__inner{
-
-  }
   &__top{
     position: relative;
     z-index: 2;
@@ -143,21 +140,21 @@
   &__social-mobile-cabinet{
     margin-top: 27px;
   }
-  &__arrow{
-    @include link(inherit, $color-gold);
-    position: absolute;
-    left: 50%;
-    bottom: -33px;
-    transform: translateX(-50%) rotate(90deg);
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    font-size: 25px;
-    border-radius: 50%;
-    background-color: $white;
-    box-shadow: 0 0 31px 3px rgba(0,0,0,0.3);
-  }
+  //&__arrow{
+  //  @include link(inherit, $color-gold);
+  //  position: absolute;
+  //  left: 50%;
+  //  bottom: -33px;
+  //  transform: translateX(-50%) rotate(90deg);
+  //  z-index: 1;
+  //  display: flex;
+  //  justify-content: center;
+  //  align-items: center;
+  //  width: 60px;
+  //  height: 60px;
+  //  font-size: 25px;
+  //  border-radius: 50%;
+  //  background-color: $white;
+  //  box-shadow: 0 0 31px 3px rgba(0,0,0,0.3);
+  //}
 }
