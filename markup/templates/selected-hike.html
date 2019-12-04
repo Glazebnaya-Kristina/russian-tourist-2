@@ -203,7 +203,9 @@
         <span class="selected-hike-header__close-description">Закрыть модальное окно</span>
         <i class="icon-error"></i>
       </button>
-                <p class="selected-hike-header__map-img"></p>
+                <div class="selected-hike-header__map-img">
+                    <div class="map" id="map"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -1286,6 +1288,7 @@
     <script src="../js/jcf.file.min.js"></script>
     <script src="../js/jcf.select.min.js"></script>
     <script src="../js/jcf.scrollable.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGZ7eT_hxqBbA2Yy48OG3P9O1K75wiFss&callback=initMap"></script>
     <script src="../js/script.min.js"></script>
     <script src="../js/selected-hike.min.js"></script>
 
