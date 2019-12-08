@@ -76,17 +76,7 @@
 }
 
 .gm-ui-hover-effect{
-  width: 26px!important;
-  height: 18px!important;
-  &:after{
-    @include pseudo;
-    font-family: "fontello";
-    content: '\e808';
-    font-size: 16px;
-  }
-  img{
-    display: none !important;
-  }
+  display: none !important;
 }
 
 

@@ -1,0 +1,627 @@
+@import "../../helper/variables";
+@import "../../helper/mixins";
+
+
+.calendar {
+  $block-name: &; // #{$block-name}__element
+
+  margin-top: 46px;
+  padding: 26px 0 25px;
+  background-image: url('../img/developments/calendar-bg.png');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  @media (min-width: $screen-md) {
+    padding: 26px 0 50px;
+  }
+  @media (min-width: $screen-xl) {
+    padding: 26px 0 81px;
+  }
+
+  &__inner {
+    @include container;
+  }
+
+  &__input {
+    @include hide-text;
+  }
+
+
+  &__wrap {
+    position: relative;
+    padding-bottom: 25px;
+    @media (min-width: $screen-sm) {
+      padding: 0;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    font-size: 10px !important;
+    color: $text-color-gray-dark3;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 31px -2px rgba(0, 0, 0, 0.3);
+    @media (min-width: $screen-md) {
+      bottom: auto;
+      top: 59%;
+      width: 30px;
+      height: 30px;
+      font-size: 12px !important;
+      box-shadow: 0 0 31px -5px rgba(0, 0, 0, 0.3);
+    }
+    @media (min-width: $screen-lg) {
+      width: 45px;
+      height: 45px;
+      font-size: 16px !important;
+      box-shadow: 0 0 31px -10px rgba(0, 0, 0, 0.3);
+    }
+    @media (min-width: $screen-xl) {
+      top: 56%;
+    }
+
+    &--left {
+      left: 0;
+      transform: rotate(180deg);
+      @media (min-width: $screen-md) {
+        transform: rotate(180deg);
+      }
+      @media (min-width: $screen-xl) {
+        left: 19px;
+      }
+    }
+
+    &--right {
+      right: 0;
+      @media (min-width: $screen-xl) {
+        right: 19px;
+      }
+    }
+  }
+
+  .fc-view {
+    margin-top: 50px;
+  }
+
+  tr:first-child > td > .fc-day-grid-event {
+    margin-top: 0;
+    @media (min-width: $screen-md) {
+      margin-top: -19px;
+    }
+  }
+
+  .fc-other-month {
+    color: #cfcfcf;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, #f3ecdf 8px, #f3ecdf 7px)
+  }
+
+  .fc-day-top.fc-other-month {
+    opacity: 1;
+  }
+
+  .fc-dayGrid-view .fc-week-number, .fc-dayGrid-view .fc-day-number {
+    padding: 10px 12px;
+    font-size: 6px;
+    @media (min-width: $screen-sm) {
+      font-size: 14px;
+    }
+  }
+
+  .fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
+    padding: 2px;
+    font-size: 6px;
+    @media (min-width: $screen-sm) {
+      font-size: 14px
+    }
+    @media (min-width: $screen-xl) {
+      padding: 10px 12px;
+    }
+  }
+
+  th,
+  td,
+  thead,
+  tbody,
+  .fc-divider,
+  .fc-row,
+  .fc-content,
+  .fc-popover,
+  .fc-list-view,
+  .fc-list-heading td {
+    border: none;
+  }
+
+  .fc-day {
+    border: 1px solid #dbdbdb;
+  }
+
+  .fc-widget-content .fc-row {
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+  }
+
+  .fc-widget-content .fc-row:last-child {
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  .fc-head {
+    border: 1px solid transparent;
+    border-bottom-color: #dbdbdb;
+
+    table {
+      margin-bottom: 20px;
+    }
+  }
+
+  .fc-row.fc-rigid .fc-content-skeleton {
+    bottom: 0;
+  }
+
+  .fc table {
+    height: 100%;
+  }
+
+  .fc-body {
+    height: 687px;
+  }
+
+  .fc-clear {
+    display: none;
+  }
+
+  .fc-toolbar {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba($color-gold, .3);
+  }
+
+  .fc-today-button {
+    display: flex;
+    margin-left: 0;
+    opacity: 1;
+
+    span {
+      margin-left: 5px;
+      color: $text-color-gray-dark2;
+      font-weight: 700;
+    }
+  }
+
+  .today-btn {
+    color: #9a9a9a;
+  }
+
+  .fc-view-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    @media (max-width: 383px) {
+      height: 247px;
+    }
+    @media (min-width: $screen-md) {
+      padding: 0 100px;
+      //height: auto;
+    }
+  }
+
+  .fc-view, .fc-view>table{
+
+    @media (max-width: 383px) {
+      height: 100%;
+    }
+  }
+
+  .fc-toolbar.fc-header-toolbar {
+    display: grid;
+    justify-content: center;
+    @media (min-width: $screen-md) {
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: start;
+    }
+  }
+
+  .fc-toolbar .fc-right {
+    position: relative;
+    float: right;
+    justify-self: center;
+    font-size: 12px;
+    grid-row: 1 / 2;
+
+    h2 {
+      font-size: 12px;
+      @media (min-width: $screen-md) {
+        font-size: 16px;
+      }
+      @media (min-width: $screen-xl) {
+        font-size: 24px;
+      }
+    }
+
+    @media (min-width: $screen-md) {
+      grid-row: auto;
+      font-size: 16px;
+    }
+    @media (min-width: $screen-xl) {
+      font-size: 24px;
+    }
+  }
+
+  .fc-left {
+    justify-self: center;
+    @media (min-width: $screen-xl) {
+      justify-self: start;
+    }
+  }
+
+  .fc-state-default {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .fc-day-header {
+    color: #757575;
+    font-size: 10px;
+    font-weight: 400;
+    @media (min-width: $screen-md) {
+      font-size: 14px;
+    }
+  }
+
+  .fc-event-container {
+    vertical-align: inherit;
+  }
+
+  // свои классы
+  .meeting {
+    //margin: 0;
+    margin-top: -10px !important;
+    padding: 0 2px;
+    background-color: $color-blue;
+    border: none;
+    font-weight: 500;
+    font-size: 6px;
+    line-height: 5px;
+    border-radius: 0;
+    @media (min-width: $screen-md) {
+      margin-top: -20px !important;
+      padding: 0 8px;
+      font-size: 8px;
+      line-height: 10px;
+    }
+    @media (min-width: $screen-xl) {
+      margin-top: -33px !important;
+      padding: 0 20px;
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    .fc-content .fc-title {
+      white-space: pre-line !important;
+    }
+  }
+
+
+  .activeDay {
+    color: $white;
+    background-color: $color-blue !important;
+  }
+
+
+  .events-block {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 4px 4px;
+    font-size: 6px;
+    background-color: #eaf7fa;
+    border: none;
+    border-left: 4px solid $color-blue;
+    border-radius: 0;
+
+    &:after {
+      @include pseudo;
+      font-family: "fontello";
+      content: '\e81f';
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $text-color-gray-dark2;
+      font-size: 6px;
+      @media (min-width: $screen-md) {
+        right: 15px;
+        font-size: 10px;
+      }
+      @media (min-width: $screen-xl) {
+        font-size: 14px;
+      }
+    }
+
+    @media (min-width: $screen-md) {
+      font-size: 10px;
+    }
+    @media (min-width: $screen-xl) {
+      margin-left: 62px;
+      margin-right: 70px;
+      padding: 12px 15px;
+      font-size: 16px;
+    }
+
+
+    .fc-title {
+      color: #1f1f1f;
+      font-weight: 500;
+    }
+  }
+
+
+  .fc-today {
+    background-color: inherit !important;
+  }
+
+  .fc-ltr .fc-h-event.fc-not-end, .fc-rtl .fc-h-event.fc-not-start {
+    &:after {
+      display: none;
+    }
+  }
+
+
+  .fc-ltr .fc-h-event.fc-not-start, .fc-rtl .fc-h-event.fc-not-end {
+    position: relative;
+    font-size: 0;
+    min-height: 8px;
+
+    &:after {
+      @include pseudo;
+      font-family: "fontello";
+      content: '\e81f';
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $text-color-gray-dark2;
+      font-size: 6px;
+      @media (min-width: $screen-md) {
+        right: 15px;
+        font-size: 10px;
+      }
+      @media (min-width: $screen-xl) {
+        font-size: 14px;
+      }
+    }
+
+    @media (min-width: $screen-md) {
+      min-height: 14px;
+    }
+    @media (min-width: $screen-xl) {
+      min-height: 19px;
+    }
+  }
+
+  .fc-scroller.fc-day-grid-container {
+    height: 100%;
+    @media (max-width: 383px) {
+      height: 100% !important;
+    }
+  }
+
+  .fc-basic-view .fc-body .fc-row {
+    min-height: 3em;
+    @media (min-width: $screen-md) {
+      min-height: 4em;
+    }
+  }
+
+  .fc-body {
+    background-color: $white;
+  }
+
+
+  //датапикер
+  .ui-widget-content {
+    z-index: 1;
+    width: 305px;
+    padding: 25px;
+    border: 1px solid $color-gold;
+    border-radius: 0;
+    background-color: #fff;
+    @media (min-width: $screen-md) {
+      width: 380px;
+    }
+  }
+
+  .ui-widget-header {
+    border: none;
+    background: $white;
+  }
+
+  .ui-datepicker-title {
+    select {
+      pointer-events: none;
+      border: none;
+      background-color: transparent;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      font-size: 12px;
+      font-weight: 700;
+      font-family: $font-family;
+      text-align-last: right;
+      @media (min-width: $screen-md) {
+        font-size: 16px;
+      }
+      @media (min-width: $screen-xl) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  option {
+    direction: rtl;
+  }
+
+  .ui-datepicker select.ui-datepicker-month {
+    margin-right: 10px;
+    width: auto;
+    color: $text-color-gray-dark2;
+  }
+
+  .ui-datepicker select.ui-datepicker-year {
+    position: relative;
+    width: auto;
+    color: #9a9a9a;
+  }
+
+  .ui-widget-header .ui-icon {
+    background-image: none;
+
+    &:after {
+      @include pseudo;
+      font-family: "fontello";;
+      content: '\e81f';
+      font-size: 13px;
+      color: $color-arrow;
+    }
+  }
+
+  .ui-icon {
+    width: 13px;
+    height: 18px;
+    text-indent: 0;
+    font-size: 0;
+    &:hover{
+      color: $color-blue;
+    }
+  }
+
+  .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    //position: relative;
+    &:hover{
+      color: $color-blue;
+    }
+  }
+
+  .ui-datepicker .ui-datepicker-prev {
+    order: 0;
+    transform: rotate(180deg);
+    left: 45px;
+    @media (min-width: $screen-md) {
+      left: 66px;
+      top: 5px;
+    }
+    @media (min-width: $screen-xl) {
+      left: 30px;
+    }
+  }
+
+  .ui-datepicker .ui-datepicker-next {
+    order: 2;
+    right: 45px;
+    @media (min-width: $screen-md) {
+      right: 66px;
+      top: 5px;
+    }
+    @media (min-width: $screen-xl) {
+      right: 30px;
+    }
+  }
+
+  .ui-datepicker .ui-datepicker-title {
+    margin: 0;
+    order: 1;
+  }
+
+  .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  .ui-datepicker th {
+    color: #757575;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: right;
+  }
+
+  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    color: #585858;
+    border: none;
+    background: transparent;
+  }
+
+  .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    background: transparent;
+    color: $color-blue;
+  }
+
+  .ui-datepicker-calendar {
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  .open-calendar {
+    position: absolute;
+    top: 50%;
+    transform: rotate(90deg) translateX(-50%);
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+    border: 1px solid $color-gold;
+    border-radius: 50%;
+
+    @media (min-width: $screen-md) {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:after {
+      @include pseudo;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: "fontello";;
+      content: '\e81f';
+      font-size: 6px;
+      color: $color-arrow;
+      @media (min-width: $screen-md) {
+        font-size: 8px;
+      }
+    }
+  }
+
+  #calendar {
+    position: relative;
+  }
+
+  .datepicker-here {
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 66px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: $transition-time;
+
+    &--opened {
+      opacity: 1;
+      z-index: 3;
+    }
+  }
+
+  .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    border: none;
+    background: transparent;
+    color: $color-blue;
+  }
+
+  .fc-row .fc-content-skeleton td, .fc-row .fc-mirror-skeleton td{
+    border: 1px solid #dbdbdb;
+    border-bottom: 0;
+    border-top: 0;
+  }
+}
+

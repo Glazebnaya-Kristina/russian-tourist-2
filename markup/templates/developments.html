@@ -14,9 +14,13 @@
     <title>Походы | Русский турист</title>
     <meta name="description" content="">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+    <!--  <link href='https://fullcalendar.io/js/fullcalendar-3.1.0/fullcalendar.css' rel='stylesheet' />-->
+    <!--  <link href='https://fullcalendar.io/js/fullcalendar-3.1.0/fullcalendar.print.css' rel='stylesheet' media='print' />-->
     <link rel="stylesheet" href="../css/style.css" data-inprogress="">
     <link rel="stylesheet" href="../css/developments.css" data-inprogress="">
-    <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>-->
+
+
 </head>
 
 <body>
@@ -96,20 +100,25 @@
         </section>
     </header>
 
-    <h1 class="title title--element title--element-small">События</h1>
+    <h1 class="title title--element title--element-small developments-title">События</h1>
 
     <!-- Секция Календарь -->
     <section class="calendar">
         <div class="calendar__inner">
             <h2 class="title title--small title--line">Календарь</h2>
 
-            <!--    <div class="calendar__wrapper">-->
-            <!--      <input type='text' id="datepicker" class="calendar__input">-->
-            <!--    </div>-->
-
             <div class="calendar__wrap">
-                <div id="my-today-button">число</div>
+
                 <div id='calendar'></div>
+
+                <div class="datepicker-here" id="datepicker"></div>
+
+                <button type="button" class="button-arrow calendar__arrow calendar__arrow--left">
+        <i class="icon-next"></i>
+      </button>
+                <button type="button" class="button-arrow calendar__arrow calendar__arrow--right">
+        <i class="icon-next"></i>
+      </button>
             </div>
 
 
@@ -484,19 +493,20 @@
     </section>
 
     <script src="../js/jquery.min.js"></script>
+    <script src="../js/moment.min.js"></script>
+    <script src="../js/fullcalendar.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>-->
+    <!--<script src='https://fullcalendar.io/js/fullcalendar-3.1.0/fullcalendar.js'></script>-->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>-->
     <script src="../js/jcf.min.js"></script>
-    <script src="../js/core.min.js"></script>
-    <script src="../js/daygrid.min.js"></script>
-    <!--<script src="../js/moment.min.js"></script>-->
-    <!--<script src="../js/moment2.js"></script>-->
-
+    <!--<script src="../js/core.min.js"></script>-->
+    <!--<script src="../js/daygrid.min.js"></script>-->
     <!--<script src="../js/datepicker.min.js"></script>-->
     <script src="../js/script.min.js"></script>
     <script src="../js/developments.min.js"></script>
 
-    <!--<script>-->
-    <!--   moment().format();-->
-    <!--</script>-->
+
 
 </body>
 

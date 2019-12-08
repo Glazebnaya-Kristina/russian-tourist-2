@@ -36,12 +36,13 @@
 
   &--element-small{
     &:after{
-      //max-width: none;
-      max-width: 200px;
+      max-width: 125px;
       height: 33px;
-      //background-size: auto;
       background-position: center;
       background-size: contain;
+      @media (min-width: $screen-xl) {
+        max-width: 200px;
+      }
     }
   }
 
