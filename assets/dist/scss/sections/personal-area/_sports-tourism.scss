@@ -70,4 +70,8 @@
       }
     }
   }
+
+  .types__description{
+    @include hide-text;
+  }
 }
