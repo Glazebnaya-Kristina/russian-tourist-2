@@ -159,6 +159,14 @@
       height: 708px;
       padding: 57px;
     }
+
+    .map{
+      height: 100%;
+      @media (min-width: $screen-xl) {
+        width: 93%;
+        height: 84%;
+      }
+    }
   }
 
 
@@ -211,6 +219,9 @@
       left: 0;
       top: 0;
       transform: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
       height: 100%;
       background-size: auto;
