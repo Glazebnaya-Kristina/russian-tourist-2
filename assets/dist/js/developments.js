@@ -113,6 +113,7 @@ $(document).ready(function () {
             end: '2019-12-25',
             className: 'meeting',
             url: 'https://www.google.com/',
+            /* что бы закрашивался весь квадрат, нужно в опициях прописать - customRender: true */
             customRender: true
          }
       ],

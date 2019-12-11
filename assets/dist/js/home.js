@@ -42,7 +42,7 @@ $(function () {
                '<li class="map-popup__item">Тридцатка</li>'+
                '<li class="map-popup__item">Сванетия</li>'+
                '</ul>'+
-               '<a href="article-post.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
+               '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
                '</div>',
       });
       addMarker({
@@ -59,7 +59,7 @@ $(function () {
             '<li class="map-popup__item">Тридцатка</li>'+
             '<li class="map-popup__item">Сванетия</li>'+
             '</ul>'+
-            '<a href="article-post.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
+            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
             '</div>',
       });
       addMarker({
@@ -76,7 +76,7 @@ $(function () {
             '<li class="map-popup__item">Тридцатка</li>'+
             '<li class="map-popup__item">Сванетия</li>'+
             '</ul>'+
-            '<a href="article-post.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
+            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
             '</div>',
       });
       addMarker({
@@ -93,7 +93,7 @@ $(function () {
             '<li class="map-popup__item">Тридцатка</li>'+
             '<li class="map-popup__item">Сванетия</li>'+
             '</ul>'+
-            '<a href="article-post.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
+            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
             '</div>',
       });
       addMarker({
@@ -110,7 +110,7 @@ $(function () {
             '<li class="map-popup__item">Тридцатка</li>'+
             '<li class="map-popup__item">Сванетия</li>'+
             '</ul>'+
-            '<a href="article-post.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
+            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
             '</div>',
       });
       addMarker({
@@ -127,7 +127,7 @@ $(function () {
             '<li class="map-popup__item">Тридцатка</li>'+
             '<li class="map-popup__item">Сванетия</li>'+
             '</ul>'+
-            '<a href="article-post.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
+            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
             '</div>',
       });
       addMarker({
@@ -144,7 +144,7 @@ $(function () {
             '<li class="map-popup__item">Тридцатка</li>'+
             '<li class="map-popup__item">Сванетия</li>'+
             '</ul>'+
-            '<a href="article-post.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
+            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
             '</div>',
       });
    }
