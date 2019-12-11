@@ -81,19 +81,22 @@
     transform: translateY(-50%);
     cursor: pointer;
     font-size: 14px;
+    @media (min-width: $screen-lg) {
+      font-size: 19px;
+    }
 
     &--left {
       left: 31.2%;
       transform: translateY(-50%) rotate(180deg);
       @media (min-width: $screen-md) {
-        left: 32.2%;
+        left: 32%;
       }
     }
 
     &--right {
       right: 30.2%;
       @media (min-width: $screen-md) {
-        right: 32.2%;
+        right: 32%;
       }
     }
   }
