@@ -69,5 +69,12 @@ $(document).ready(function () {
       var comentHistory = $('.comment__history-answer');
       $(this).parents('.comment__history-item').append(comentHistory);
       $(this).parents('.comment__history').find('.comment__history-answer').toggle('comment__history-answer--active');
+   });
+
+
+   $('.jcf-real-element').on('mouseover', function(){
+      $(this).parent().addClass('jcf-upload-button--active');
+   }).on('mouseout', function(){
+      $(this).parent().removeClass('jcf-upload-button--active');
    })
 });

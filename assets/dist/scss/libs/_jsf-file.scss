@@ -13,12 +13,12 @@
   margin: 0;
   right: 0;
   top: 0;
-  &:hover,
-  &:focus{
-    .jcf-upload-button{
-      i{
-        color: red;
-      }
+}
+
+.jcf-upload-button--active{
+  .jcf-button-content-my{
+    i{
+      color: #b88c41;
     }
   }
 }
