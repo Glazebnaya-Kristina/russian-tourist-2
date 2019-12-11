@@ -19,6 +19,8 @@
     }
     &:after{
       @media (min-width: $screen-xs) and (max-width: 767px) {
+        left: 50%;
+        transform: translateX(-50%);
         background-position: center;
       }
     }
