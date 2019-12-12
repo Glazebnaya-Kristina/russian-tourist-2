@@ -191,6 +191,15 @@ $(document).ready(function () {
 
    openCalendar.addEventListener('click', function () {
       calendarBlock.classList.toggle('datepicker-here--opened');
-   })
+   });
+
+
+   var btnCabinet = document.querySelector('.header__button-cabinet');
+
+   btnCabinet.addEventListener('click', function () {
+      var caledarPick = document.querySelector('.datepicker-here');
+      caledarPick.classList.remove('datepicker-here--opened');
+   });
+
 
 });
