@@ -10,8 +10,16 @@
   font-weight: 500;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  transition: $transition-time;
 
   i{
     margin-right: 10px;
+  }
+
+  &:hover,
+  &:focus{
+    outline: none;
+    color: $color-gold;
   }
 }
