@@ -14,11 +14,16 @@
 }
 .jcf-scrollbar-vertical .jcf-scrollbar-dec,
 .jcf-scrollbar-vertical .jcf-scrollbar-inc {
-  height: 15px;
-  width: 11px;
-  left: 0;
-  top: 0;
-  background-color: #e8e8e8;
+  //height: 15px;
+  //width: 11px;
+  //left: 0;
+  //top: 0;
+  //background-color: #e8e8e8;
+  top: auto;
+  bottom: 0;
+  display: none;
+  height: 0;
+  width: 0;
 }
 .jcf-scrollbar-vertical .jcf-scrollbar-inc {
   top: auto;
