@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
       modalRegistration.classList.remove('popup--opened');
    });
 
+
    // закрытие модального окна Спасибо за регистрацию
    var btnRegistrationThanks = document.querySelector('.modal__thanks-registration button[data-modal="sign-in"]');
 
@@ -120,6 +121,24 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
       var modalPass = document.querySelector('.popup[data-modal="new-pass"]');
       modalPass.classList.remove('popup--opened');
+   });
+
+
+
+
+   // закрытие модального окна с подпиской
+   var btnJournal = document.querySelectorAll('button[data-modal="buy-print-journal"]');
+
+   btnJournal.forEach(function (item) {
+      item.addEventListener('click', function (e) {
+         e.preventDefault();
+         var modalSummary = document.querySelector('.popup[data-modal="release-summary"]');
+         modalSummary.classList.remove('popup--opened');
+
+         var modalDownload = document.querySelector('.popup[data-modal="download-pdf"]');
+         modalDownload.classList.remove('popup--opened');
+      });
+
    });
 
    closeButtons.forEach(function(item){
