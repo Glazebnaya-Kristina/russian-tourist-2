@@ -40,7 +40,10 @@
       height: 350px;
     }
     @media (min-width: $screen-lg) {
-      height: auto;
+      height: 312px;
+    }
+    @media (min-width: $screen-xl) {
+      height: 276px;
     }
   }
 
