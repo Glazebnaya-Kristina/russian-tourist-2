@@ -184,4 +184,10 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelector('.hidden').classList.remove('hidden');
       this.classList.remove('.modal__overlay--opened');
    });
+
+   jcf.setOptions('File', {
+      placeholderText: 'прикрепить документ, подтверждающий руководство группой в походе'
+   });
+
+   jcf.replaceAll();
 }); // end ready

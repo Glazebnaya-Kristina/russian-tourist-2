@@ -1,0 +1,62 @@
+.file{
+  /* file */
+  .jcf-file {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    //white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+  }
+  .jcf-file .jcf-real-element {
+    position: absolute;
+    font-size: 200px;
+    height: 200px;
+    margin: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .jcf-upload-button--active{
+    .jcf-button-content-my{
+      i{
+        color: #b88c41;
+      }
+    }
+  }
+
+  .jcf-file .jcf-fake-input {
+    overflow: hidden;
+    display: inline-block;
+    max-width: 193px;
+    width: 100%;
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: normal;
+    color: $text-color-gray-lighten;
+    border: none;
+    white-space: normal;
+    height: auto;
+    padding: 0;
+  }
+
+  .jcf-button-content-my{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    i{
+      font-size: 14px;
+      color: $color-grey-light;
+    }
+
+  }
+  .jcf-file .jcf-upload-button {
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+  }
+}

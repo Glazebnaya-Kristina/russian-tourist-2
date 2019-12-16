@@ -149,6 +149,19 @@
     margin-top: 5px;
   }
 
+  &__registration-file {
+    display: flex;
+    margin-top: 10px;
+    margin-right: 39px;
+    @media (min-width: $screen-md) {
+      justify-content: flex-end;
+    }
+  }
+
+  &__registration-wpapper-choise{
+    margin-bottom: 27px;
+  }
+
   /*----- Модальное окно Спасибо за РЕГЕСТРИЦИЮ -----*/
   &__sign-in-button {
     max-width: 200px;

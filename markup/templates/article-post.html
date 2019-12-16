@@ -821,7 +821,7 @@
     <!-- Секция Модальны окна -->
     <section class="modal">
         <!--   Модальное окно РЕГЕСТРИЦИЯ -->
-        <div class="popup popup--big modal__registration" data-modal="registration">
+        <div class="popup popup--big popup--opened modal__registration" data-modal="registration">
             <div class="modal__dialog">
                 <div class="modal__header modal__header--line">
                     <h3 class="modal__title">Регистрация</h3>
@@ -832,6 +832,21 @@
                 </div>
                 <div class="modal__content">
                     <form action="#" class="form">
+                        <div class="modal__registration-wpapper-choise">
+                            <ul class="radio">
+                                <li class="radio__item">
+                                    <label for="registration-1">Обычный пользователь</label>
+                                    <input type="radio" id="registration-1" name="registration">
+                                </li>
+                                <li class="radio__item">
+                                    <input type="radio" id="registration-2" name="registration" checked>
+                                    <label for="registration-2">Руковадитель группы</label>
+                                </li>
+                            </ul>
+                            <div class="file modal__registration-file">
+                                <input type="file">
+                            </div>
+                        </div>
                         <div class="form__wrapper form__wrapper--column-2">
                             <label class="label">
               <span class="label__name">Имя</span>
@@ -851,11 +866,11 @@
             </label>
                             <label class="label">
               <span class="label__name">Пароль</span>
-              <input type="password" class="input" placeholder="Пароль">
+              <input id="password" type="password" name="password" class="input" placeholder="Пароль">
             </label>
                             <label class="label">
               <span class="label__name">Повторите пароль</span>
-              <input type="password" class="input" placeholder="Повторите пароль">
+              <input type="password" name="confirm_password" class="input" placeholder="Повторите пароль">
             </label>
                         </div>
                         <span class="text-error">Ошибка...</span>
@@ -973,6 +988,7 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.radio.min.js"></script>
     <script src="../js/jcf.file.min.js"></script>
     <script src="../js/jcf.select.min.js"></script>
     <script src="../js/jcf.scrollable.min.js"></script>

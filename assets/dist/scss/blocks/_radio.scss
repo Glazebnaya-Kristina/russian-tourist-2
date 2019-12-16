@@ -1,0 +1,85 @@
+/* radio */
+.radio{
+  @include ul-reset;
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: $screen-md) {
+    margin: 0 43px 0 31px;
+  }
+
+  &__item {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:nth-child(1){
+      .jcf-radio{
+        margin-right: -5px;
+      }
+    }
+    &:nth-child(2){
+      .jcf-radio{
+        margin-left: -5px;
+      }
+      label{
+        text-align: right;
+        @media (min-width: $screen-md) {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  label{
+    font-family: $font-family-Cormorant;
+    font-weight: 400;
+    font-size: 15px;
+    color: $text-color-gray-dark3;
+    @media (min-width: $screen-md) {
+      font-size: 25px;
+    }
+  }
+  .jcf-radio {
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+    background: #e8e8e8;
+    height: 11px;
+    width: 40px;
+    border-radius: 25px;
+    border: none;
+    @media (min-width: $screen-md) {
+      width: 64px;
+    }
+  }
+  .jcf-radio span{
+    position:absolute;
+    z-index: 2;
+    display:none;
+    height: 11px;
+    width: 40px;
+    background-color: $color-blue;
+    border-radius: 25px;
+    top: 0;
+    right: 0;
+    @media (min-width: $screen-md) {
+      width: 64px;
+    }
+  }
+  .jcf-radio input[type="radio"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+  }
+  .jcf-radio.jcf-checked span {display:block;}
+
+  .jcf-radio.jcf-unchecked.jcf-disabled + label{
+    color: #bababa;
+  }
+}
