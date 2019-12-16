@@ -143,14 +143,4 @@ $(document).ready(function () {
 
    });
 
-
-   // var closeHike = document.querySelectorAll('.hike__wrapper-want--active button');
-   //
-   // closeHike.forEach(function (item) {
-   //    item.addEventListener('click', function () {
-   //       typesAddElem.classList.remove('types__item--active');
-   //       parentTypes.style.display = '';
-   //    })
-   // })
-
 });

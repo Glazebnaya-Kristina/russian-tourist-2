@@ -139,15 +139,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
    });
 
-
    // закрытие модального окна с подпиской
-   var btnDownload = document.querySelector('a[data-modal="download-pdf"]');
+   var btnDownload = document.querySelector('.release-summary__download');
 
-   btnDownload.addEventListener('click', function (e) {
-      e.preventDefault();
-      var modalRelease = document.querySelector('.popup[data-modal="release-summary"]');
-      modalRelease.classList.remove('popup--opened');
-   });
+   if(btnDownload) {
+      btnDownload.addEventListener('click', function (e) {
+         e.preventDefault();
+         var modalRelease = document.querySelector('.popup[data-modal="release-summary"]');
+         modalRelease.classList.remove('popup--opened');
+      });
+   }
+
 
    closeButtons.forEach(function(item){
 

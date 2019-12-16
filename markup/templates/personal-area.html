@@ -263,7 +263,7 @@
                                         <p class="hike__supervisor-wrapper">
                                             <span class="hike__supervisor-field">Руковадитель:</span>
                                             <span class="hike__supervisor-name">Имя Фамилия</span>
-                                            <button class="button button--blue hike__button-write">Написать руководителю</button>
+                                            <button class="button button--blue hike__button-write js-open-modal" data-modal="write-message-supervisor">Написать руководителю</button>
                                         </p>
                                     </div>
                                     <div class="hike__watching">
@@ -497,7 +497,7 @@
                                         <p class="hike__supervisor-wrapper">
                                             <span class="hike__supervisor-field">Руковадитель:</span>
                                             <span class="hike__supervisor-name">Имя Фамилия</span>
-                                            <button class="button button--blue hike__button-write">Написать руководителю</button>
+                                            <button class="button button--blue hike__button-write js-open-modal" data-modal="write-message-supervisor">Написать руководителю</button>
                                         </p>
                                     </div>
                                     <div class="hike__watching">
@@ -740,7 +740,7 @@
                                     <p class="hike__supervisor-wrapper">
                                         <span class="hike__supervisor-field">Руковадитель:</span>
                                         <span class="hike__supervisor-name">Имя Фамилия</span>
-                                        <button class="button button--blue hike__button-write">Написать руководителю</button>
+                                        <button class="button button--blue hike__button-write js-open-modal" data-modal="write-message-supervisor">Написать руководителю</button>
                                     </p>
                                 </div>
                                 <div class="hike__watching">
@@ -978,7 +978,7 @@
                                     <p class="hike__supervisor-wrapper">
                                         <span class="hike__supervisor-field">Руковадитель:</span>
                                         <span class="hike__supervisor-name">Имя Фамилия</span>
-                                        <button class="button button--blue hike__button-write">Написать руководителю</button>
+                                        <button class="button button--blue hike__button-write js-open-modal" data-modal="write-message-supervisor">Написать руководителю</button>
                                     </p>
                                 </div>
                                 <div class="hike__watching">
@@ -2259,6 +2259,39 @@
                             </article>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Модальное окно Написать сообщение -->
+        <div class="popup popup--big modal__write-message" data-modal="write-message-supervisor">
+            <div class="modal__dialog">
+                <div class="modal__header modal__header--line">
+                    <h3 class="modal__title">Написать руководителю</h3>
+                    <button class="modal__close close close--grey-dark close--icon" type="button">
+          <span class="close__description">Закрыть модальное окно</span>
+          <i class="icon-error"></i>
+        </button>
+                </div>
+                <div class="modal__content">
+                    <form action="#" class="form modal__write-message-form">
+                        <fieldset class="form__fieldset">
+                            <legend class="form__legend">Новое сообщение</legend>
+                            <label class="label modal__write-message-label">
+              <span>Кому:</span>
+              <input type="text" class="input-message" placeholder="Имя фамилия">
+              <time datetime="2019-07-27">24.07.2019</time>
+            </label>
+                            <textarea class="input input--textarea modal__write-message-textarea" placeholder="Имя фамилия">Сообщение</textarea>
+                            <span class="text-error">Ошибка...</span>
+                            <div class="modal__write-message-wrapper-action">
+                                <button class="button button--blue modal__write-message-save-submit" type="submit">Отправить</button>
+                                <div class="smile">
+                                    <button type="button" class="smile__button"><i class="icon-smile"></i></button>
+                                </div>
+                                <input type="file">
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>
