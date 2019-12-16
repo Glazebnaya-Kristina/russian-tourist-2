@@ -124,8 +124,6 @@ document.addEventListener('DOMContentLoaded', function() {
    });
 
 
-
-
    // закрытие модального окна с подпиской
    var btnJournal = document.querySelectorAll('button[data-modal="buy-print-journal"]');
 
@@ -139,6 +137,16 @@ document.addEventListener('DOMContentLoaded', function() {
          modalDownload.classList.remove('popup--opened');
       });
 
+   });
+
+
+   // закрытие модального окна с подпиской
+   var btnDownload = document.querySelector('a[data-modal="download-pdf"]');
+
+   btnDownload.addEventListener('click', function (e) {
+      e.preventDefault();
+      var modalRelease = document.querySelector('.popup[data-modal="release-summary"]');
+      modalRelease.classList.remove('popup--opened');
    });
 
    closeButtons.forEach(function(item){
