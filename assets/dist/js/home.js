@@ -4,8 +4,7 @@ $(function () {
       arrows: true,
       prevArrow: $('.header__arrow--left'),
       nextArrow: $('.header__arrow--right'),
-      dots: true,
-      fade: true
+      dots: true
    });
 
    //карта
