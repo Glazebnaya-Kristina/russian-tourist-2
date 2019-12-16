@@ -44,6 +44,14 @@
     background-position: top center;
     background-size: cover;
   }
+
+  .jcf-upload-button--active{
+    .jcf-button-content-my{
+      i{
+        color: #b88c41;
+      }
+    }
+  }
 }
 
 

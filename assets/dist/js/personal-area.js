@@ -143,4 +143,10 @@ $(document).ready(function () {
 
    });
 
+   $('.jcf-real-element').on('mouseover', function(){
+      $(this).parent().addClass('jcf-upload-button--active');
+   }).on('mouseout', function(){
+      $(this).parent().removeClass('jcf-upload-button--active');
+   })
+
 });
