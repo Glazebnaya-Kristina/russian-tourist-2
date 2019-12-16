@@ -10,14 +10,14 @@
     display: flex;
     @media (min-width: $screen-md) {
       padding: 27px 0;
-      margin-right: 50px;
+      //margin-right: 50px;
     }
-    @media (min-width: $screen-lg) {
-      margin-right: 60px;
-    }
-    @media (min-width: $screen-xl) {
-      margin-right: 120px;
-    }
+    //@media (min-width: $screen-lg) {
+    //  //margin-right: 60px;
+    //}
+    //@media (min-width: $screen-xl) {
+    //  //margin-right: 120px;
+    //}
     li{
       &:not(:first-of-type){
         @media (min-width: $screen-md) {

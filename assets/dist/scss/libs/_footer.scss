@@ -46,6 +46,14 @@
       margin-bottom: 0;
     }
 
+    > a{
+      &:hover,
+      &:focus{
+        outline: none;
+        color: $color-gold;
+      }
+    }
+
     &:last-of-type{
       @media (min-width: $screen-sm) {
         grid-column: 1 / 3;
@@ -110,7 +118,7 @@
   &__list{
     @include ul-reset;
     margin-top: 16px;
-    a{
+    a:not(.footer__button-subscription){
       font-size: 14px;
       &:hover,
       &:focus{
@@ -159,5 +167,20 @@
   &__social{
     justify-content: flex-end;
     margin-top: 11px;
+  }
+
+  &__button-subscription{
+    padding: 6px 19px;
+    text-transform: uppercase;
+    border: 1px solid $white;
+    &:hover,
+    &:focus{
+      border-color: $color-gold;
+      background-color: $color-gold;
+    }
+  }
+
+  &__link-want-camping{
+    text-transform: uppercase;
   }
 }
