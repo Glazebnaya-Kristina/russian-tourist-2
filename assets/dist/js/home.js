@@ -1,8 +1,11 @@
 $(function () {
 
    $('.header__slider').slick({
-      arrows: false,
-      dots: true
+      arrows: true,
+      prevArrow: $('.header__arrow--left'),
+      nextArrow: $('.header__arrow--right'),
+      dots: true,
+      fade: true
    });
 
    //карта
@@ -21,7 +24,7 @@ $(function () {
       });
       addMarkers();
 
-      map.addListener('click', function() {
+      map.addListener('click', function () {
          if (infoWindow) infoWindow.close();
       });
    }
@@ -29,122 +32,122 @@ $(function () {
 
    function addMarkers() {
       addMarker({
-         coords: { lat: 57.6686531, lng: 46.5856643 },
+         coords: {lat: 57.6686531, lng: 46.5856643},
          content: '<div id="content" class="map-popup">' +
-               '<p class="map-popup__img"><img src="../img/map-img.jpg" alt="Фотография местости"></p>'+
-               '<h3 class="map-popup__title">Название маршрута</h3>' +
-               '<p class="map-popup__level"><span>Сложность:</span><img src="../img/trekking/level.png" alt="уровень сложности"></p>'+
-               '<ul class="map-popup__list">'+
-               '<li class="map-popup__item">Сванетия</li>'+
-               '<li class="map-popup__item">Эльбрус восточная вершина</li>'+
-               '<li class="map-popup__item">Абхазия</li>'+
-               '<li class="map-popup__item">Казбек</li>'+
-               '<li class="map-popup__item">Тридцатка</li>'+
-               '<li class="map-popup__item">Сванетия</li>'+
-               '</ul>'+
-               '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
-               '</div>',
-      });
-      addMarker({
-         coords: { lat: 49.5509507, lng: 25.5893844 },
-         content: '<div id="content" class="map-popup">' +
-            '<p class="map-popup__img"><img src="../img/map-img.jpg" alt="Фотография местости"></p>'+
+            '<p class="map-popup__img"><img src="../img/map-img.jpg" alt="Фотография местости"></p>' +
             '<h3 class="map-popup__title">Название маршрута</h3>' +
-            '<p class="map-popup__level"><span>Сложность:</span><img src="../img/trekking/level.png" alt="уровень сложности"></p>'+
-            '<ul class="map-popup__list">'+
-            '<li class="map-popup__item">Сванетия</li>'+
-            '<li class="map-popup__item">Эльбрус восточная вершина</li>'+
-            '<li class="map-popup__item">Абхазия</li>'+
-            '<li class="map-popup__item">Казбек</li>'+
-            '<li class="map-popup__item">Тридцатка</li>'+
-            '<li class="map-popup__item">Сванетия</li>'+
-            '</ul>'+
-            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
+            '<p class="map-popup__level"><span>Сложность:</span><img src="../img/trekking/level.png" alt="уровень сложности"></p>' +
+            '<ul class="map-popup__list">' +
+            '<li class="map-popup__item">Сванетия</li>' +
+            '<li class="map-popup__item">Эльбрус восточная вершина</li>' +
+            '<li class="map-popup__item">Абхазия</li>' +
+            '<li class="map-popup__item">Казбек</li>' +
+            '<li class="map-popup__item">Тридцатка</li>' +
+            '<li class="map-popup__item">Сванетия</li>' +
+            '</ul>' +
+            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>' +
             '</div>',
       });
       addMarker({
-         coords: { lat: 47.9547219, lng: 21.7162095 },
+         coords: {lat: 49.5509507, lng: 25.5893844},
          content: '<div id="content" class="map-popup">' +
-            '<p class="map-popup__img"><img src="../img/map-img.jpg" alt="Фотография местости"></p>'+
+            '<p class="map-popup__img"><img src="../img/map-img.jpg" alt="Фотография местости"></p>' +
             '<h3 class="map-popup__title">Название маршрута</h3>' +
-            '<p class="map-popup__level"><span>Сложность:</span><img src="../img/trekking/level.png" alt="уровень сложности"></p>'+
-            '<ul class="map-popup__list">'+
-            '<li class="map-popup__item">Сванетия</li>'+
-            '<li class="map-popup__item">Эльбрус восточная вершина</li>'+
-            '<li class="map-popup__item">Абхазия</li>'+
-            '<li class="map-popup__item">Казбек</li>'+
-            '<li class="map-popup__item">Тридцатка</li>'+
-            '<li class="map-popup__item">Сванетия</li>'+
-            '</ul>'+
-            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
+            '<p class="map-popup__level"><span>Сложность:</span><img src="../img/trekking/level.png" alt="уровень сложности"></p>' +
+            '<ul class="map-popup__list">' +
+            '<li class="map-popup__item">Сванетия</li>' +
+            '<li class="map-popup__item">Эльбрус восточная вершина</li>' +
+            '<li class="map-popup__item">Абхазия</li>' +
+            '<li class="map-popup__item">Казбек</li>' +
+            '<li class="map-popup__item">Тридцатка</li>' +
+            '<li class="map-popup__item">Сванетия</li>' +
+            '</ul>' +
+            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>' +
             '</div>',
       });
       addMarker({
-         coords: { lat: 44.8017258, lng: 10.318929 },
+         coords: {lat: 47.9547219, lng: 21.7162095},
          content: '<div id="content" class="map-popup">' +
-            '<p class="map-popup__img"><img src="../img/map-img.jpg" alt="Фотография местости"></p>'+
+            '<p class="map-popup__img"><img src="../img/map-img.jpg" alt="Фотография местости"></p>' +
             '<h3 class="map-popup__title">Название маршрута</h3>' +
-            '<p class="map-popup__level"><span>Сложность:</span><img src="../img/trekking/level.png" alt="уровень сложности"></p>'+
-            '<ul class="map-popup__list">'+
-            '<li class="map-popup__item">Сванетия</li>'+
-            '<li class="map-popup__item">Эльбрус восточная вершина</li>'+
-            '<li class="map-popup__item">Абхазия</li>'+
-            '<li class="map-popup__item">Казбек</li>'+
-            '<li class="map-popup__item">Тридцатка</li>'+
-            '<li class="map-popup__item">Сванетия</li>'+
-            '</ul>'+
-            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
+            '<p class="map-popup__level"><span>Сложность:</span><img src="../img/trekking/level.png" alt="уровень сложности"></p>' +
+            '<ul class="map-popup__list">' +
+            '<li class="map-popup__item">Сванетия</li>' +
+            '<li class="map-popup__item">Эльбрус восточная вершина</li>' +
+            '<li class="map-popup__item">Абхазия</li>' +
+            '<li class="map-popup__item">Казбек</li>' +
+            '<li class="map-popup__item">Тридцатка</li>' +
+            '<li class="map-popup__item">Сванетия</li>' +
+            '</ul>' +
+            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>' +
             '</div>',
       });
       addMarker({
-         coords: { lat: 36.5563376, lng: 2.7858127 },
+         coords: {lat: 44.8017258, lng: 10.318929},
          content: '<div id="content" class="map-popup">' +
-            '<p class="map-popup__img"><img src="../img/map-img.jpg" alt="Фотография местости"></p>'+
+            '<p class="map-popup__img"><img src="../img/map-img.jpg" alt="Фотография местости"></p>' +
             '<h3 class="map-popup__title">Название маршрута</h3>' +
-            '<p class="map-popup__level"><span>Сложность:</span><img src="../img/trekking/level.png" alt="уровень сложности"></p>'+
-            '<ul class="map-popup__list">'+
-            '<li class="map-popup__item">Сванетия</li>'+
-            '<li class="map-popup__item">Эльбрус восточная вершина</li>'+
-            '<li class="map-popup__item">Абхазия</li>'+
-            '<li class="map-popup__item">Казбек</li>'+
-            '<li class="map-popup__item">Тридцатка</li>'+
-            '<li class="map-popup__item">Сванетия</li>'+
-            '</ul>'+
-            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
+            '<p class="map-popup__level"><span>Сложность:</span><img src="../img/trekking/level.png" alt="уровень сложности"></p>' +
+            '<ul class="map-popup__list">' +
+            '<li class="map-popup__item">Сванетия</li>' +
+            '<li class="map-popup__item">Эльбрус восточная вершина</li>' +
+            '<li class="map-popup__item">Абхазия</li>' +
+            '<li class="map-popup__item">Казбек</li>' +
+            '<li class="map-popup__item">Тридцатка</li>' +
+            '<li class="map-popup__item">Сванетия</li>' +
+            '</ul>' +
+            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>' +
             '</div>',
       });
       addMarker({
-         coords: { lat: 41.7136682, lng: 44.7907789 },
+         coords: {lat: 36.5563376, lng: 2.7858127},
          content: '<div id="content" class="map-popup">' +
-            '<p class="map-popup__img"><img src="../img/map-img.jpg" alt="Фотография местости"></p>'+
+            '<p class="map-popup__img"><img src="../img/map-img.jpg" alt="Фотография местости"></p>' +
             '<h3 class="map-popup__title">Название маршрута</h3>' +
-            '<p class="map-popup__level"><span>Сложность:</span><img src="../img/trekking/level.png" alt="уровень сложности"></p>'+
-            '<ul class="map-popup__list">'+
-            '<li class="map-popup__item">Сванетия</li>'+
-            '<li class="map-popup__item">Эльбрус восточная вершина</li>'+
-            '<li class="map-popup__item">Абхазия</li>'+
-            '<li class="map-popup__item">Казбек</li>'+
-            '<li class="map-popup__item">Тридцатка</li>'+
-            '<li class="map-popup__item">Сванетия</li>'+
-            '</ul>'+
-            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
+            '<p class="map-popup__level"><span>Сложность:</span><img src="../img/trekking/level.png" alt="уровень сложности"></p>' +
+            '<ul class="map-popup__list">' +
+            '<li class="map-popup__item">Сванетия</li>' +
+            '<li class="map-popup__item">Эльбрус восточная вершина</li>' +
+            '<li class="map-popup__item">Абхазия</li>' +
+            '<li class="map-popup__item">Казбек</li>' +
+            '<li class="map-popup__item">Тридцатка</li>' +
+            '<li class="map-popup__item">Сванетия</li>' +
+            '</ul>' +
+            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>' +
             '</div>',
       });
       addMarker({
-         coords: { lat: 46.517961, lng: 58.387727 },
+         coords: {lat: 41.7136682, lng: 44.7907789},
          content: '<div id="content" class="map-popup">' +
-            '<p class="map-popup__img"><img src="../img/map-img.jpg" alt="Фотография местости"></p>'+
+            '<p class="map-popup__img"><img src="../img/map-img.jpg" alt="Фотография местости"></p>' +
             '<h3 class="map-popup__title">Название маршрута</h3>' +
-            '<p class="map-popup__level"><span>Сложность:</span><img src="../img/trekking/level.png" alt="уровень сложности"></p>'+
-            '<ul class="map-popup__list">'+
-            '<li class="map-popup__item">Сванетия</li>'+
-            '<li class="map-popup__item">Эльбрус восточная вершина</li>'+
-            '<li class="map-popup__item">Абхазия</li>'+
-            '<li class="map-popup__item">Казбек</li>'+
-            '<li class="map-popup__item">Тридцатка</li>'+
-            '<li class="map-popup__item">Сванетия</li>'+
-            '</ul>'+
-            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>'+
+            '<p class="map-popup__level"><span>Сложность:</span><img src="../img/trekking/level.png" alt="уровень сложности"></p>' +
+            '<ul class="map-popup__list">' +
+            '<li class="map-popup__item">Сванетия</li>' +
+            '<li class="map-popup__item">Эльбрус восточная вершина</li>' +
+            '<li class="map-popup__item">Абхазия</li>' +
+            '<li class="map-popup__item">Казбек</li>' +
+            '<li class="map-popup__item">Тридцатка</li>' +
+            '<li class="map-popup__item">Сванетия</li>' +
+            '</ul>' +
+            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>' +
+            '</div>',
+      });
+      addMarker({
+         coords: {lat: 46.517961, lng: 58.387727},
+         content: '<div id="content" class="map-popup">' +
+            '<p class="map-popup__img"><img src="../img/map-img.jpg" alt="Фотография местости"></p>' +
+            '<h3 class="map-popup__title">Название маршрута</h3>' +
+            '<p class="map-popup__level"><span>Сложность:</span><img src="../img/trekking/level.png" alt="уровень сложности"></p>' +
+            '<ul class="map-popup__list">' +
+            '<li class="map-popup__item">Сванетия</li>' +
+            '<li class="map-popup__item">Эльбрус восточная вершина</li>' +
+            '<li class="map-popup__item">Абхазия</li>' +
+            '<li class="map-popup__item">Казбек</li>' +
+            '<li class="map-popup__item">Тридцатка</li>' +
+            '<li class="map-popup__item">Сванетия</li>' +
+            '</ul>' +
+            '<a href="selected-hike.html" class="map-popup__link"><i class="icon-right-arrow right-arrow right-arrow--blue"></i></a>' +
             '</div>',
       });
    }

@@ -39,24 +39,6 @@
     margin-top: 18px;
   }
 
-  //.archive-edition__list {
-  //  .slick-center {
-  //    transition: $transition-time;
-  //    transform: scale(1.17);
-  //  }
-  //
-  //  .slick-track {
-  //    padding: 34px 0;
-  //  }
-  //
-  //  .slick-slide {
-  //    margin: 0 20px;
-  //    display: flex;
-  //    align-items: center;
-  //    justify-content: center;
-  //  }
-  //}
-
   &__list {
     @include ul-reset;
     position: relative;
