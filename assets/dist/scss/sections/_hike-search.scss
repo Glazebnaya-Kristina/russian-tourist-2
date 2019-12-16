@@ -6,6 +6,10 @@
   $block-name: &; // #{$block-name}__element
 
   padding: 41px 0 19px;
+
+  &--trekking{
+    padding: 41px 0 13px;
+  }
   &__inner{
     @include container;
   }
@@ -26,5 +30,10 @@
 
   &__button-reset{
     margin-left: -15px;
+    @media (min-width: $screen-md) {
+      grid-column: 1 / -1;
+      margin-top: 14px;
+      margin-left: 0;
+    }
   }
 }
