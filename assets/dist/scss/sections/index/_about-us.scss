@@ -156,5 +156,8 @@
     border-radius: 50%;
     background-color: $white;
     box-shadow: 0 0 31px 3px rgba(0,0,0,0.3);
+    i{
+      display: flex;
+    }
   }
 }

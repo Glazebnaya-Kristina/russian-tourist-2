@@ -17,12 +17,17 @@
     margin: 0 auto;
     margin-top: 20px;
     @media (min-width: $screen-md) {
-      max-width: 750px;
+      //max-width: 750px;
+      //max-width: 550px;
+      max-width: 100%;
+      grid-template-columns: 1fr 1fr;
     }
     @media (min-width: $screen-lg) {
-      max-width: 819px;
+      //max-width: 819px;
     }
     @media (min-width: $screen-xl) {
+      grid-template-columns: 1fr;
+      max-width: 819px;
       margin-top: 48px;
     }
 
