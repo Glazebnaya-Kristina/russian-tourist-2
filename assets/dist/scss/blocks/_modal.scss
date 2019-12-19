@@ -795,6 +795,12 @@
       margin: 0 auto;
       margin-top: 39px;
       padding: 6px 10px;
+
+      // Для профля руководитель групп
+      &--supervisor{
+        display: none;
+      }
+      // Для профля руководитель групп
     }
   }
 
