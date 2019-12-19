@@ -130,6 +130,15 @@
 .input-message{
   outline: none;
   border: none;
+  font-family: 'Cormorant Garamond';
+  font-size: 18px;
+  line-height: normal;
+  @media (min-width: $screen-md) {
+    font-size: 24px;
+  }
+  @media (min-width: $screen-xl) {
+    font-size: 30px;
+  }
   @include placeholder{
     font-family: 'Cormorant Garamond';
     color: $text-color-gray-dark3;

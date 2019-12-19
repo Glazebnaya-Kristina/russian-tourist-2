@@ -551,12 +551,18 @@
 
   &__write-message-label {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     padding-bottom: 30px;
     border-bottom: 1px solid rgba(#a7a6af, .3);
 
     span {
+      display: block;
       color: $text-color-gray-light;
-      font-size: 18px;
+      font-size: 14px;
+      @media (min-width: $screen-md) {
+        font-size: 18px;
+      }
     }
 
     input {
@@ -567,9 +573,16 @@
     }
 
     time {
+      align-self: flex-end;
+      text-align: right;
       margin-left: auto;
+      font-size: 14px;
       color: $text-color-gray-light;
-      font-size: 18px;
+      @media (min-width: $screen-md) {
+        display: inline-block;
+        width: auto;
+        font-size: 18px;
+      }
     }
   }
 
@@ -586,6 +599,7 @@
       margin-left: 10px;
     }
   }
+
 
   .smile {
     margin-left: 10px;
